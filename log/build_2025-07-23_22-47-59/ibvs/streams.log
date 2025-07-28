@@ -1,0 +1,69 @@
+[0.017s] Invoking command in '/home/p/ws_demo2/build/ibvs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake /home/p/ws_demo2/src/ibvs -DCMAKE_INSTALL_PREFIX=/home/p/ws_demo2/install/ibvs
+[0.063s] -- The C compiler identification is GNU 12.3.0
+[0.116s] -- The CXX compiler identification is GNU 12.3.0
+[0.124s] -- Detecting C compiler ABI info
+[0.169s] -- Detecting C compiler ABI info - done
+[0.184s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.184s] -- Detecting C compile features
+[0.185s] -- Detecting C compile features - done
+[0.197s] -- Detecting CXX compiler ABI info
+[0.261s] -- Detecting CXX compiler ABI info - done
+[0.276s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.276s] -- Detecting CXX compile features
+[0.277s] -- Detecting CXX compile features - done
+[0.286s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.397s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter
+[0.503s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.568s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.577s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.590s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.608s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.633s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.702s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.709s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.806s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")
+[0.843s] -- Found FastRTPS: /opt/ros/humble/include
+[0.891s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.906s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.956s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.957s] -- Found Threads: TRUE
+[1.028s] -- Found image_transport: 3.1.12 (/opt/ros/humble/share/image_transport/cmake)
+[1.114s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[1.125s] -- Found OpenCV: /usr/local (found version "4.11.0")
+[1.137s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.215s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.215s] -- Configured cppcheck include dirs: 
+[1.215s] -- Configured cppcheck exclude dirs and/or files: 
+[1.216s] -- Added test 'lint_cmake' to check CMake code style
+[1.217s] -- Added test 'uncrustify' to check C / C++ code style
+[1.217s] -- Configured uncrustify additional arguments: 
+[1.218s] -- Added test 'xmllint' to check XML markup files
+[1.221s] -- Configuring done (1.2s)
+[1.232s] -- Generating done (0.0s)
+[1.234s] -- Build files have been written to: /home/p/ws_demo2/build/ibvs
+[1.241s] Invoked command in '/home/p/ws_demo2/build/ibvs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake /home/p/ws_demo2/src/ibvs -DCMAKE_INSTALL_PREFIX=/home/p/ws_demo2/install/ibvs
+[1.242s] Invoking command in '/home/p/ws_demo2/build/ibvs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --build /home/p/ws_demo2/build/ibvs -- -j16 -l16
+[1.263s] [ 50%] [32mBuilding CXX object CMakeFiles/ibvs.dir/src/ibvs.cpp.o[0m
+[3.798s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:[m[K In member function ‘[01m[Kvoid VisualServoInit::rgb_callback(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[3.798s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:42:64:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.798s]    42 |     void rgb_callback([01;35m[Kconst sensor_msgs::msg::Image::SharedPtr msg[m[K)
+[3.798s]       |                       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[3.799s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:[m[K In member function ‘[01m[Kvoid VisualServoInit::depth_callback(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[3.799s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:54:66:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.799s]    54 |     void depth_callback([01;35m[Kconst sensor_msgs::msg::Image::SharedPtr msg[m[K)
+[3.799s]       |                         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[10.874s] [100%] [32m[1mLinking CXX executable ibvs[0m
+[11.162s] /usr/bin/ld: CMakeFiles/ibvs.dir/src/ibvs.cpp.o: in function `VisualServoInit::VisualServoInit()':
+[11.162s] ibvs.cpp:(.text._ZN15VisualServoInitC2Ev[_ZN15VisualServoInitC5Ev]+0x168): undefined reference to `vpCameraParameters::vpCameraParameters()'
+[11.162s] /usr/bin/ld: ibvs.cpp:(.text._ZN15VisualServoInitC2Ev[_ZN15VisualServoInitC5Ev]+0x8bc): undefined reference to `vpCameraParameters::~vpCameraParameters()'
+[11.162s] /usr/bin/ld: CMakeFiles/ibvs.dir/src/ibvs.cpp.o: in function `VisualServoInit::~VisualServoInit()':
+[11.163s] ibvs.cpp:(.text._ZN15VisualServoInitD2Ev[_ZN15VisualServoInitD5Ev]+0x1b5): undefined reference to `vpCameraParameters::~vpCameraParameters()'
+[11.163s] /usr/bin/ld: CMakeFiles/ibvs.dir/src/ibvs.cpp.o: in function `VisualServoInit::rgb_camera_info_callback(std::shared_ptr<sensor_msgs::msg::CameraInfo_<std::allocator<void> > >)':
+[11.163s] ibvs.cpp:(.text._ZN15VisualServoInit24rgb_camera_info_callbackESt10shared_ptrIN11sensor_msgs3msg11CameraInfo_ISaIvEEEE[_ZN15VisualServoInit24rgb_camera_info_callbackESt10shared_ptrIN11sensor_msgs3msg11CameraInfo_ISaIvEEEE]+0x11a): undefined reference to `vpCameraParameters::vpCameraParameters(double, double, double, double)'
+[11.163s] /usr/bin/ld: ibvs.cpp:(.text._ZN15VisualServoInit24rgb_camera_info_callbackESt10shared_ptrIN11sensor_msgs3msg11CameraInfo_ISaIvEEEE[_ZN15VisualServoInit24rgb_camera_info_callbackESt10shared_ptrIN11sensor_msgs3msg11CameraInfo_ISaIvEEEE]+0x13a): undefined reference to `vpCameraParameters::operator=(vpCameraParameters const&)'
+[11.163s] /usr/bin/ld: ibvs.cpp:(.text._ZN15VisualServoInit24rgb_camera_info_callbackESt10shared_ptrIN11sensor_msgs3msg11CameraInfo_ISaIvEEEE[_ZN15VisualServoInit24rgb_camera_info_callbackESt10shared_ptrIN11sensor_msgs3msg11CameraInfo_ISaIvEEEE]+0x149): undefined reference to `vpCameraParameters::~vpCameraParameters()'
+[11.164s] /usr/bin/ld: ibvs.cpp:(.text._ZN15VisualServoInit24rgb_camera_info_callbackESt10shared_ptrIN11sensor_msgs3msg11CameraInfo_ISaIvEEEE[_ZN15VisualServoInit24rgb_camera_info_callbackESt10shared_ptrIN11sensor_msgs3msg11CameraInfo_ISaIvEEEE]+0x471): undefined reference to `vpCameraParameters::~vpCameraParameters()'
+[11.194s] collect2: error: ld returned 1 exit status
+[11.194s] gmake[2]: *** [CMakeFiles/ibvs.dir/build.make:195：ibvs] 错误 1
+[11.194s] gmake[1]: *** [CMakeFiles/Makefile2:153：CMakeFiles/ibvs.dir/all] 错误 2
+[11.195s] gmake: *** [Makefile:146：all] 错误 2

@@ -1,0 +1,8 @@
+[01m[K/home/p/ws_demo2/src/camera_image/src/camera_image.cpp:[m[K In member function ‘[01m[Kvoid CameraImageViewer::depth_callback(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/p/ws_demo2/src/camera_image/src/camera_image.cpp:65:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kdepth_8u[m[K’ was not declared in this scope; did you mean ‘[01m[Kdepth[m[K’?
+   65 |             cv::imshow("Depth Image", [01;31m[Kdepth_8u[m[K);
+      |                                       [01;31m[K^~~~~~~~[m[K
+      |                                       [32m[Kdepth[m[K
+gmake[2]: *** [CMakeFiles/camera_image.dir/build.make:79：CMakeFiles/camera_image.dir/src/camera_image.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:153：CMakeFiles/camera_image.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

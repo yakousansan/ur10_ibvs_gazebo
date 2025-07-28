@@ -1,0 +1,54 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/ibvs.dir/src/ibvs.cpp.o[0m
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:[m[K In member function ‘[01m[Kvoid VisualServoInit::rgb_callback(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:130:42:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst class vpFeaturePoint[m[K’ has no member named ‘[01m[Kget_uv[m[K’; did you mean ‘[01m[Kget_x[m[K’?
+  130 |                 const auto& uv = feature.[01;31m[Kget_uv[m[K();
+      |                                          [01;31m[K^~~~~~[m[K
+      |                                          [32m[Kget_x[m[K
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:[m[K In member function ‘[01m[Kvoid VisualServoInit::init_target_features()[m[K’:
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:241:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass vpFeaturePoint[m[K’ has no member named ‘[01m[Kset_uv[m[K’; did you mean ‘[01m[Kset_x[m[K’?
+  241 |                 vpFeaturePoint().[01;31m[Kset_uv[m[K(center_u_ - offset_u_, center_v_ - offset_v_),  // 左上
+      |                                  [01;31m[K^~~~~~[m[K
+      |                                  [32m[Kset_x[m[K
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:242:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass vpFeaturePoint[m[K’ has no member named ‘[01m[Kset_uv[m[K’; did you mean ‘[01m[Kset_x[m[K’?
+  242 |                 vpFeaturePoint().[01;31m[Kset_uv[m[K(center_u_ + offset_u_, center_v_ - offset_v_),  // 右上
+      |                                  [01;31m[K^~~~~~[m[K
+      |                                  [32m[Kset_x[m[K
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:243:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass vpFeaturePoint[m[K’ has no member named ‘[01m[Kset_uv[m[K’; did you mean ‘[01m[Kset_x[m[K’?
+  243 |                 vpFeaturePoint().[01;31m[Kset_uv[m[K(center_u_ + offset_u_, center_v_ + offset_v_),  // 右下
+      |                                  [01;31m[K^~~~~~[m[K
+      |                                  [32m[Kset_x[m[K
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:244:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass vpFeaturePoint[m[K’ has no member named ‘[01m[Kset_uv[m[K’; did you mean ‘[01m[Kset_x[m[K’?
+  244 |                 vpFeaturePoint().[01;31m[Kset_uv[m[K(center_u_ - offset_u_, center_v_ + offset_v_)};   // 左下
+      |                                  [01;31m[K^~~~~~[m[K
+      |                                  [32m[Kset_x[m[K
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:244:86:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kstd::vector<vpFeaturePoint>[m[K’ and ‘[01m[K<brace-enclosed initializer list>[m[K’)
+  244 |                 vpFeaturePoint().set_uv(center_u_ - offset_u_, center_v_ + offset_v_)[01;31m[K}[m[K;   // 左下
+      |                                                                                      [01;31m[K^[m[K
+In file included from [01m[K/usr/include/c++/12/vector:70[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:1[m[K:
+[01m[K/usr/include/c++/12/bits/vector.tcc:204:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(const std::vector<_Tp, _Alloc>&) [with _Tp = vpFeaturePoint; _Alloc = std::allocator<vpFeaturePoint>][m[K’
+  204 |     [01;36m[Kvector<_Tp, _Alloc>[m[K::
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/12/bits/vector.tcc:205:42:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kconst std::vector<vpFeaturePoint>&[m[K’
+  205 |     operator=([01;36m[Kconst vector<_Tp, _Alloc>& __x[m[K)
+      |               [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+In file included from [01m[K/usr/include/c++/12/vector:64[m[K:
+[01m[K/usr/include/c++/12/bits/stl_vector.h:761:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::vector<_Tp, _Alloc>&&) [with _Tp = vpFeaturePoint; _Alloc = std::allocator<vpFeaturePoint>][m[K’
+  761 |       [01;36m[Koperator[m[K=(vector&& __x) noexcept(_Alloc_traits::_S_nothrow_move())
+      |       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/12/bits/stl_vector.h:761:26:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kstd::vector<vpFeaturePoint>&&[m[K’
+  761 |       operator=([01;36m[Kvector&& __x[m[K) noexcept(_Alloc_traits::_S_nothrow_move())
+      |                 [01;36m[K~~~~~~~~~^~~[m[K
+[01m[K/usr/include/c++/12/bits/stl_vector.h:783:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::initializer_list<_Tp>) [with _Tp = vpFeaturePoint; _Alloc = std::allocator<vpFeaturePoint>][m[K’
+  783 |       [01;36m[Koperator[m[K=(initializer_list<value_type> __l)
+      |       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/12/bits/stl_vector.h:783:46:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kstd::initializer_list<vpFeaturePoint>[m[K’
+  783 |       operator=([01;36m[Kinitializer_list<value_type> __l[m[K)
+      |                 [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+gmake[2]: *** [CMakeFiles/ibvs.dir/build.make:79：CMakeFiles/ibvs.dir/src/ibvs.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:153：CMakeFiles/ibvs.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

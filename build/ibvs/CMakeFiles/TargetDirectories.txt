@@ -1,0 +1,10 @@
+/home/p/ws_demo2/build/ibvs/CMakeFiles/uninstall.dir
+/home/p/ws_demo2/build/ibvs/CMakeFiles/ibvs_uninstall.dir
+/home/p/ws_demo2/build/ibvs/CMakeFiles/ibvs.dir
+/home/p/ws_demo2/build/ibvs/CMakeFiles/test.dir
+/home/p/ws_demo2/build/ibvs/CMakeFiles/edit_cache.dir
+/home/p/ws_demo2/build/ibvs/CMakeFiles/rebuild_cache.dir
+/home/p/ws_demo2/build/ibvs/CMakeFiles/list_install_components.dir
+/home/p/ws_demo2/build/ibvs/CMakeFiles/install.dir
+/home/p/ws_demo2/build/ibvs/CMakeFiles/install/local.dir
+/home/p/ws_demo2/build/ibvs/CMakeFiles/install/strip.dir

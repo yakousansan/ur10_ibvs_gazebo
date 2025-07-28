@@ -1,0 +1,16 @@
+/home/p/ws_demo2/install/camera_image/lib/camera_image/camera_image
+/home/p/ws_demo2/install/camera_image/share/ament_index/resource_index/package_run_dependencies/camera_image
+/home/p/ws_demo2/install/camera_image/share/ament_index/resource_index/parent_prefix_path/camera_image
+/home/p/ws_demo2/install/camera_image/share/camera_image/environment/ament_prefix_path.sh
+/home/p/ws_demo2/install/camera_image/share/camera_image/environment/ament_prefix_path.dsv
+/home/p/ws_demo2/install/camera_image/share/camera_image/environment/path.sh
+/home/p/ws_demo2/install/camera_image/share/camera_image/environment/path.dsv
+/home/p/ws_demo2/install/camera_image/share/camera_image/local_setup.bash
+/home/p/ws_demo2/install/camera_image/share/camera_image/local_setup.sh
+/home/p/ws_demo2/install/camera_image/share/camera_image/local_setup.zsh
+/home/p/ws_demo2/install/camera_image/share/camera_image/local_setup.dsv
+/home/p/ws_demo2/install/camera_image/share/camera_image/package.dsv
+/home/p/ws_demo2/install/camera_image/share/ament_index/resource_index/packages/camera_image
+/home/p/ws_demo2/install/camera_image/share/camera_image/cmake/camera_imageConfig.cmake
+/home/p/ws_demo2/install/camera_image/share/camera_image/cmake/camera_imageConfig-version.cmake
+/home/p/ws_demo2/install/camera_image/share/camera_image/package.xml

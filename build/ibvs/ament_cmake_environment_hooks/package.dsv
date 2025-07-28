@@ -1,0 +1,4 @@
+source;share/ibvs/local_setup.bash
+source;share/ibvs/local_setup.dsv
+source;share/ibvs/local_setup.sh
+source;share/ibvs/local_setup.zsh

@@ -1,0 +1,56 @@
+[0.019s] Invoking command in '/home/p/ws_demo2/build/ibvs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --build /home/p/ws_demo2/build/ibvs -- -j16 -l16
+[0.034s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.199s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.227s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.229s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.235s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.247s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.262s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.297s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.300s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.399s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.450s] -- Found image_transport: 3.1.12 (/opt/ros/humble/share/image_transport/cmake)
+[0.501s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[0.531s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.582s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.582s] -- Configured cppcheck include dirs: 
+[0.582s] -- Configured cppcheck exclude dirs and/or files: 
+[0.582s] -- Added test 'lint_cmake' to check CMake code style
+[0.583s] -- Added test 'uncrustify' to check C / C++ code style
+[0.583s] -- Configured uncrustify additional arguments: 
+[0.583s] -- Added test 'xmllint' to check XML markup files
+[0.584s] -- Configuring done (0.6s)
+[0.669s] -- Generating done (0.1s)
+[0.671s] -- Build files have been written to: /home/p/ws_demo2/build/ibvs
+[0.693s] [ 50%] [32mBuilding CXX object CMakeFiles/ibvs.dir/src/ibvs.cpp.o[0m
+[3.154s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:[m[K In member function ‘[01m[Kvoid VisualServoInit::rgb_callback(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[3.154s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:42:64:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.154s]    42 |     void rgb_callback([01;35m[Kconst sensor_msgs::msg::Image::SharedPtr msg[m[K)
+[3.154s]       |                       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[3.155s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:[m[K In member function ‘[01m[Kvoid VisualServoInit::depth_callback(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[3.155s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:54:66:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.155s]    54 |     void depth_callback([01;35m[Kconst sensor_msgs::msg::Image::SharedPtr msg[m[K)
+[3.155s]       |                         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[10.261s] [100%] [32m[1mLinking CXX executable ibvs[0m
+[11.137s] [100%] Built target ibvs
+[11.149s] Invoked command in '/home/p/ws_demo2/build/ibvs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --build /home/p/ws_demo2/build/ibvs -- -j16 -l16
+[11.151s] Invoking command in '/home/p/ws_demo2/build/ibvs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --install /home/p/ws_demo2/build/ibvs
+[11.156s] -- Install configuration: ""
+[11.156s] -- Installing: /home/p/ws_demo2/install/ibvs/lib/ibvs/ibvs
+[11.161s] -- Set non-toolchain portion of runtime path of "/home/p/ws_demo2/install/ibvs/lib/ibvs/ibvs" to ""
+[11.162s] -- Installing: /home/p/ws_demo2/install/ibvs/share/ament_index/resource_index/package_run_dependencies/ibvs
+[11.162s] -- Installing: /home/p/ws_demo2/install/ibvs/share/ament_index/resource_index/parent_prefix_path/ibvs
+[11.162s] -- Installing: /home/p/ws_demo2/install/ibvs/share/ibvs/environment/ament_prefix_path.sh
+[11.162s] -- Installing: /home/p/ws_demo2/install/ibvs/share/ibvs/environment/ament_prefix_path.dsv
+[11.162s] -- Installing: /home/p/ws_demo2/install/ibvs/share/ibvs/environment/path.sh
+[11.162s] -- Installing: /home/p/ws_demo2/install/ibvs/share/ibvs/environment/path.dsv
+[11.163s] -- Installing: /home/p/ws_demo2/install/ibvs/share/ibvs/local_setup.bash
+[11.163s] -- Installing: /home/p/ws_demo2/install/ibvs/share/ibvs/local_setup.sh
+[11.163s] -- Installing: /home/p/ws_demo2/install/ibvs/share/ibvs/local_setup.zsh
+[11.163s] -- Installing: /home/p/ws_demo2/install/ibvs/share/ibvs/local_setup.dsv
+[11.163s] -- Installing: /home/p/ws_demo2/install/ibvs/share/ibvs/package.dsv
+[11.163s] -- Installing: /home/p/ws_demo2/install/ibvs/share/ament_index/resource_index/packages/ibvs
+[11.164s] -- Installing: /home/p/ws_demo2/install/ibvs/share/ibvs/cmake/ibvsConfig.cmake
+[11.164s] -- Installing: /home/p/ws_demo2/install/ibvs/share/ibvs/cmake/ibvsConfig-version.cmake
+[11.164s] -- Installing: /home/p/ws_demo2/install/ibvs/share/ibvs/package.xml
+[11.165s] Invoked command in '/home/p/ws_demo2/build/ibvs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --install /home/p/ws_demo2/build/ibvs

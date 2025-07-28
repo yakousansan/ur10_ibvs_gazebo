@@ -1,0 +1,10 @@
+/home/p/ws_demo2/build/camera_image/CMakeFiles/uninstall.dir
+/home/p/ws_demo2/build/camera_image/CMakeFiles/camera_image_uninstall.dir
+/home/p/ws_demo2/build/camera_image/CMakeFiles/camera_image.dir
+/home/p/ws_demo2/build/camera_image/CMakeFiles/test.dir
+/home/p/ws_demo2/build/camera_image/CMakeFiles/edit_cache.dir
+/home/p/ws_demo2/build/camera_image/CMakeFiles/rebuild_cache.dir
+/home/p/ws_demo2/build/camera_image/CMakeFiles/list_install_components.dir
+/home/p/ws_demo2/build/camera_image/CMakeFiles/install.dir
+/home/p/ws_demo2/build/camera_image/CMakeFiles/install/local.dir
+/home/p/ws_demo2/build/camera_image/CMakeFiles/install/strip.dir

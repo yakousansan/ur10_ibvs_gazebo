@@ -1,0 +1,13 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/ibvs.dir/src/ibvs.cpp.o[0m
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:[m[K In member function ‘[01m[Kvoid VisualServoInit::rgb_callback(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:88:45:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst class vpImagePoint[m[K’ has no member named ‘[01m[Kget_x[m[K’; did you mean ‘[01m[Kget_i[m[K’?
+   88 |                         cv::Point pt(corner.[01;31m[Kget_x[m[K(), corner.get_y());
+      |                                             [01;31m[K^~~~~[m[K
+      |                                             [32m[Kget_i[m[K
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:88:61:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst class vpImagePoint[m[K’ has no member named ‘[01m[Kget_y[m[K’; did you mean ‘[01m[Kget_i[m[K’?
+   88 |                         cv::Point pt(corner.get_x(), corner.[01;31m[Kget_y[m[K());
+      |                                                             [01;31m[K^~~~~[m[K
+      |                                                             [32m[Kget_i[m[K
+gmake[2]: *** [CMakeFiles/ibvs.dir/build.make:79：CMakeFiles/ibvs.dir/src/ibvs.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:153：CMakeFiles/ibvs.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

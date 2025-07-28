@@ -1,0 +1,15 @@
+[ 50%] [32m[1mLinking CXX executable ibvs[0m
+/usr/bin/ld: CMakeFiles/ibvs.dir/src/ibvs.cpp.o: in function `VisualServoInit::VisualServoInit()':
+ibvs.cpp:(.text._ZN15VisualServoInitC2Ev[_ZN15VisualServoInitC5Ev]+0x168): undefined reference to `vpCameraParameters::vpCameraParameters()'
+/usr/bin/ld: ibvs.cpp:(.text._ZN15VisualServoInitC2Ev[_ZN15VisualServoInitC5Ev]+0x8bc): undefined reference to `vpCameraParameters::~vpCameraParameters()'
+/usr/bin/ld: CMakeFiles/ibvs.dir/src/ibvs.cpp.o: in function `VisualServoInit::~VisualServoInit()':
+ibvs.cpp:(.text._ZN15VisualServoInitD2Ev[_ZN15VisualServoInitD5Ev]+0x1b5): undefined reference to `vpCameraParameters::~vpCameraParameters()'
+/usr/bin/ld: CMakeFiles/ibvs.dir/src/ibvs.cpp.o: in function `VisualServoInit::rgb_camera_info_callback(std::shared_ptr<sensor_msgs::msg::CameraInfo_<std::allocator<void> > >)':
+ibvs.cpp:(.text._ZN15VisualServoInit24rgb_camera_info_callbackESt10shared_ptrIN11sensor_msgs3msg11CameraInfo_ISaIvEEEE[_ZN15VisualServoInit24rgb_camera_info_callbackESt10shared_ptrIN11sensor_msgs3msg11CameraInfo_ISaIvEEEE]+0x11a): undefined reference to `vpCameraParameters::vpCameraParameters(double, double, double, double)'
+/usr/bin/ld: ibvs.cpp:(.text._ZN15VisualServoInit24rgb_camera_info_callbackESt10shared_ptrIN11sensor_msgs3msg11CameraInfo_ISaIvEEEE[_ZN15VisualServoInit24rgb_camera_info_callbackESt10shared_ptrIN11sensor_msgs3msg11CameraInfo_ISaIvEEEE]+0x13a): undefined reference to `vpCameraParameters::operator=(vpCameraParameters const&)'
+/usr/bin/ld: ibvs.cpp:(.text._ZN15VisualServoInit24rgb_camera_info_callbackESt10shared_ptrIN11sensor_msgs3msg11CameraInfo_ISaIvEEEE[_ZN15VisualServoInit24rgb_camera_info_callbackESt10shared_ptrIN11sensor_msgs3msg11CameraInfo_ISaIvEEEE]+0x149): undefined reference to `vpCameraParameters::~vpCameraParameters()'
+/usr/bin/ld: ibvs.cpp:(.text._ZN15VisualServoInit24rgb_camera_info_callbackESt10shared_ptrIN11sensor_msgs3msg11CameraInfo_ISaIvEEEE[_ZN15VisualServoInit24rgb_camera_info_callbackESt10shared_ptrIN11sensor_msgs3msg11CameraInfo_ISaIvEEEE]+0x471): undefined reference to `vpCameraParameters::~vpCameraParameters()'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/ibvs.dir/build.make:195：ibvs] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:153：CMakeFiles/ibvs.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2
