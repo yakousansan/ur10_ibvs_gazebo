@@ -1,0 +1,29 @@
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:[m[K In member function ‘[01m[Kvoid VisualServoInit::rgb_callback(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:153:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst class vpFeaturePoint[m[K’ has no member named ‘[01m[Kget_u[m[K’; did you mean ‘[01m[Kget_x[m[K’?
+  153 |                 double u = feature.[01;31m[Kget_u[m[K();
+      |                                    [01;31m[K^~~~~[m[K
+      |                                    [32m[Kget_x[m[K
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:154:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst class vpFeaturePoint[m[K’ has no member named ‘[01m[Kget_v[m[K’; did you mean ‘[01m[Kget_x[m[K’?
+  154 |                 double v = feature.[01;31m[Kget_v[m[K();
+      |                                    [01;31m[K^~~~~[m[K
+      |                                    [32m[Kget_x[m[K
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:[m[K In lambda function:
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:276:45:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass vpCameraParameters[m[K’ has no member named ‘[01m[Kget_cx[m[K’; did you mean ‘[01m[Kget_px[m[K’?
+  276 |                 double x = (u - cam_params_.[01;31m[Kget_cx[m[K()) / cam_params_.get_fx();  // 归一化x
+      |                                             [01;31m[K^~~~~~[m[K
+      |                                             [32m[Kget_px[m[K
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:276:69:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass vpCameraParameters[m[K’ has no member named ‘[01m[Kget_fx[m[K’; did you mean ‘[01m[Kget_px[m[K’?
+  276 |                 double x = (u - cam_params_.get_cx()) / cam_params_.[01;31m[Kget_fx[m[K();  // 归一化x
+      |                                                                     [01;31m[K^~~~~~[m[K
+      |                                                                     [32m[Kget_px[m[K
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:277:45:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass vpCameraParameters[m[K’ has no member named ‘[01m[Kget_cy[m[K’; did you mean ‘[01m[Kget_py[m[K’?
+  277 |                 double y = (v - cam_params_.[01;31m[Kget_cy[m[K()) / cam_params_.get_fy();  // 归一化y
+      |                                             [01;31m[K^~~~~~[m[K
+      |                                             [32m[Kget_py[m[K
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:277:69:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass vpCameraParameters[m[K’ has no member named ‘[01m[Kget_fy[m[K’; did you mean ‘[01m[Kget_py[m[K’?
+  277 |                 double y = (v - cam_params_.get_cy()) / cam_params_.[01;31m[Kget_fy[m[K();  // 归一化y
+      |                                                                     [01;31m[K^~~~~~[m[K
+      |                                                                     [32m[Kget_py[m[K
+gmake[2]: *** [CMakeFiles/ibvs.dir/build.make:79：CMakeFiles/ibvs.dir/src/ibvs.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:153：CMakeFiles/ibvs.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

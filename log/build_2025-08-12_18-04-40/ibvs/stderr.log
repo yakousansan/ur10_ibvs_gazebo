@@ -1,0 +1,16 @@
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:67:5:[m[K [01;31m[Kerror: [m[K‘[01m[KvpServo[m[K’ does not name a type
+   67 |     [01;31m[KvpServo[m[K task;
+      |     [01;31m[K^~~~~~~[m[K
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:[m[K In member function ‘[01m[Kvoid VisualServoInit::init_visual_servo()[m[K’:
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:380:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktask[m[K’ was not declared in this scope
+  380 |         [01;31m[Ktask[m[K.setServo(vpServo::EYEINHAND_CAMERA); // 设置伺服模式为相机在手眼坐标系下
+      |         [01;31m[K^~~~[m[K
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:380:23:[m[K [01;31m[Kerror: [m[K‘[01m[KvpServo[m[K’ has not been declared
+  380 |         task.setServo([01;31m[KvpServo[m[K::EYEINHAND_CAMERA); // 设置伺服模式为相机在手眼坐标系下
+      |                       [01;31m[K^~~~~~~[m[K
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:382:39:[m[K [01;31m[Kerror: [m[K‘[01m[KvpServo[m[K’ has not been declared
+  382 |         task.setInteractionMatrixType([01;31m[KvpServo[m[K::CURRENT);
+      |                                       [01;31m[K^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/ibvs.dir/build.make:79：CMakeFiles/ibvs.dir/src/ibvs.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:153：CMakeFiles/ibvs.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

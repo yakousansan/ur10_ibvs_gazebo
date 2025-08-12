@@ -1,0 +1,23 @@
+[0.018s] Invoking command in '/home/p/ws_demo2/build/ibvs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --build /home/p/ws_demo2/build/ibvs -- -j16 -l16
+[0.069s] [ 50%] [32mBuilding CXX object CMakeFiles/ibvs.dir/src/ibvs.cpp.o[0m
+[2.648s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:[m[K In lambda function:
+[2.648s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:283:45:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass vpCameraParameters[m[K’ has no member named ‘[01m[Kget_cx[m[K’; did you mean ‘[01m[Kget_px[m[K’?
+[2.648s]   283 |                 double x = (u - cam_params_.[01;31m[Kget_cx[m[K()) / cam_params_.get_fx();  // 归一化x
+[2.648s]       |                                             [01;31m[K^~~~~~[m[K
+[2.648s]       |                                             [32m[Kget_px[m[K
+[2.648s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:283:69:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass vpCameraParameters[m[K’ has no member named ‘[01m[Kget_fx[m[K’; did you mean ‘[01m[Kget_px[m[K’?
+[2.648s]   283 |         double x = (u - cam_params_.get_cx()) / cam_params_.[01;31m[Kget_fx[m[K();  // 归一化x
+[2.648s]       |                                                             [01;31m[K^~~~~~[m[K
+[2.648s]       |                                                             [32m[Kget_px[m[K
+[2.649s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:284:45:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass vpCameraParameters[m[K’ has no member named ‘[01m[Kget_cy[m[K’; did you mean ‘[01m[Kget_py[m[K’?
+[2.649s]   284 |                 double y = (v - cam_params_.[01;31m[Kget_cy[m[K()) / cam_params_.get_fy();  // 归一化y
+[2.649s]       |                                             [01;31m[K^~~~~~[m[K
+[2.649s]       |                                             [32m[Kget_py[m[K
+[2.649s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:284:69:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass vpCameraParameters[m[K’ has no member named ‘[01m[Kget_fy[m[K’; did you mean ‘[01m[Kget_py[m[K’?
+[2.649s]   284 |         double y = (v - cam_params_.get_cy()) / cam_params_.[01;31m[Kget_fy[m[K();  // 归一化y
+[2.649s]       |                                                             [01;31m[K^~~~~~[m[K
+[2.649s]       |                                                             [32m[Kget_py[m[K
+[5.453s] gmake[2]: *** [CMakeFiles/ibvs.dir/build.make:79：CMakeFiles/ibvs.dir/src/ibvs.cpp.o] 错误 1
+[5.453s] gmake[1]: *** [CMakeFiles/Makefile2:153：CMakeFiles/ibvs.dir/all] 错误 2
+[5.453s] gmake: *** [Makefile:146：all] 错误 2
+[5.455s] Invoked command in '/home/p/ws_demo2/build/ibvs' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --build /home/p/ws_demo2/build/ibvs -- -j16 -l16

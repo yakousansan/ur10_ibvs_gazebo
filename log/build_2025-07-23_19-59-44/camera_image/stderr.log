@@ -1,8 +1,0 @@
-[01m[K/home/p/ws_demo2/src/camera_image/src/camera_image.cpp:[m[K In constructor ‘[01m[KCameraImageViewer::CameraImageViewer()[m[K’:
-[01m[K/home/p/ws_demo2/src/camera_image/src/camera_image.cpp:16:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kdepth_subscriber[m[K’ was not declared in this scope; did you mean ‘[01m[Krgb_subscriber[m[K’?
-   16 |     [01;31m[Kdepth_subscriber[m[K = this->create_subscription<sensor_msgs::msg::Image>("/depth/image_raw",10,
-      |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
-      |     [32m[Krgb_subscriber[m[K
-gmake[2]: *** [CMakeFiles/camera_image.dir/build.make:79：CMakeFiles/camera_image.dir/src/camera_image.cpp.o] 错误 1
-gmake[1]: *** [CMakeFiles/Makefile2:153：CMakeFiles/camera_image.dir/all] 错误 2
-gmake: *** [Makefile:146：all] 错误 2

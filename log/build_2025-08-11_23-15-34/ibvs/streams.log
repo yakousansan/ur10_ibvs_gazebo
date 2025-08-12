@@ -1,0 +1,76 @@
+[0.023s] Invoking command in '/home/p/ws_demo2/build/ibvs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --build /home/p/ws_demo2/build/ibvs -- -j16 -l16
+[0.051s] [ 50%] [32mBuilding CXX object CMakeFiles/ibvs.dir/src/ibvs.cpp.o[0m
+[2.624s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:[m[K In member function ‘[01m[Kvoid VisualServoInit::rgb_callback(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.624s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:168:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kcompute_feature_error[m[K’ was not declared in this scope
+[2.624s]   168 |                 [01;31m[Kcompute_feature_error[m[K();
+[2.624s]       |                 [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[2.639s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:[m[K In function ‘[01m[Kvoid compute_feature_error()[m[K’:
+[2.639s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:328:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_features_[m[K’ was not declared in this scope
+[2.639s]   328 |         if ([01;31m[Ktarget_features_[m[K.size() != current_features_.size() || target_features_.empty()) {
+[2.639s]       |             [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[2.645s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:328:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_features_[m[K’ was not declared in this scope
+[2.645s]   328 |         if (target_features_.size() != [01;31m[Kcurrent_features_[m[K.size() || target_features_.empty()) {
+[2.645s]       |                                        [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[2.645s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.645s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.645s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.646s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.646s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.646s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.646s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.646s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.646s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.646s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.646s]                  from [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:1[m[K:
+[2.646s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:329:26:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.646s]   329 |             RCLCPP_ERROR([01;31m[Kthis[m[K->get_logger(), "特征点数量不匹配或为空，无法计算误差");
+[2.646s]       |                          [01;31m[K^~~~[m[K
+[2.646s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:329:26:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.646s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:329:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.646s]   329 |             [01;31m[KRCLCPP_ERROR[m[K(this->get_logger(), "特征点数量不匹配或为空，无法计算误差");
+[2.646s]       |             [01;31m[K^~~~~~~~~~~~[m[K
+[2.646s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:329:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.646s]   329 |             [01;31m[KRCLCPP_ERROR[m[K(this->get_logger(), "特征点数量不匹配或为空，无法计算误差");
+[2.646s]       |             [01;31m[K^~~~~~~~~~~~[m[K
+[2.646s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:329:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.646s]   329 |             [01;31m[KRCLCPP_ERROR[m[K(this->get_logger(), "特征点数量不匹配或为空，无法计算误差");
+[2.646s]       |             [01;31m[K^~~~~~~~~~~~[m[K
+[2.646s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K:
+[2.647s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:329:26:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.647s]   329 |             RCLCPP_ERROR([01;31m[Kthis[m[K->get_logger(), "特征点数量不匹配或为空，无法计算误差");
+[2.647s]       |                          [01;31m[K^~~~[m[K
+[2.647s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:329:26:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.647s]   329 |             RCLCPP_ERROR([01;31m[Kthis[m[K->get_logger(), "特征点数量不匹配或为空，无法计算误差");
+[2.647s]       |                          [01;31m[K^~~~[m[K
+[2.651s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:333:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kfeature_error_[m[K’ was not declared in this scope
+[2.651s]   333 |         [01;31m[Kfeature_error_[m[K.resize(target_features_.size() * 2);
+[2.651s]       |         [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.656s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:333:31:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_features_[m[K’ was not declared in this scope
+[2.656s]   333 |         feature_error_.resize([01;31m[Ktarget_features_[m[K.size() * 2);
+[2.656s]       |                               [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[2.662s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:339:45:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_features_[m[K’ was not declared in this scope
+[2.662s]   339 |             const vpFeaturePoint& current = [01;31m[Kcurrent_features_[m[K[i];
+[2.662s]       |                                             [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[2.662s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:350:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.662s]   350 |         RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "特征误差: %s", feature_error_.toString().c_str());
+[2.662s]       |                     [01;31m[K^~~~[m[K
+[2.662s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:350:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.663s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:350:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.663s]   350 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "特征误差: %s", feature_error_.toString().c_str());
+[2.663s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[2.663s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:350:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.663s]   350 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "特征误差: %s", feature_error_.toString().c_str());
+[2.663s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[2.663s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:350:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.663s]   350 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "特征误差: %s", feature_error_.toString().c_str());
+[2.663s]       |         [01;31m[K^~~~~~~~~~~[m[K
+[2.663s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:350:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.663s]   350 |         RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "特征误差: %s", feature_error_.toString().c_str());
+[2.663s]       |                     [01;31m[K^~~~[m[K
+[2.663s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:350:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[2.663s]   350 |         RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "特征误差: %s", feature_error_.toString().c_str());
+[2.663s]       |                     [01;31m[K^~~~[m[K
+[5.493s] gmake[2]: *** [CMakeFiles/ibvs.dir/build.make:79：CMakeFiles/ibvs.dir/src/ibvs.cpp.o] 错误 1
+[5.493s] gmake[1]: *** [CMakeFiles/Makefile2:153：CMakeFiles/ibvs.dir/all] 错误 2
+[5.493s] gmake: *** [Makefile:146：all] 错误 2
+[5.495s] Invoked command in '/home/p/ws_demo2/build/ibvs' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --build /home/p/ws_demo2/build/ibvs -- -j16 -l16

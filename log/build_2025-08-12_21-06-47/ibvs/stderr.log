@@ -1,0 +1,7 @@
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:[m[K In member function ‘[01m[Kvoid VisualServoInit::ConvertCameraVelToBaseVel(const std::string&, const std::string&)[m[K’:
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:415:26:[m[K [01;31m[Kerror: [m[K‘[01m[Ktf_buffer_[m[K’ was not declared in this scope
+  415 |             tfCamWorld = [01;31m[Ktf_buffer_[m[K.lookupTransform(base_frame, camera_frame, rclcpp::Time(0.1));
+      |                          [01;31m[K^~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/ibvs.dir/build.make:79：CMakeFiles/ibvs.dir/src/ibvs.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:153：CMakeFiles/ibvs.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

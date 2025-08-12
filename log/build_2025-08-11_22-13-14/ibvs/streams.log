@@ -1,0 +1,27 @@
+[0.017s] Invoking command in '/home/p/ws_demo2/build/ibvs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --build /home/p/ws_demo2/build/ibvs -- -j16 -l16
+[0.047s] [ 50%] [32mBuilding CXX object CMakeFiles/ibvs.dir/src/ibvs.cpp.o[0m
+[10.140s] [100%] [32m[1mLinking CXX executable ibvs[0m
+[10.718s] /usr/bin/ld: warning: libopencv_imgproc.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgproc.so.411
+[10.719s] /usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.411
+[11.195s] [100%] Built target ibvs
+[11.207s] Invoked command in '/home/p/ws_demo2/build/ibvs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --build /home/p/ws_demo2/build/ibvs -- -j16 -l16
+[11.209s] Invoking command in '/home/p/ws_demo2/build/ibvs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --install /home/p/ws_demo2/build/ibvs
+[11.211s] -- Install configuration: ""
+[11.211s] -- Installing: /home/p/ws_demo2/install/ibvs/lib/ibvs/ibvs
+[11.215s] -- Set non-toolchain portion of runtime path of "/home/p/ws_demo2/install/ibvs/lib/ibvs/ibvs" to ""
+[11.215s] -- Up-to-date: /home/p/ws_demo2/install/ibvs/share/ament_index/resource_index/package_run_dependencies/ibvs
+[11.215s] -- Up-to-date: /home/p/ws_demo2/install/ibvs/share/ament_index/resource_index/parent_prefix_path/ibvs
+[11.216s] -- Up-to-date: /home/p/ws_demo2/install/ibvs/share/ibvs/environment/ament_prefix_path.sh
+[11.216s] -- Up-to-date: /home/p/ws_demo2/install/ibvs/share/ibvs/environment/ament_prefix_path.dsv
+[11.216s] -- Up-to-date: /home/p/ws_demo2/install/ibvs/share/ibvs/environment/path.sh
+[11.216s] -- Up-to-date: /home/p/ws_demo2/install/ibvs/share/ibvs/environment/path.dsv
+[11.216s] -- Up-to-date: /home/p/ws_demo2/install/ibvs/share/ibvs/local_setup.bash
+[11.216s] -- Up-to-date: /home/p/ws_demo2/install/ibvs/share/ibvs/local_setup.sh
+[11.216s] -- Up-to-date: /home/p/ws_demo2/install/ibvs/share/ibvs/local_setup.zsh
+[11.216s] -- Up-to-date: /home/p/ws_demo2/install/ibvs/share/ibvs/local_setup.dsv
+[11.216s] -- Installing: /home/p/ws_demo2/install/ibvs/share/ibvs/package.dsv
+[11.216s] -- Up-to-date: /home/p/ws_demo2/install/ibvs/share/ament_index/resource_index/packages/ibvs
+[11.216s] -- Up-to-date: /home/p/ws_demo2/install/ibvs/share/ibvs/cmake/ibvsConfig.cmake
+[11.216s] -- Up-to-date: /home/p/ws_demo2/install/ibvs/share/ibvs/cmake/ibvsConfig-version.cmake
+[11.216s] -- Up-to-date: /home/p/ws_demo2/install/ibvs/share/ibvs/package.xml
+[11.217s] Invoked command in '/home/p/ws_demo2/build/ibvs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --install /home/p/ws_demo2/build/ibvs

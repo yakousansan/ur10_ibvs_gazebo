@@ -1,0 +1,11 @@
+[0.020s] Invoking command in '/home/p/ws_demo2/build/ibvs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --build /home/p/ws_demo2/build/ibvs -- -j16 -l16
+[0.054s] [ 50%] [32mBuilding CXX object CMakeFiles/ibvs.dir/src/ibvs.cpp.o[0m
+[2.883s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:[m[K In member function ‘[01m[Kvoid VisualServoInit::rgb_callback(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.883s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:208:13:[m[K [01;31m[Kerror: [m[K‘[01m[KconvertCameraVelToBaseVel[m[K’ was not declared in this scope; did you mean ‘[01m[KConvertCameraVelToBaseVel[m[K’?
+[2.883s]   208 |             [01;31m[KconvertCameraVelToBaseVel[m[K("kinect_link", "base_link");
+[2.883s]       |             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.884s]       |             [32m[KConvertCameraVelToBaseVel[m[K
+[6.330s] gmake[2]: *** [CMakeFiles/ibvs.dir/build.make:79：CMakeFiles/ibvs.dir/src/ibvs.cpp.o] 错误 1
+[6.330s] gmake[1]: *** [CMakeFiles/Makefile2:153：CMakeFiles/ibvs.dir/all] 错误 2
+[6.331s] gmake: *** [Makefile:146：all] 错误 2
+[6.332s] Invoked command in '/home/p/ws_demo2/build/ibvs' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --build /home/p/ws_demo2/build/ibvs -- -j16 -l16

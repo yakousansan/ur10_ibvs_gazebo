@@ -1,0 +1,19 @@
+[100%] Built target camera_image
+-- Install configuration: ""
+-- Installing: /home/p/ws_demo2/install/camera_image/lib/camera_image/camera_image
+-- Set non-toolchain portion of runtime path of "/home/p/ws_demo2/install/camera_image/lib/camera_image/camera_image" to ""
+-- Installing: /home/p/ws_demo2/install/camera_image/share/ament_index/resource_index/package_run_dependencies/camera_image
+-- Installing: /home/p/ws_demo2/install/camera_image/share/ament_index/resource_index/parent_prefix_path/camera_image
+-- Installing: /home/p/ws_demo2/install/camera_image/share/camera_image/environment/ament_prefix_path.sh
+-- Installing: /home/p/ws_demo2/install/camera_image/share/camera_image/environment/ament_prefix_path.dsv
+-- Installing: /home/p/ws_demo2/install/camera_image/share/camera_image/environment/path.sh
+-- Installing: /home/p/ws_demo2/install/camera_image/share/camera_image/environment/path.dsv
+-- Installing: /home/p/ws_demo2/install/camera_image/share/camera_image/local_setup.bash
+-- Installing: /home/p/ws_demo2/install/camera_image/share/camera_image/local_setup.sh
+-- Installing: /home/p/ws_demo2/install/camera_image/share/camera_image/local_setup.zsh
+-- Installing: /home/p/ws_demo2/install/camera_image/share/camera_image/local_setup.dsv
+-- Installing: /home/p/ws_demo2/install/camera_image/share/camera_image/package.dsv
+-- Installing: /home/p/ws_demo2/install/camera_image/share/ament_index/resource_index/packages/camera_image
+-- Installing: /home/p/ws_demo2/install/camera_image/share/camera_image/cmake/camera_imageConfig.cmake
+-- Installing: /home/p/ws_demo2/install/camera_image/share/camera_image/cmake/camera_imageConfig-version.cmake
+-- Installing: /home/p/ws_demo2/install/camera_image/share/camera_image/package.xml

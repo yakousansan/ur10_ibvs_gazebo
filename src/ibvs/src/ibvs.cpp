@@ -1,18 +1,26 @@
 #include "rclcpp/rclcpp.hpp"
 #include "sensor_msgs/msg/image.hpp"
 #include "sensor_msgs/msg/camera_info.hpp"
+#include "geometry_msgs/msg/transform_stamped.hpp"
 #include <visp3/core/vpCameraParameters.h>
 #include <visp3/core/vpPoint.h>
 #include <visp3/visual_features/vpFeaturePoint.h>
+#include <visp3/vs/vpServo.h>
 #include <opencv2/opencv.hpp>
 #include <cv_bridge/cv_bridge.h>
 #include <vector>
+#include "tf2/transform_datatypes.h"
+#include "tf2/exceptions.h"
+#include "tf2_ros/buffer.h"
+#include "tf2_ros/transform_listener.h"
 
 class VisualServoInit : public rclcpp::Node
 {
 public:
     //构造函数
-    VisualServoInit() : Node("ibvs")
+    VisualServoInit() : Node("ibvs"), 
+                        tf_buffer_(this->get_clock()), 
+                        tf_listener_(tf_buffer_)
     {
      // 订阅相机内参话题
     rgb_cam_info_sub_ = this->create_subscription<sensor_msgs::msg::CameraInfo>("/rgb/camera_info", 10,
@@ -27,13 +35,20 @@ public:
     cv::namedWindow("Detected Corners", cv::WINDOW_NORMAL);
     // 调整窗口大小
     cv::resizeWindow("Detected Corners", 640, 480);
-    //
-    init_target_features();
+
     //RCLCPP_INFO(this->get_logger(), "节点初始化完成");   
     }
     
     ~VisualServoInit()
-    {
+    {    
+            // 取消订阅话题
+            rgb_subscriber.reset();
+            depth_subscriber.reset();
+            rgb_cam_info_sub_.reset();
+            // 销毁OpenCV窗口
+            cv::destroyWindow("Detected Corners");
+            // 释放OpenCV资源
+            cv::waitKey(1); 
             //RCLCPP_INFO(this->get_logger(), "节点已关闭");
     }
     
@@ -57,8 +72,24 @@ private:
     double center_v_ = 240.0; // 图像中心v坐标
     double offset_u_ = 50.0;  // 水平偏移量
     double offset_v_ = 50.0;  // 垂直偏移量
+    // 目标特征点的像素坐标（用于存储目标特征点的像素坐标）
+    std::vector<vpImagePoint> target_pixels_; 
+    // 定义当前特征点（用于存储当前检测到的特征点）
+    std::vector<vpFeaturePoint> current_features_;
+    // 定义特征误差（用于存储特征点的误差）
+    vpColVector feature_error_;
 
-    //定义回调函数（当收到话题的消息，会自动调用回调函数） 
+    // 定义伺服控制器
+    vpServo task;
+    // 定义伺服控制器的增益
+    double lambda_ = 1.0;
+    // 相机速度指令
+    vpColVector cam_velocity_cmd;
+
+    // 定义TF2相关变量
+    tf2_ros::Buffer tf_buffer_;
+    tf2_ros::TransformListener tf_listener_;
+    // 定义回调函数（当收到话题的消息，会自动调用回调函数） 
     void rgb_callback(const sensor_msgs::msg::Image::SharedPtr msg)
     {
         try
@@ -112,7 +143,33 @@ private:
                         cv::Point(640 - 180, 30),
                         // cv::FONT_HERSHEY_SIMPLEX表示字体类型
                         cv::FONT_HERSHEY_SIMPLEX, 0.4, 
-                        cv::Scalar(0, 255, 0), 2);     
+                        cv::Scalar(0, 255, 0), 2);  
+
+                // 将检测到的角点转换为ViSP格式的特征点
+                    // 清空当前特征点容器
+                    current_features_.clear();
+                    // 遍历检测到的角点，将其转换为ViSP格式的特征点并存储
+                    for (size_t i = 0; i < detected_corners_.size(); ++i) {
+                        // 获取ViSP格式的角点坐标
+                        const auto& corner = detected_corners_[i];
+                        // 获取角点的像素坐标（u, v）
+                        double u = corner.get_u(); 
+                        double v = corner.get_v();
+                        // 转换为归一化坐标（x, y）
+                        double x = (u - cam_params_.get_u0()) / cam_params_.get_px();  // 归一化x
+                        double y = (v - cam_params_.get_v0()) / cam_params_.get_py();  // 归一化y
+                        // 创建一个新的vpFeaturePoint对象
+                        vpFeaturePoint feature;
+                        // 设置特征点的像素坐标和归一化坐标
+                        feature.set_x(x);
+                        feature.set_y(y);
+                        // 存入当前特征点容器
+                        current_features_.push_back(feature);
+                        // 打印坐标信息u和v以及x和y
+                        //RCLCPP_INFO(this->get_logger(), "特征点坐标: u=%.2f, v=%.2f, x=%.2f, y=%.2f",corner.get_u(), corner.get_v(), feature.get_x(), feature.get_y());
+                        // 相机内参打印
+                        //RCLCPP_INFO(this->get_logger(), "相机内参: cx=%.2f, cy=%.2f, fx=%.2f, fy=%.2f",cam_params_.get_u0(), cam_params_.get_v0(), cam_params_.get_px(), cam_params_.get_py());
+                    }  
             } 
             if (!detection_success) {
                 // 右上角显示文字
@@ -124,11 +181,11 @@ private:
             }
             // 绘制目标特征点（期望的角点位置）
             for (size_t i = 0; i < target_features_.size(); ++i) {
-                // 获取容器中第 i 个目标特征点，用 feature 作为临时别名方便后续操作
-                const auto& feature = target_features_[i];
+                // 获取容器中第 i 个目标特征点，用 target_pixel 作为临时别名方便后续操作
+                const auto& target_pixel = target_pixels_[i];
                 // 获取目标特征点的像素坐标
-                double u = feature.get_x(); 
-                double v = feature.get_y(); 
+                double u = target_pixel.get_u(); 
+                double v = target_pixel.get_v(); 
                 // 将目标特征点的像素坐标转换为 OpenCV 格式
                 cv::Point pt(static_cast<int>(u), static_cast<int>(v));
                 
@@ -140,6 +197,15 @@ private:
                             cv::Point(pt.x + 10, pt.y - 10),
                             cv::FONT_HERSHEY_SIMPLEX, 0.5, cv::Scalar(255, 0, 0), 1);
             }
+            // 计算并打印特征误差
+            if (detection_success) {
+                compute_feature_error();
+            }
+            // 伺服控制器初始化 
+            init_visual_servo();
+
+            // 将相机速度转换为机器人末端速度
+            ConvertCameraVelToBaseVel("kinect_link", "base_link");
 
             // 显示处理后的图像
             cv::imshow("Detected Corners", img_copy);
@@ -175,6 +241,8 @@ private:
 
             //vpCameraParameters类是 ViSP 中专门用于存储和管理相机内参的容器
             cam_params_ = vpCameraParameters(fx, fy, cx, cy);
+            // 初始化目标特征点
+            init_target_features();
             //RCLCPP_INFO(this->get_logger(), "相机内参初始化完成");
             //RCLCPP_INFO(this->get_logger(), "fx=%.2f, fy=%.2f, cx=%.2f, cy=%.2f",fx, fy, cx, cy);
         }
@@ -237,35 +305,183 @@ private:
      }
      // 目标特征点设定
      void init_target_features() {
-            // 设定目标特征点（矩形四个角点）
-            // 1. 左上角
-            // 计算目标特征点的偏移量
-            // 这里假设图像中心为 (320, 240)，偏移量为 (50, 50)，通过设置偏移量来确定目标特征点的位置
-            vpFeaturePoint fp0;
-                fp0.set_x(center_u_ - offset_u_);  
-                fp0.set_y(center_v_ - offset_v_);  
-                target_features_.push_back(fp0);
+            // 清空之前的目标特征点和像素坐标
+            target_features_.clear();
+            target_pixels_.clear(); 
 
-                // 2. 左下角（编号2，逆时针下一个点）
-                vpFeaturePoint fp1;
-                fp1.set_x(center_u_ - offset_u_);
-                fp1.set_y(center_v_ + offset_v_);
-                target_features_.push_back(fp1);
+            // 1.设定目标特征点像素坐标
+            vpImagePoint ip0(center_v_ - offset_v_,center_u_ - offset_u_ );  
+            vpImagePoint ip1(center_v_ + offset_v_,center_u_ - offset_u_);  
+            vpImagePoint ip2(center_v_ + offset_v_,center_u_ + offset_u_ );  
+            vpImagePoint ip3(center_v_ - offset_v_,center_u_ + offset_u_ );  
+            // 将目标特征点像素坐标存入容器
+            target_pixels_.push_back(ip0);
+            target_pixels_.push_back(ip1);
+            target_pixels_.push_back(ip2);
+            target_pixels_.push_back(ip3);
+            
+            // 2. 转换为归一化坐标（x, y）
+            auto to_normalized = [&](const vpImagePoint& ip) {
+                double u = ip.get_u();
+                double v = ip.get_v();
+                //double x = (u - cam_params_.get_u0()) / cam_params_.get_px();  // 归一化x
+                //double y = (v - cam_params_.get_v0()) / cam_params_.get_py();  // 归一化y
+                double cx = cam_params_.get_u0();
+                double cy = cam_params_.get_v0();
+                double fx = cam_params_.get_px();
+                double fy = cam_params_.get_py();
+                // 打印中间值用于排查
+                //RCLCPP_INFO(this->get_logger(), "中间值：u=%.0f, v=%.0f, cx=%.2f, cy=%.2f, fx=%.2f, fy=%.2f",u, v, cx, cy, fx, fy);
+                double x = (u - cx) / fx;
+                double y = (v - cy) / fy;
+                return std::make_pair(x, y);
+            };
 
-                // 3. 右下角（编号3，逆时针下一个点）
-                vpFeaturePoint fp2;
-                fp2.set_x(center_u_ + offset_u_);  
-                fp2.set_y(center_v_ + offset_v_); 
-                target_features_.push_back(fp2);
+            // 3. 初始化vpFeaturePoint（Z=1.0，默认深度）
+            auto [x0, y0] = to_normalized(ip0);
+            auto [x1, y1] = to_normalized(ip1);
+            auto [x2, y2] = to_normalized(ip2);
+            auto [x3, y3] = to_normalized(ip3);
 
-                // 4. 右上角（编号4，逆时针最后一个点）
-                vpFeaturePoint fp3;
-                fp3.set_x(center_u_ + offset_u_); 
-                fp3.set_y(center_v_ - offset_v_);
-                target_features_.push_back(fp3);
+            vpFeaturePoint fp0, fp1, fp2, fp3;
+            // 
+            fp0.buildFrom(x0, y0, 1.0);
+            fp1.buildFrom(x1, y1, 1.0);
+            fp2.buildFrom(x2, y2, 1.0);
+            fp3.buildFrom(x3, y3, 1.0);
+
+            // 4. 存入容器
+            target_features_.push_back(fp0);
+            target_features_.push_back(fp1);
+            target_features_.push_back(fp2);
+            target_features_.push_back(fp3);
+
+            //RCLCPP_INFO(this->get_logger(), "转换前（像素坐标）：u=%.0f, v=%.0f", ip0.get_u(), ip0.get_v());
+            //RCLCPP_INFO(this->get_logger(), "转换后（归一化坐标）：x=%.6f, y=%.6f", fp0.get_x(), fp0.get_y());
     }
-};
+    // 计算特征误差
+     void compute_feature_error(){   
+        // 检查target_features_ 和 current_features_ 特征点数量是否匹配
+        if (target_features_.size() != current_features_.size() || target_features_.empty()) {
+            RCLCPP_ERROR(this->get_logger(), "特征点数量不匹配或为空，无法计算误差");
+            return;
+        }
+        // 清空特征误差 
+        feature_error_.resize(target_features_.size() * 2); // 每个特征点有两个误差分量（x和y）
+        for (size_t i = 0; i < feature_error_.size(); ++i) {feature_error_[i] = 0.0;}
+        //RCLCPP_INFO(this->get_logger(), "特征点数量：%zu", target_features_.size());
+        //RCLCPP_INFO(this->get_logger(), "特征误差向量大小：%zu", feature_error_.size());
+        // 打印当前特征点和目标特征点
+        //RCLCPP_INFO(this->get_logger(), "当前特征点数量：%zu", current_features_.size());
+        //RCLCPP_INFO(this->get_logger(), "目标特征点数量：%zu", target_features_.size());
+        // 计算特征误差
+        for (size_t i = 0; i < target_features_.size(); ++i) {
+            const vpFeaturePoint& target = target_features_[i];
+            const vpFeaturePoint& current = current_features_[i];
 
+            // 打印目标点和当前点的x、y坐标
+        // RCLCPP_INFO(this->get_logger(), 
+        //             "特征点 %zu:\n"
+        //             "  目标 (x, y) = (%.6f, %.6f)\n"
+        //             "  当前 (x, y) = (%.6f, %.6f)",
+        //             i + 1,
+        //             target.get_x(), target.get_y(),  // 目标特征点坐标
+        //             current.get_x(), current.get_y());  // 当前特征点坐标
+                    
+            // 计算误差：期望特征点 - 当前特征点
+            double error_x = target.get_x() - current.get_x();
+            double error_y = target.get_y() - current.get_y();
+
+            // 存储误差
+            feature_error_[i * 2] = error_x;
+            feature_error_[i * 2 + 1] = error_y;
+        }
+        // 打印特征误差
+        // for (size_t i = 0; i < target_features_.size(); ++i) {
+        //     RCLCPP_INFO(this->get_logger(), "特征点 %zu: 误差 (x, y) = (%.6f, %.6f)", 
+        //                 i + 1, feature_error_[i * 2], feature_error_[i * 2 + 1]);
+        // }
+    }
+    // 配置伺服参数
+     void init_visual_servo(){
+        // 1.伺服控制器初始化
+        task.setServo(vpServo::EYEINHAND_CAMERA); // 设置伺服模式为相机在手眼坐标系下
+        // 2.交互矩阵
+        task.setInteractionMatrixType(vpServo::CURRENT); 
+        // 3.增益
+        task.setLambda(lambda_);
+        // 4.
+        for (size_t i = 0; i < current_features_.size(); ++i) {
+            task.addFeature(current_features_[i], target_features_[i]);
+         }
+        // 5.计算相机速度
+        cam_velocity_cmd = task.computeControlLaw();
+        // 6.打印相机速度指令
+        // RCLCPP_INFO(this->get_logger(), "相机速度指令: [%.6f, %.6f, %.6f]", 
+        //             cam_velocity_cmd[0], cam_velocity_cmd[1], cam_velocity_cmd[2]);
+    }
+    // 相机速度转换为机器人末端速度
+     void ConvertCameraVelToBaseVel(const std::string &camera_frame, const std::string &base_frame){
+        // 1.获取相机在机器人末端坐标系下的变换矩阵
+        // 通过TF式获取相机在机器人末端坐标系下的变换矩阵
+        // 获取相机到基坐标系的变换关系
+        geometry_msgs::msg::TransformStamped tfCamWorld;
+        try
+        {
+            tfCamWorld = tf_buffer_.lookupTransform(base_frame, camera_frame, rclcpp::Time(0));
+            // 打印变换信息
+            // RCLCPP_INFO(this->get_logger(), "相机到基坐标系变换: translation=(%.2f, %.2f, %.2f), rotation=(%.2f, %.2f, %.2f, %.2f)", 
+            //             tfCamWorld.transform.translation.x, 
+            //             tfCamWorld.transform.translation.y, 
+            //             tfCamWorld.transform.translation.z,
+            //             tfCamWorld.transform.rotation.x,
+            //             tfCamWorld.transform.rotation.y,
+            //             tfCamWorld.transform.rotation.z,
+            //             tfCamWorld.transform.rotation.w);
+
+                //lookupTransform 只是获取了 “相机与基坐标系的位姿关系”（旋转 + 平移），但要完成速度从相机坐标系到基坐标系的转换，还需要：
+                //1.将旋转信息从四元数转换为旋转矩阵（便于向量运算）；
+                //2.提取平移信息（位置向量），构造完整的变换矩阵；
+                //3.用变换矩阵对相机速度向量进行数学转换，得到基坐标系下的速度。
+
+            // 提取平移向量
+            tf2::Vector3 t(tfCamWorld.transform.translation.x,
+                           tfCamWorld.transform.translation.y,
+                           tfCamWorld.transform.translation.z);
+            // 提取旋转矩阵
+            tf2::Quaternion q(tfCamWorld.transform.rotation.x,
+                              tfCamWorld.transform.rotation.y,
+                              tfCamWorld.transform.rotation.z,
+                              tfCamWorld.transform.rotation.w);
+            //RCLCPP_INFO(this->get_logger(), "平移向量 t: x=%.3f, y=%.3f, z=%.3f",t.x(), t.y(), t.z());
+            //RCLCPP_INFO(this->get_logger(), "旋转四元数 q: x=%.3f, y=%.3f, z=%.3f, w=%.3f",q.x(), q.y(), q.z(), q.w());
+            // 构建变换矩阵
+            tf2::Transform transform(q, t);
+            // 构建雅可比矩阵
+            // tf2::Matrix3x3 Zero;
+            // Zero.setZero();
+            // tf2::Matrix3x3 Identity;
+            // Identity.setIdentity();
+            // tf2::Matrix3x3 J;
+            // J.setValue(T[0][0], T[0][1], T[0][2], 0, 0, 0,
+            //            T[1][0], T[1][1], T[1][2], 0, 0, 0,
+            //            T[2][0], T[2][1], T[2][2], 0, 0, 0,
+            //            0, 0, 0, T[0][0], T[0][1], T[0][2],
+            //            0, 0, 0, T[1][0], T[1][1], T[1][2],
+            //            0, 0, 0, T[2][0], T[2][1], T[2][2]);
+            // 转换相机速度到基坐标系速度
+        
+        } 
+        catch (tf2::TransformException &ex) 
+        {
+            RCLCPP_WARN(this->get_logger(), "Transform failed: %s", ex.what());
+        }
+            // 2.将相机速度指令转换为机器人末端速度指令
+            // 3.发布机器人末端速度指令
+            // 4.打印转换后的速度指令
+        }
+};
+// 计算特征误差函数结束
 int main(int argc, char **argv)
 {
     // 初始化

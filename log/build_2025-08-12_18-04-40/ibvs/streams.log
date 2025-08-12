@@ -1,0 +1,19 @@
+[0.019s] Invoking command in '/home/p/ws_demo2/build/ibvs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --build /home/p/ws_demo2/build/ibvs -- -j16 -l16
+[0.068s] [ 50%] [32mBuilding CXX object CMakeFiles/ibvs.dir/src/ibvs.cpp.o[0m
+[2.680s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:67:5:[m[K [01;31m[Kerror: [m[K‘[01m[KvpServo[m[K’ does not name a type
+[2.680s]    67 |     [01;31m[KvpServo[m[K task;
+[2.680s]       |     [01;31m[K^~~~~~~[m[K
+[2.714s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:[m[K In member function ‘[01m[Kvoid VisualServoInit::init_visual_servo()[m[K’:
+[2.714s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:380:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktask[m[K’ was not declared in this scope
+[2.714s]   380 |         [01;31m[Ktask[m[K.setServo(vpServo::EYEINHAND_CAMERA); // 设置伺服模式为相机在手眼坐标系下
+[2.714s]       |         [01;31m[K^~~~[m[K
+[2.714s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:380:23:[m[K [01;31m[Kerror: [m[K‘[01m[KvpServo[m[K’ has not been declared
+[2.714s]   380 |         task.setServo([01;31m[KvpServo[m[K::EYEINHAND_CAMERA); // 设置伺服模式为相机在手眼坐标系下
+[2.714s]       |                       [01;31m[K^~~~~~~[m[K
+[2.714s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:382:39:[m[K [01;31m[Kerror: [m[K‘[01m[KvpServo[m[K’ has not been declared
+[2.714s]   382 |         task.setInteractionMatrixType([01;31m[KvpServo[m[K::CURRENT);
+[2.714s]       |                                       [01;31m[K^~~~~~~[m[K
+[5.569s] gmake[2]: *** [CMakeFiles/ibvs.dir/build.make:79：CMakeFiles/ibvs.dir/src/ibvs.cpp.o] 错误 1
+[5.570s] gmake[1]: *** [CMakeFiles/Makefile2:153：CMakeFiles/ibvs.dir/all] 错误 2
+[5.570s] gmake: *** [Makefile:146：all] 错误 2
+[5.571s] Invoked command in '/home/p/ws_demo2/build/ibvs' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --build /home/p/ws_demo2/build/ibvs -- -j16 -l16

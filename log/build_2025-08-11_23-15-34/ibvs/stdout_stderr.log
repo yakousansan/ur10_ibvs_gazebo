@@ -1,0 +1,74 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/ibvs.dir/src/ibvs.cpp.o[0m
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:[m[K In member function ‘[01m[Kvoid VisualServoInit::rgb_callback(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:168:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kcompute_feature_error[m[K’ was not declared in this scope
+  168 |                 [01;31m[Kcompute_feature_error[m[K();
+      |                 [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:[m[K In function ‘[01m[Kvoid compute_feature_error()[m[K’:
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:328:13:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_features_[m[K’ was not declared in this scope
+  328 |         if ([01;31m[Ktarget_features_[m[K.size() != current_features_.size() || target_features_.empty()) {
+      |             [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:328:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_features_[m[K’ was not declared in this scope
+  328 |         if (target_features_.size() != [01;31m[Kcurrent_features_[m[K.size() || target_features_.empty()) {
+      |                                        [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:1[m[K:
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:329:26:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  329 |             RCLCPP_ERROR([01;31m[Kthis[m[K->get_logger(), "特征点数量不匹配或为空，无法计算误差");
+      |                          [01;31m[K^~~~[m[K
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:329:26:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:329:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  329 |             [01;31m[KRCLCPP_ERROR[m[K(this->get_logger(), "特征点数量不匹配或为空，无法计算误差");
+      |             [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:329:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  329 |             [01;31m[KRCLCPP_ERROR[m[K(this->get_logger(), "特征点数量不匹配或为空，无法计算误差");
+      |             [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:329:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  329 |             [01;31m[KRCLCPP_ERROR[m[K(this->get_logger(), "特征点数量不匹配或为空，无法计算误差");
+      |             [01;31m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K:
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:329:26:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  329 |             RCLCPP_ERROR([01;31m[Kthis[m[K->get_logger(), "特征点数量不匹配或为空，无法计算误差");
+      |                          [01;31m[K^~~~[m[K
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:329:26:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  329 |             RCLCPP_ERROR([01;31m[Kthis[m[K->get_logger(), "特征点数量不匹配或为空，无法计算误差");
+      |                          [01;31m[K^~~~[m[K
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:333:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kfeature_error_[m[K’ was not declared in this scope
+  333 |         [01;31m[Kfeature_error_[m[K.resize(target_features_.size() * 2);
+      |         [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:333:31:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_features_[m[K’ was not declared in this scope
+  333 |         feature_error_.resize([01;31m[Ktarget_features_[m[K.size() * 2);
+      |                               [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:339:45:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_features_[m[K’ was not declared in this scope
+  339 |             const vpFeaturePoint& current = [01;31m[Kcurrent_features_[m[K[i];
+      |                                             [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:350:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  350 |         RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "特征误差: %s", feature_error_.toString().c_str());
+      |                     [01;31m[K^~~~[m[K
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:350:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:350:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  350 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "特征误差: %s", feature_error_.toString().c_str());
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:350:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  350 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "特征误差: %s", feature_error_.toString().c_str());
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:350:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  350 |         [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "特征误差: %s", feature_error_.toString().c_str());
+      |         [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:350:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  350 |         RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "特征误差: %s", feature_error_.toString().c_str());
+      |                     [01;31m[K^~~~[m[K
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:350:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+  350 |         RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "特征误差: %s", feature_error_.toString().c_str());
+      |                     [01;31m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/ibvs.dir/build.make:79：CMakeFiles/ibvs.dir/src/ibvs.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:153：CMakeFiles/ibvs.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

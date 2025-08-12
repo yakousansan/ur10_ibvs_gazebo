@@ -1,0 +1,71 @@
+[0.018s] Invoking command in '/home/p/ws_demo2/build/ibvs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --build /home/p/ws_demo2/build/ibvs -- -j16 -l16
+[0.067s] [ 50%] [32mBuilding CXX object CMakeFiles/ibvs.dir/src/ibvs.cpp.o[0m
+[2.687s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:[m[K In member function ‘[01m[Kvoid VisualServoInit::rgb_callback(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.687s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:153:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst class vpFeaturePoint[m[K’ has no member named ‘[01m[Kget_u[m[K’; did you mean ‘[01m[Kget_x[m[K’?
+[2.687s]   153 |                 double u = feature.[01;31m[Kget_u[m[K();
+[2.687s]       |                                    [01;31m[K^~~~~[m[K
+[2.687s]       |                                    [32m[Kget_x[m[K
+[2.687s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:154:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst class vpFeaturePoint[m[K’ has no member named ‘[01m[Kget_v[m[K’; did you mean ‘[01m[Kget_x[m[K’?
+[2.687s]   154 |                 double v = feature.[01;31m[Kget_v[m[K();
+[2.687s]       |                                    [01;31m[K^~~~~[m[K
+[2.687s]       |                                    [32m[Kget_x[m[K
+[2.693s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:[m[K In member function ‘[01m[Kvoid VisualServoInit::init_target_features()[m[K’:
+[2.693s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:276:26:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KvpFeaturePoint::buildFrom(vpImagePoint&, vpCameraParameters&)[m[K’
+[2.693s]   276 |             [01;31m[Kfp0.buildFrom(ip0, cam_params_)[m[K;
+[2.693s]       |             [01;31m[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[2.693s] In file included from [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:6[m[K:
+[2.693s] [01m[K/usr/local/include/visp3/visual_features/vpFeaturePoint.h:194:19:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KvpFeaturePoint& vpFeaturePoint::buildFrom(const double&, const double&, const double&)[m[K’
+[2.693s]   194 |   vpFeaturePoint &[01;36m[KbuildFrom[m[K(const double &x, const double &y, const double &Z);
+[2.693s]       |                   [01;36m[K^~~~~~~~~[m[K
+[2.693s] [01m[K/usr/local/include/visp3/visual_features/vpFeaturePoint.h:194:19:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 2 provided
+[2.693s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:277:26:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KvpFeaturePoint::buildFrom(vpImagePoint&, vpCameraParameters&)[m[K’
+[2.693s]   277 |             [01;31m[Kfp1.buildFrom(ip1, cam_params_)[m[K;
+[2.694s]       |             [01;31m[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[2.694s] [01m[K/usr/local/include/visp3/visual_features/vpFeaturePoint.h:194:19:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KvpFeaturePoint& vpFeaturePoint::buildFrom(const double&, const double&, const double&)[m[K’
+[2.694s]   194 |   vpFeaturePoint &[01;36m[KbuildFrom[m[K(const double &x, const double &y, const double &Z);
+[2.694s]       |                   [01;36m[K^~~~~~~~~[m[K
+[2.694s] [01m[K/usr/local/include/visp3/visual_features/vpFeaturePoint.h:194:19:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 2 provided
+[2.694s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:278:26:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KvpFeaturePoint::buildFrom(vpImagePoint&, vpCameraParameters&)[m[K’
+[2.694s]   278 |             [01;31m[Kfp2.buildFrom(ip2, cam_params_)[m[K;
+[2.694s]       |             [01;31m[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[2.694s] [01m[K/usr/local/include/visp3/visual_features/vpFeaturePoint.h:194:19:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KvpFeaturePoint& vpFeaturePoint::buildFrom(const double&, const double&, const double&)[m[K’
+[2.694s]   194 |   vpFeaturePoint &[01;36m[KbuildFrom[m[K(const double &x, const double &y, const double &Z);
+[2.694s]       |                   [01;36m[K^~~~~~~~~[m[K
+[2.694s] [01m[K/usr/local/include/visp3/visual_features/vpFeaturePoint.h:194:19:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 2 provided
+[2.694s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:279:26:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KvpFeaturePoint::buildFrom(vpImagePoint&, vpCameraParameters&)[m[K’
+[2.694s]   279 |             [01;31m[Kfp3.buildFrom(ip3, cam_params_)[m[K;
+[2.694s]       |             [01;31m[K~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[2.694s] [01m[K/usr/local/include/visp3/visual_features/vpFeaturePoint.h:194:19:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KvpFeaturePoint& vpFeaturePoint::buildFrom(const double&, const double&, const double&)[m[K’
+[2.694s]   194 |   vpFeaturePoint &[01;36m[KbuildFrom[m[K(const double &x, const double &y, const double &Z);
+[2.695s]       |                   [01;36m[K^~~~~~~~~[m[K
+[2.695s] [01m[K/usr/local/include/visp3/visual_features/vpFeaturePoint.h:194:19:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 2 provided
+[2.695s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.695s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[2.695s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[2.695s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[2.695s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.695s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.695s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[2.695s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[2.695s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.695s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.695s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[2.695s]                  from [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:1[m[K:
+[2.695s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:290:104:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass vpCameraParameters[m[K’ has no member named ‘[01m[Kget_fx[m[K’; did you mean ‘[01m[Kget_px[m[K’?
+[2.695s]   290 |             RCLCPP_INFO(this->get_logger(), "相机内参：fx=%.2f, fy=%.2f, cx=%.0f, cy=%.0f",cam_params_.[01;31m[Kget_fx[m[K(), cam_params_.get_fy(), cam_params_.get_cx(), cam_params_.get_cy());
+[2.695s]       |                                                                                                        [01;31m[K^~~~~~[m[K
+[2.696s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:290:126:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass vpCameraParameters[m[K’ has no member named ‘[01m[Kget_fy[m[K’; did you mean ‘[01m[Kget_py[m[K’?
+[2.696s]   290 |             RCLCPP_INFO(this->get_logger(), "相机内参：fx=%.2f, fy=%.2f, cx=%.0f, cy=%.0f",cam_params_.get_fx(), cam_params_.[01;31m[Kget_fy[m[K(), cam_params_.get_cx(), cam_params_.get_cy());
+[2.696s]       |                                                                                                                              [01;31m[K^~~~~~[m[K
+[2.696s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:290:148:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass vpCameraParameters[m[K’ has no member named ‘[01m[Kget_cx[m[K’; did you mean ‘[01m[Kget_px[m[K’?
+[2.696s]   290 | NFO(this->get_logger(), "相机内参：fx=%.2f, fy=%.2f, cx=%.0f, cy=%.0f",cam_params_.get_fx(), cam_params_.get_fy(), cam_params_.[01;31m[Kget_cx[m[K(), cam_params_.get_cy());
+[2.696s]       |                                                                                                                                [01;31m[K^~~~~~[m[K
+[2.696s] 
+[2.696s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:290:170:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass vpCameraParameters[m[K’ has no member named ‘[01m[Kget_cy[m[K’; did you mean ‘[01m[Kget_py[m[K’?
+[2.696s]   290 | ), "相机内参：fx=%.2f, fy=%.2f, cx=%.0f, cy=%.0f",cam_params_.get_fx(), cam_params_.get_fy(), cam_params_.get_cx(), cam_params_.[01;31m[Kget_cy[m[K());
+[2.696s]       |                                                                                                                                 [01;31m[K^~~~~~[m[K
+[2.696s] 
+[5.511s] gmake[2]: *** [CMakeFiles/ibvs.dir/build.make:79：CMakeFiles/ibvs.dir/src/ibvs.cpp.o] 错误 1
+[5.511s] gmake[1]: *** [CMakeFiles/Makefile2:153：CMakeFiles/ibvs.dir/all] 错误 2
+[5.511s] gmake: *** [Makefile:146：all] 错误 2
+[5.513s] Invoked command in '/home/p/ws_demo2/build/ibvs' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --build /home/p/ws_demo2/build/ibvs -- -j16 -l16
