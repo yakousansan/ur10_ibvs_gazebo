@@ -1,1 +1,1 @@
-rclcpp;std_msgs;sensor_msgs;opencv2;cv_bridge;image_transport;rclpy;launch;launch_ros;ament_lint_auto;ament_lint_common
+rclcpp;std_msgs;sensor_msgs;opencv2;cv_bridge;image_transport;rclpy;launch;launch_ros;service_interfaces;moveit_core;moveit_ros_planning_interface;ament_lint_auto;ament_lint_common

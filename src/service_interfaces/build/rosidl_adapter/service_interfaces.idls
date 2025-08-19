@@ -1,0 +1,4 @@
+/home/dbh/experiment_ws/src/service_interfaces/build/rosidl_adapter/service_interfaces:srv/SendGraspRequest.idl
+/home/dbh/experiment_ws/src/service_interfaces/build/rosidl_adapter/service_interfaces:srv/SendGripperRequest.idl
+/home/dbh/experiment_ws/src/service_interfaces/build/rosidl_adapter/service_interfaces:srv/GetJacobian.idl
+/home/dbh/experiment_ws/src/service_interfaces/build/rosidl_adapter/service_interfaces:msg/MomentFeatures.idl

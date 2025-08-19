@@ -1,0 +1,10 @@
+
+# Request: 关节角度
+# 关节角度是一个包含所有关节角度的数组
+float64[6] joint_angles
+
+---
+# Response: 雅可比矩阵
+# 雅可比矩阵是一个6xN的矩阵，这里使用二维数组表示
+std_msgs/Float64MultiArray jacobian_matrix
+bool success

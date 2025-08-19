@@ -1,0 +1,4 @@
+/home/p/ws_demo2/build/service_interfaces/rosidl_adapter/service_interfaces:srv/SendGraspRequest.idl
+/home/p/ws_demo2/build/service_interfaces/rosidl_adapter/service_interfaces:srv/SendGripperRequest.idl
+/home/p/ws_demo2/build/service_interfaces/rosidl_adapter/service_interfaces:srv/GetJacobian.idl
+/home/p/ws_demo2/build/service_interfaces/rosidl_adapter/service_interfaces:msg/MomentFeatures.idl

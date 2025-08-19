@@ -1,0 +1,9 @@
+{
+  "package_name": "service_interfaces",
+  "non_idl_tuples": [
+    "/home/p/ws_demo2/src/service_interfaces:srv/SendGraspRequest.srv",
+    "/home/p/ws_demo2/src/service_interfaces:srv/SendGripperRequest.srv",
+    "/home/p/ws_demo2/src/service_interfaces:srv/GetJacobian.srv",
+    "/home/p/ws_demo2/src/service_interfaces:msg/MomentFeatures.msg"
+  ]
+}

@@ -369,9 +369,14 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__struct.hpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__traits.hpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__type_support.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__builder.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__struct.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__traits.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__type_support.hpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/region_of_interest__struct.hpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/region_of_interest__traits.hpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/image.hpp \
+  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/joint_state.hpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__builder.hpp \
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__struct.hpp \
@@ -381,8 +386,18 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__traits.hpp \
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/metrics_message.hpp \
   /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64_multi_array__builder.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64_multi_array__struct.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64_multi_array__traits.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64_multi_array__type_support.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp \
   /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__traits.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/multi_array_dimension__struct.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/multi_array_dimension__traits.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/multi_array_layout__struct.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/multi_array_layout__traits.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/float64_multi_array.hpp \
+  /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp \
   /opt/ros/humble/include/tf2/tf2/LinearMath/Matrix3x3.hpp \
   /opt/ros/humble/include/tf2/tf2/LinearMath/MinMax.hpp \
   /opt/ros/humble/include/tf2/tf2/LinearMath/QuadWord.hpp \
@@ -647,6 +662,189 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
   /usr/include/c++/12/variant \
   /usr/include/c++/12/vector \
   /usr/include/ctype.h \
+  /usr/include/eigen3/Eigen/Cholesky \
+  /usr/include/eigen3/Eigen/Core \
+  /usr/include/eigen3/Eigen/Dense \
+  /usr/include/eigen3/Eigen/Eigenvalues \
+  /usr/include/eigen3/Eigen/Geometry \
+  /usr/include/eigen3/Eigen/Householder \
+  /usr/include/eigen3/Eigen/Jacobi \
+  /usr/include/eigen3/Eigen/LU \
+  /usr/include/eigen3/Eigen/QR \
+  /usr/include/eigen3/Eigen/SVD \
+  /usr/include/eigen3/Eigen/src/Cholesky/LDLT.h \
+  /usr/include/eigen3/Eigen/src/Cholesky/LLT.h \
+  /usr/include/eigen3/Eigen/src/Core/ArithmeticSequence.h \
+  /usr/include/eigen3/Eigen/src/Core/Array.h \
+  /usr/include/eigen3/Eigen/src/Core/ArrayBase.h \
+  /usr/include/eigen3/Eigen/src/Core/ArrayWrapper.h \
+  /usr/include/eigen3/Eigen/src/Core/Assign.h \
+  /usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h \
+  /usr/include/eigen3/Eigen/src/Core/BandMatrix.h \
+  /usr/include/eigen3/Eigen/src/Core/Block.h \
+  /usr/include/eigen3/Eigen/src/Core/BooleanRedux.h \
+  /usr/include/eigen3/Eigen/src/Core/CommaInitializer.h \
+  /usr/include/eigen3/Eigen/src/Core/ConditionEstimator.h \
+  /usr/include/eigen3/Eigen/src/Core/CoreEvaluators.h \
+  /usr/include/eigen3/Eigen/src/Core/CoreIterators.h \
+  /usr/include/eigen3/Eigen/src/Core/CwiseBinaryOp.h \
+  /usr/include/eigen3/Eigen/src/Core/CwiseNullaryOp.h \
+  /usr/include/eigen3/Eigen/src/Core/CwiseTernaryOp.h \
+  /usr/include/eigen3/Eigen/src/Core/CwiseUnaryOp.h \
+  /usr/include/eigen3/Eigen/src/Core/CwiseUnaryView.h \
+  /usr/include/eigen3/Eigen/src/Core/DenseBase.h \
+  /usr/include/eigen3/Eigen/src/Core/DenseCoeffsBase.h \
+  /usr/include/eigen3/Eigen/src/Core/DenseStorage.h \
+  /usr/include/eigen3/Eigen/src/Core/Diagonal.h \
+  /usr/include/eigen3/Eigen/src/Core/DiagonalMatrix.h \
+  /usr/include/eigen3/Eigen/src/Core/DiagonalProduct.h \
+  /usr/include/eigen3/Eigen/src/Core/Dot.h \
+  /usr/include/eigen3/Eigen/src/Core/EigenBase.h \
+  /usr/include/eigen3/Eigen/src/Core/Fuzzy.h \
+  /usr/include/eigen3/Eigen/src/Core/GeneralProduct.h \
+  /usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h \
+  /usr/include/eigen3/Eigen/src/Core/GlobalFunctions.h \
+  /usr/include/eigen3/Eigen/src/Core/IO.h \
+  /usr/include/eigen3/Eigen/src/Core/IndexedView.h \
+  /usr/include/eigen3/Eigen/src/Core/Inverse.h \
+  /usr/include/eigen3/Eigen/src/Core/Map.h \
+  /usr/include/eigen3/Eigen/src/Core/MapBase.h \
+  /usr/include/eigen3/Eigen/src/Core/MathFunctions.h \
+  /usr/include/eigen3/Eigen/src/Core/MathFunctionsImpl.h \
+  /usr/include/eigen3/Eigen/src/Core/Matrix.h \
+  /usr/include/eigen3/Eigen/src/Core/MatrixBase.h \
+  /usr/include/eigen3/Eigen/src/Core/NestByValue.h \
+  /usr/include/eigen3/Eigen/src/Core/NoAlias.h \
+  /usr/include/eigen3/Eigen/src/Core/NumTraits.h \
+  /usr/include/eigen3/Eigen/src/Core/PartialReduxEvaluator.h \
+  /usr/include/eigen3/Eigen/src/Core/PermutationMatrix.h \
+  /usr/include/eigen3/Eigen/src/Core/PlainObjectBase.h \
+  /usr/include/eigen3/Eigen/src/Core/Product.h \
+  /usr/include/eigen3/Eigen/src/Core/ProductEvaluators.h \
+  /usr/include/eigen3/Eigen/src/Core/Random.h \
+  /usr/include/eigen3/Eigen/src/Core/Redux.h \
+  /usr/include/eigen3/Eigen/src/Core/Ref.h \
+  /usr/include/eigen3/Eigen/src/Core/Replicate.h \
+  /usr/include/eigen3/Eigen/src/Core/Reshaped.h \
+  /usr/include/eigen3/Eigen/src/Core/ReturnByValue.h \
+  /usr/include/eigen3/Eigen/src/Core/Reverse.h \
+  /usr/include/eigen3/Eigen/src/Core/Select.h \
+  /usr/include/eigen3/Eigen/src/Core/SelfAdjointView.h \
+  /usr/include/eigen3/Eigen/src/Core/SelfCwiseBinaryOp.h \
+  /usr/include/eigen3/Eigen/src/Core/Solve.h \
+  /usr/include/eigen3/Eigen/src/Core/SolveTriangular.h \
+  /usr/include/eigen3/Eigen/src/Core/SolverBase.h \
+  /usr/include/eigen3/Eigen/src/Core/StableNorm.h \
+  /usr/include/eigen3/Eigen/src/Core/StlIterators.h \
+  /usr/include/eigen3/Eigen/src/Core/Stride.h \
+  /usr/include/eigen3/Eigen/src/Core/Swap.h \
+  /usr/include/eigen3/Eigen/src/Core/Transpose.h \
+  /usr/include/eigen3/Eigen/src/Core/Transpositions.h \
+  /usr/include/eigen3/Eigen/src/Core/TriangularMatrix.h \
+  /usr/include/eigen3/Eigen/src/Core/VectorBlock.h \
+  /usr/include/eigen3/Eigen/src/Core/VectorwiseOp.h \
+  /usr/include/eigen3/Eigen/src/Core/Visitor.h \
+  /usr/include/eigen3/Eigen/src/Core/arch/Default/BFloat16.h \
+  /usr/include/eigen3/Eigen/src/Core/arch/Default/ConjHelper.h \
+  /usr/include/eigen3/Eigen/src/Core/arch/Default/GenericPacketMathFunctions.h \
+  /usr/include/eigen3/Eigen/src/Core/arch/Default/GenericPacketMathFunctionsFwd.h \
+  /usr/include/eigen3/Eigen/src/Core/arch/Default/Half.h \
+  /usr/include/eigen3/Eigen/src/Core/arch/Default/Settings.h \
+  /usr/include/eigen3/Eigen/src/Core/arch/Default/TypeCasting.h \
+  /usr/include/eigen3/Eigen/src/Core/arch/SSE/Complex.h \
+  /usr/include/eigen3/Eigen/src/Core/arch/SSE/MathFunctions.h \
+  /usr/include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h \
+  /usr/include/eigen3/Eigen/src/Core/arch/SSE/TypeCasting.h \
+  /usr/include/eigen3/Eigen/src/Core/functors/AssignmentFunctors.h \
+  /usr/include/eigen3/Eigen/src/Core/functors/BinaryFunctors.h \
+  /usr/include/eigen3/Eigen/src/Core/functors/NullaryFunctors.h \
+  /usr/include/eigen3/Eigen/src/Core/functors/StlFunctors.h \
+  /usr/include/eigen3/Eigen/src/Core/functors/TernaryFunctors.h \
+  /usr/include/eigen3/Eigen/src/Core/functors/UnaryFunctors.h \
+  /usr/include/eigen3/Eigen/src/Core/products/GeneralBlockPanelKernel.h \
+  /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrix.h \
+  /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h \
+  /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixVector.h \
+  /usr/include/eigen3/Eigen/src/Core/products/Parallelizer.h \
+  /usr/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixMatrix.h \
+  /usr/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixVector.h \
+  /usr/include/eigen3/Eigen/src/Core/products/SelfadjointProduct.h \
+  /usr/include/eigen3/Eigen/src/Core/products/SelfadjointRank2Update.h \
+  /usr/include/eigen3/Eigen/src/Core/products/TriangularMatrixMatrix.h \
+  /usr/include/eigen3/Eigen/src/Core/products/TriangularMatrixVector.h \
+  /usr/include/eigen3/Eigen/src/Core/products/TriangularSolverMatrix.h \
+  /usr/include/eigen3/Eigen/src/Core/products/TriangularSolverVector.h \
+  /usr/include/eigen3/Eigen/src/Core/util/BlasUtil.h \
+  /usr/include/eigen3/Eigen/src/Core/util/ConfigureVectorization.h \
+  /usr/include/eigen3/Eigen/src/Core/util/Constants.h \
+  /usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h \
+  /usr/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h \
+  /usr/include/eigen3/Eigen/src/Core/util/IndexedViewHelper.h \
+  /usr/include/eigen3/Eigen/src/Core/util/IntegralConstant.h \
+  /usr/include/eigen3/Eigen/src/Core/util/MKL_support.h \
+  /usr/include/eigen3/Eigen/src/Core/util/Macros.h \
+  /usr/include/eigen3/Eigen/src/Core/util/Memory.h \
+  /usr/include/eigen3/Eigen/src/Core/util/Meta.h \
+  /usr/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h \
+  /usr/include/eigen3/Eigen/src/Core/util/ReshapedHelper.h \
+  /usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h \
+  /usr/include/eigen3/Eigen/src/Core/util/SymbolicIndex.h \
+  /usr/include/eigen3/Eigen/src/Core/util/XprHelper.h \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/ComplexEigenSolver.h \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/ComplexSchur.h \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/EigenSolver.h \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/HessenbergDecomposition.h \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/RealSchur.h \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h \
+  /usr/include/eigen3/Eigen/src/Eigenvalues/Tridiagonalization.h \
+  /usr/include/eigen3/Eigen/src/Geometry/AlignedBox.h \
+  /usr/include/eigen3/Eigen/src/Geometry/AngleAxis.h \
+  /usr/include/eigen3/Eigen/src/Geometry/EulerAngles.h \
+  /usr/include/eigen3/Eigen/src/Geometry/Homogeneous.h \
+  /usr/include/eigen3/Eigen/src/Geometry/Hyperplane.h \
+  /usr/include/eigen3/Eigen/src/Geometry/OrthoMethods.h \
+  /usr/include/eigen3/Eigen/src/Geometry/ParametrizedLine.h \
+  /usr/include/eigen3/Eigen/src/Geometry/Quaternion.h \
+  /usr/include/eigen3/Eigen/src/Geometry/Rotation2D.h \
+  /usr/include/eigen3/Eigen/src/Geometry/RotationBase.h \
+  /usr/include/eigen3/Eigen/src/Geometry/Scaling.h \
+  /usr/include/eigen3/Eigen/src/Geometry/Transform.h \
+  /usr/include/eigen3/Eigen/src/Geometry/Translation.h \
+  /usr/include/eigen3/Eigen/src/Geometry/Umeyama.h \
+  /usr/include/eigen3/Eigen/src/Geometry/arch/Geometry_SIMD.h \
+  /usr/include/eigen3/Eigen/src/Householder/BlockHouseholder.h \
+  /usr/include/eigen3/Eigen/src/Householder/Householder.h \
+  /usr/include/eigen3/Eigen/src/Householder/HouseholderSequence.h \
+  /usr/include/eigen3/Eigen/src/Jacobi/Jacobi.h \
+  /usr/include/eigen3/Eigen/src/LU/Determinant.h \
+  /usr/include/eigen3/Eigen/src/LU/FullPivLU.h \
+  /usr/include/eigen3/Eigen/src/LU/InverseImpl.h \
+  /usr/include/eigen3/Eigen/src/LU/PartialPivLU.h \
+  /usr/include/eigen3/Eigen/src/LU/arch/InverseSize4.h \
+  /usr/include/eigen3/Eigen/src/QR/ColPivHouseholderQR.h \
+  /usr/include/eigen3/Eigen/src/QR/CompleteOrthogonalDecomposition.h \
+  /usr/include/eigen3/Eigen/src/QR/FullPivHouseholderQR.h \
+  /usr/include/eigen3/Eigen/src/QR/HouseholderQR.h \
+  /usr/include/eigen3/Eigen/src/SVD/BDCSVD.h \
+  /usr/include/eigen3/Eigen/src/SVD/JacobiSVD.h \
+  /usr/include/eigen3/Eigen/src/SVD/SVDBase.h \
+  /usr/include/eigen3/Eigen/src/SVD/UpperBidiagonalization.h \
+  /usr/include/eigen3/Eigen/src/misc/Image.h \
+  /usr/include/eigen3/Eigen/src/misc/Kernel.h \
+  /usr/include/eigen3/Eigen/src/misc/RealSvd2x2.h \
+  /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.h \
+  /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.h \
+  /usr/include/eigen3/Eigen/src/plugins/BlockMethods.h \
+  /usr/include/eigen3/Eigen/src/plugins/CommonCwiseBinaryOps.h \
+  /usr/include/eigen3/Eigen/src/plugins/CommonCwiseUnaryOps.h \
+  /usr/include/eigen3/Eigen/src/plugins/IndexedViewMethods.h \
+  /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h \
+  /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h \
+  /usr/include/eigen3/Eigen/src/plugins/ReshapedMethods.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
   /usr/include/features-time64.h \
@@ -801,6 +999,7 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
   /usr/lib/gcc/x86_64-linux-gnu/12/include/limits.h \
   /usr/lib/gcc/x86_64-linux-gnu/12/include/mm_malloc.h \
   /usr/lib/gcc/x86_64-linux-gnu/12/include/mmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/12/include/omp.h \
   /usr/lib/gcc/x86_64-linux-gnu/12/include/stdalign.h \
   /usr/lib/gcc/x86_64-linux-gnu/12/include/stdarg.h \
   /usr/lib/gcc/x86_64-linux-gnu/12/include/stdbool.h \
@@ -972,10 +1171,6 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /usr/local/include/visp3/core/vpTranslationVector.h:
 
-/usr/local/include/visp3/core/vpTracker.h:
-
-/usr/local/include/visp3/core/vpThetaUVector.h:
-
 /usr/local/include/visp3/core/vpRzyzVector.h:
 
 /usr/local/include/visp3/core/vpRzyxVector.h:
@@ -990,11 +1185,7 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /usr/local/include/visp3/core/vpImage_operators.h:
 
-/usr/local/include/visp3/core/vpImage_lut.h:
-
 /usr/local/include/visp3/core/vpImage_getters.h:
-
-/usr/local/include/visp3/core/vpImagePoint.h:
 
 /usr/local/include/visp3/core/vpTime.h:
 
@@ -1040,8 +1231,6 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /usr/local/include/opencv4/opencv2/opencv.hpp:
 
-/usr/local/include/opencv4/opencv2/objdetect/graphical_code_detector.hpp:
-
 /usr/local/include/opencv4/opencv2/objdetect/face.hpp:
 
 /usr/local/include/opencv4/opencv2/objdetect/charuco_detector.hpp:
@@ -1066,11 +1255,7 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /usr/local/include/opencv4/opencv2/flann/random.h:
 
-/usr/local/include/opencv4/opencv2/flann/params.h:
-
 /usr/local/include/opencv4/opencv2/flann/matrix.h:
-
-/usr/local/include/opencv4/opencv2/flann/linear_index.h:
 
 /usr/local/include/opencv4/opencv2/flann/kmeans_index.h:
 
@@ -1082,21 +1267,13 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /usr/local/include/opencv4/opencv2/flann/config.h:
 
-/usr/local/include/opencv4/opencv2/flann/composite_index.h:
-
 /usr/local/include/opencv4/opencv2/flann/autotuned_index.h:
 
 /usr/local/include/opencv4/opencv2/flann/any.h:
 
-/usr/local/include/opencv4/opencv2/flann.hpp:
-
 /usr/local/include/opencv4/opencv2/features2d.hpp:
 
-/usr/local/include/opencv4/opencv2/dnn/version.hpp:
-
 /usr/local/include/opencv4/opencv2/dnn/utils/inference_engine.hpp:
-
-/usr/local/include/opencv4/opencv2/dnn/layer.hpp:
 
 /usr/local/include/opencv4/opencv2/dnn/dnn.inl.hpp:
 
@@ -1146,19 +1323,13 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /usr/local/include/opencv4/opencv2/core/affine.hpp:
 
-/usr/local/include/opencv4/opencv2/calib3d.hpp:
-
 /usr/lib/gcc/x86_64-linux-gnu/12/include/stddef.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/12/include/stdbool.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/12/include/stdarg.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/12/include/mmintrin.h:
-
 /usr/lib/gcc/x86_64-linux-gnu/12/include/limits.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/12/include/float.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/12/include/emmintrin.h:
 
@@ -1202,15 +1373,9 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
-
-/usr/local/include/opencv4/opencv2/stitching/detail/warpers_inl.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
 
@@ -1221,8 +1386,6 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/sigval_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h:
 
@@ -1264,10 +1427,6 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
-/usr/local/include/visp3/core/vpRowVector.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
-
 /usr/include/x86_64-linux-gnu/bits/ss_flags.h:
 
 /usr/include/x86_64-linux-gnu/bits/sigthread.h:
@@ -1288,7 +1447,279 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/siginfo-consts-arch.h:
 
+/usr/include/x86_64-linux-gnu/bits/sigcontext.h:
+
+/usr/include/x86_64-linux-gnu/bits/setjmp.h:
+
+/usr/local/include/opencv4/opencv2/core/cvstd_wrapper.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
+
+/usr/local/include/opencv4/opencv2/core/version.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/long-double.h:
+
+/usr/include/x86_64-linux-gnu/bits/local_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
+
+/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
+
+/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
+
+/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
+
+/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
+
+/usr/local/include/visp3/core/vpForceTwistMatrix.h:
+
+/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
+
+/usr/include/x86_64-linux-gnu/bits/floatn.h:
+
+/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
+
+/usr/include/x86_64-linux-gnu/bits/endianness.h:
+
+/usr/include/x86_64-linux-gnu/bits/endian.h:
+
+/usr/include/x86_64-linux-gnu/bits/byteswap.h:
+
+/usr/local/include/opencv4/opencv2/objdetect/detection_based_tracker.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
+
+/usr/include/unistd.h:
+
+/usr/include/time.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/stdio.h:
+
+/usr/include/signal.h:
+
+/usr/include/math.h:
+
+/usr/include/locale.h:
+
+/usr/include/linux/limits.h:
+
+/usr/include/linux/errno.h:
+
+/usr/local/include/opencv4/opencv2/flann/defines.h:
+
+/usr/include/linux/close_range.h:
+
+/usr/include/limits.h:
+
+/usr/include/libintl.h:
+
+/usr/include/inttypes.h:
+
+/usr/include/features.h:
+
+/usr/include/features-time64.h:
+
+/usr/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h:
+
+/usr/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.h:
+
+/usr/include/eigen3/Eigen/src/misc/RealSvd2x2.h:
+
+/usr/include/eigen3/Eigen/src/misc/Kernel.h:
+
+/usr/local/include/opencv4/opencv2/dnn/version.hpp:
+
+/usr/include/eigen3/Eigen/src/SVD/SVDBase.h:
+
+/usr/include/eigen3/Eigen/src/SVD/JacobiSVD.h:
+
+/usr/include/eigen3/Eigen/src/QR/FullPivHouseholderQR.h:
+
+/usr/local/include/opencv4/opencv2/objdetect/graphical_code_detector.hpp:
+
+/usr/include/eigen3/Eigen/src/QR/CompleteOrthogonalDecomposition.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/12/include/float.h:
+
+/usr/include/eigen3/Eigen/src/LU/PartialPivLU.h:
+
+/usr/include/eigen3/Eigen/src/LU/FullPivLU.h:
+
+/usr/include/eigen3/Eigen/src/Householder/HouseholderSequence.h:
+
+/usr/local/include/visp3/core/vpImagePoint.h:
+
+/usr/include/eigen3/Eigen/src/Householder/Householder.h:
+
+/usr/include/x86_64-linux-gnu/bits/fp-fast.h:
+
+/usr/include/eigen3/Eigen/src/Geometry/Umeyama.h:
+
+/usr/include/eigen3/Eigen/src/Geometry/Scaling.h:
+
+/usr/include/eigen3/Eigen/src/Geometry/Rotation2D.h:
+
+/usr/include/eigen3/Eigen/src/Geometry/Quaternion.h:
+
+/usr/include/eigen3/Eigen/src/Geometry/Hyperplane.h:
+
+/usr/include/eigen3/Eigen/src/Geometry/Homogeneous.h:
+
+/usr/include/eigen3/Eigen/src/Geometry/EulerAngles.h:
+
+/usr/include/eigen3/Eigen/src/Geometry/AngleAxis.h:
+
+/usr/include/eigen3/Eigen/src/Eigenvalues/Tridiagonalization.h:
+
+/usr/include/eigen3/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h:
+
+/usr/include/eigen3/Eigen/src/Eigenvalues/RealSchur.h:
+
+/usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h:
+
+/usr/include/eigen3/Eigen/src/Eigenvalues/HessenbergDecomposition.h:
+
+/usr/include/eigen3/Eigen/src/Core/util/XprHelper.h:
+
+/usr/include/eigen3/Eigen/src/Core/util/SymbolicIndex.h:
+
+/usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/12/include/xmmintrin.h:
+
+/usr/include/x86_64-linux-gnu/bits/select.h:
+
+/usr/include/eigen3/Eigen/src/Core/util/ReshapedHelper.h:
+
 /usr/include/x86_64-linux-gnu/bits/sigevent-consts.h:
+
+/usr/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h:
+
+/usr/include/eigen3/Eigen/src/Core/util/Meta.h:
+
+/usr/include/eigen3/Eigen/src/Core/util/Macros.h:
+
+/usr/include/eigen3/Eigen/src/Core/util/IntegralConstant.h:
+
+/usr/include/eigen3/Eigen/src/Core/util/IndexedViewHelper.h:
+
+/usr/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h:
+
+/usr/local/include/visp3/core/vpThetaUVector.h:
+
+/usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h:
+
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:
+
+/usr/include/eigen3/Eigen/src/Core/util/BlasUtil.h:
+
+/usr/local/include/visp3/vs/vpServo.h:
+
+/usr/local/include/opencv4/opencv2/flann/result_set.h:
+
+/usr/include/x86_64-linux-gnu/sys/ucontext.h:
+
+/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
+
+/usr/include/eigen3/Eigen/src/Core/products/TriangularSolverVector.h:
+
+/usr/include/eigen3/Eigen/src/Core/products/TriangularSolverMatrix.h:
+
+/usr/include/eigen3/Eigen/src/Core/products/TriangularMatrixVector.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/time_t.h:
+
+/usr/include/eigen3/Eigen/src/Core/products/TriangularMatrixMatrix.h:
+
+/usr/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixVector.h:
+
+/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
+
+/usr/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixMatrix.h:
+
+/usr/include/eigen3/Eigen/src/Core/products/Parallelizer.h:
+
+/usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h:
+
+/usr/include/eigen3/Eigen/src/Core/functors/TernaryFunctors.h:
+
+/usr/include/eigen3/Eigen/src/Core/functors/StlFunctors.h:
+
+/usr/include/eigen3/Eigen/src/Core/functors/NullaryFunctors.h:
+
+/usr/include/eigen3/Eigen/src/Core/functors/BinaryFunctors.h:
+
+/usr/include/eigen3/Eigen/src/Core/functors/AssignmentFunctors.h:
+
+/usr/include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h:
+
+/usr/include/eigen3/Eigen/src/Core/arch/SSE/Complex.h:
+
+/usr/include/eigen3/Eigen/src/Core/arch/Default/TypeCasting.h:
+
+/usr/local/include/opencv4/opencv2/flann/linear_index.h:
+
+/usr/include/eigen3/Eigen/src/Core/arch/Default/Settings.h:
+
+/usr/local/include/opencv4/opencv2/flann/composite_index.h:
+
+/usr/include/eigen3/Eigen/src/Core/arch/Default/Half.h:
+
+/usr/include/eigen3/Eigen/src/Core/arch/Default/ConjHelper.h:
+
+/usr/include/eigen3/Eigen/src/Core/arch/Default/BFloat16.h:
+
+/usr/local/include/opencv4/opencv2/flann/params.h:
+
+/usr/include/eigen3/Eigen/src/Core/VectorwiseOp.h:
+
+/usr/local/include/opencv4/opencv2/stitching/detail/warpers_inl.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h:
+
+/usr/include/eigen3/Eigen/src/Core/VectorBlock.h:
+
+/usr/include/eigen3/Eigen/src/Core/util/MKL_support.h:
+
+/usr/include/eigen3/Eigen/src/Core/Transpositions.h:
+
+/usr/include/eigen3/Eigen/src/Core/Swap.h:
+
+/usr/include/eigen3/Eigen/src/Core/Stride.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/12/include/mmintrin.h:
+
+/usr/include/eigen3/Eigen/src/Core/StlIterators.h:
+
+/usr/local/include/opencv4/opencv2/calib3d.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/SolveTriangular.h:
+
+/usr/local/include/visp3/core/vpImage_lut.h:
+
+/usr/include/eigen3/Eigen/src/Core/Solve.h:
+
+/usr/include/eigen3/Eigen/src/Core/SelfCwiseBinaryOp.h:
+
+/usr/include/eigen3/Eigen/src/Core/SelfAdjointView.h:
+
+/usr/include/eigen3/Eigen/src/Core/Reshaped.h:
+
+/usr/include/eigen3/Eigen/src/Core/Redux.h:
+
+/usr/include/eigen3/Eigen/src/Core/PermutationMatrix.h:
+
+/usr/include/eigen3/Eigen/src/Core/MatrixBase.h:
+
+/usr/include/eigen3/Eigen/src/Core/Random.h:
+
+/usr/include/eigen3/Eigen/src/Core/Matrix.h:
 
 /opt/ros/humble/include/rmw/rmw/subscription_options.h:
 
@@ -1304,6 +1735,8 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /usr/include/c++/12/bits/localefwd.h:
 
+/usr/include/eigen3/Eigen/src/Geometry/Translation.h:
+
 /opt/ros/humble/include/rclcpp/rclcpp/time.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__struct.hpp:
@@ -1318,6 +1751,8 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h:
 
+/usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h:
+
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/contexts/default_context.hpp:
@@ -1330,9 +1765,11 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /usr/include/c++/12/bits/regex_error.h:
 
-/opt/ros/humble/include/rmw/rmw/events_statuses/events_statuses.h:
+/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
 
-/opt/ros/humble/include/rmw/rmw/localhost.h:
+/opt/ros/humble/include/rmw/rmw/events_statuses/incompatible_qos.h:
+
+/opt/ros/humble/include/rmw/rmw/events_statuses/events_statuses.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/subscription_base.hpp:
 
@@ -1354,13 +1791,13 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /opt/ros/humble/include/rmw/rmw/domain_id.h:
 
+/usr/include/eigen3/Eigen/src/plugins/BlockMethods.h:
+
 /opt/ros/humble/include/rcutils/rcutils/visibility_control_macros.h:
 
 /opt/ros/humble/include/rcutils/rcutils/types/uint8_array.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/set_parameters.hpp:
-
-/opt/ros/humble/include/rcutils/rcutils/types/string_array.h:
 
 /opt/ros/humble/include/rcutils/rcutils/types/rcutils_ret.h:
 
@@ -1370,9 +1807,7 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /usr/include/c++/12/bits/stl_deque.h:
 
-/usr/local/include/opencv4/opencv2/flann/defines.h:
-
-/usr/include/linux/close_range.h:
+/usr/include/eigen3/Eigen/src/Core/util/Memory.h:
 
 /usr/include/c++/12/clocale:
 
@@ -1384,23 +1819,25 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /opt/ros/humble/include/rmw/rmw/network_flow_endpoint.h:
 
-/usr/include/c++/12/bits/algorithmfwd.h:
-
-/usr/include/c++/12/iterator:
+/usr/include/eigen3/Eigen/src/Core/util/ConfigureVectorization.h:
 
 /opt/ros/humble/include/rcutils/rcutils/logging.h:
-
-/usr/include/x86_64-linux-gnu/bits/sigcontext.h:
 
 /opt/ros/humble/include/rcpputils/rcpputils/time.hpp:
 
 /usr/include/c++/12/cstdio:
 
+/usr/include/eigen3/Eigen/src/Core/CommaInitializer.h:
+
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/sequential_synchronization.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/StableNorm.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/dynamic_storage.hpp:
 
 /usr/include/c++/12/backward/binders.h:
+
+/usr/include/eigen3/Eigen/src/Geometry/arch/Geometry_SIMD.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/detail/synchronization_policy_common.hpp:
 
@@ -1416,6 +1853,10 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /opt/ros/humble/include/rmw/rmw/qos_profiles.h:
 
+/usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h:
+
+/usr/include/eigen3/Eigen/src/Core/NumTraits.h:
+
 /opt/ros/humble/include/rclcpp/rclcpp/wait_result.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__type_support.hpp:
@@ -1428,11 +1869,13 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /usr/include/c++/12/tuple:
 
-/opt/ros/humble/include/rclcpp/rclcpp/type_adapter.hpp:
-
 /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
 
 /opt/ros/humble/include/rmw/rmw/security_options.h:
+
+/usr/local/include/visp3/core/vpTracker.h:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/multi_array_layout__traits.hpp:
 
 /usr/include/c++/12/bits/predefined_ops.h:
 
@@ -1446,6 +1889,8 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /opt/ros/humble/include/rclcpp/rclcpp/qos_overriding_options.hpp:
 
+/usr/include/eigen3/Eigen/src/Core/DiagonalMatrix.h:
+
 /opt/ros/humble/include/rclcpp/rclcpp/init_options.hpp:
 
 /opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.hpp:
@@ -1458,6 +1903,8 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /opt/ros/humble/include/rclcpp/rclcpp/parameter_map.hpp:
 
+/usr/include/eigen3/Eigen/src/QR/HouseholderQR.h:
+
 /usr/include/c++/12/bits/streambuf.tcc:
 
 /usr/include/c++/12/bits/std_abs.h:
@@ -1469,6 +1916,8 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 /opt/ros/humble/include/rclcpp/rclcpp/parameter_client.hpp:
 
 /opt/ros/humble/include/rmw/rmw/qos_string_conversions.h:
+
+/usr/include/eigen3/Eigen/src/Core/NoAlias.h:
 
 /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/types.h:
 
@@ -1490,7 +1939,7 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_timers_interface_traits.hpp:
 
-/usr/include/time.h:
+/usr/include/eigen3/Eigen/src/Core/MapBase.h:
 
 /usr/include/c++/12/bits/stl_set.h:
 
@@ -1504,11 +1953,17 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_parameters_interface_traits.hpp:
 
+/usr/include/eigen3/Eigen/src/Geometry/RotationBase.h:
+
 /usr/include/c++/12/bits/regex_executor.tcc:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_timers_interface.hpp:
 
+/usr/lib/gcc/x86_64-linux-gnu/12/include/omp.h:
+
 /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/tf_message.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/Ref.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_base_interface.hpp:
 
@@ -1520,8 +1975,6 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /opt/ros/humble/include/rclcpp/rclcpp/message_memory_strategy.hpp:
 
-/opt/ros/humble/include/rclcpp/rclcpp/is_ros_compatible_type.hpp:
-
 /opt/ros/humble/include/rcl/rcl/node_options.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/intra_process_setting.hpp:
@@ -1529,6 +1982,10 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 /usr/include/c++/12/bits/regex.tcc:
 
 /usr/include/c++/12/bits/regex_scanner.h:
+
+/usr/include/string.h:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__traits.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/generic_subscription.hpp:
 
@@ -1548,8 +2005,6 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__type_support.hpp:
 
-/opt/ros/humble/include/rclcpp/rclcpp/experimental/subscription_intra_process_base.hpp:
-
 /opt/ros/humble/include/rcpputils/rcpputils/thread_safety_annotations.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/subscription_intra_process.hpp:
@@ -1560,7 +2015,11 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/ros_message_intra_process_buffer.hpp:
 
+/usr/include/eigen3/Eigen/src/Geometry/OrthoMethods.h:
+
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/executable_list.hpp:
+
+/usr/include/eigen3/Eigen/src/Cholesky/LLT.h:
 
 /usr/local/include/visp3/core/vpHomogeneousMatrix.h:
 
@@ -1588,19 +2047,27 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/generate_statistics_message.hpp:
 
+/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
+
+/opt/ros/humble/include/tf2/tf2/LinearMath/Transform.hpp:
+
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_policies/static_storage.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
-
 /opt/ros/humble/include/rclcpp/rclcpp/get_message_type_support_handle.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:
 
+/usr/include/eigen3/Eigen/src/Core/Replicate.h:
+
+/usr/include/eigen3/Eigen/src/Core/PartialReduxEvaluator.h:
+
 /usr/include/c++/12/bits/exception.h:
+
+/usr/include/eigen3/Eigen/src/Core/ReturnByValue.h:
 
 /usr/include/c++/12/bits/std_function.h:
 
@@ -1612,29 +2079,31 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /usr/include/assert.h:
 
-/usr/include/c++/12/bits/stl_algo.h:
-
-/usr/include/c++/12/ext/string_conversions.h:
-
 /opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_services_interface.hpp:
 
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/image_encodings.hpp:
 
-/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface.hpp:
-
 /usr/include/endian.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_base_interface.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/exceptions/exceptions.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/intra_process_buffer_type.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/arch/SSE/MathFunctions.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/exceptions.hpp:
 
 /opt/ros/humble/include/rmw/rmw/macros.h:
+
+/usr/include/sched.h:
+
+/usr/include/c++/12/memory:
 
 /opt/ros/humble/include/rcutils/rcutils/qsort.h:
 
@@ -1646,11 +2115,17 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /opt/ros/humble/include/rcutils/rcutils/types/array_list.h:
 
-/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
+/usr/include/x86_64-linux-gnu/bits/sigaction.h:
+
+/usr/include/stdint.h:
+
+/opt/ros/humble/include/rcl/rcl/time.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter__builder.hpp:
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__type_support.hpp:
+
+/usr/include/eigen3/Eigen/src/Eigenvalues/EigenSolver.h:
 
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__type_support.hpp:
 
@@ -1688,25 +2163,19 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__struct.hpp:
 
-/usr/local/include/visp3/vs/vpServo.h:
-
-/usr/local/include/opencv4/opencv2/flann/result_set.h:
-
-/usr/include/x86_64-linux-gnu/sys/ucontext.h:
-
-/usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
-
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
 
 /opt/ros/humble/include/rcutils/rcutils/types/hash_map.h:
 
 /opt/ros/humble/include/rcl/rcl/service.h:
 
-/usr/include/stdio.h:
-
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform_stamped__struct.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/siginfo_t.h:
+
+/usr/include/eigen3/Eigen/Core:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__traits.hpp:
 
@@ -1714,13 +2183,13 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /usr/include/c++/12/bits/stl_multimap.h:
 
-/usr/include/x86_64-linux-gnu/bits/endianness.h:
+/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
-/usr/include/x86_64-linux-gnu/bits/floatn.h:
+/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
+
+/opt/ros/humble/include/rcl/rcl/error_handling.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:
-
-/usr/include/libintl.h:
 
 /opt/ros/humble/include/rcl/rcl/graph.h:
 
@@ -1740,13 +2209,9 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter_descriptor.hpp:
 
-/opt/ros/humble/include/rclcpp/rclcpp/macros.hpp:
-
 /opt/ros/humble/include/rcl/rcl/allocator.h:
 
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/topic_statistics_collector/received_message_period.hpp:
-
-/usr/include/linux/errno.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_descriptor__traits.hpp:
 
@@ -1764,11 +2229,15 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__traits.hpp:
 
+/usr/include/x86_64-linux-gnu/bits/errno.h:
+
+/usr/include/c++/12/map:
+
 /opt/ros/humble/include/rclcpp/rclcpp/publisher_base.hpp:
 
-/opt/ros/humble/include/rclcpp/rclcpp/create_service.hpp:
-
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
+
+/usr/include/eigen3/Eigen/src/Geometry/AlignedBox.h:
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp:
 
@@ -1788,6 +2257,8 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /usr/local/include/opencv4/opencv2/stitching/detail/exposure_compensate.hpp:
 
+/usr/include/eigen3/Eigen/src/misc/Image.h:
+
 /opt/ros/humble/include/rcl/rcl/wait.h:
 
 /opt/ros/humble/include/rmw/rmw/events_statuses/liveliness_changed.h:
@@ -1798,6 +2269,8 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /usr/include/c++/12/pstl/glue_numeric_defs.h:
 
+/usr/include/eigen3/Eigen/src/Jacobi/Jacobi.h:
+
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__traits.hpp:
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/time.hpp:
@@ -1805,6 +2278,8 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__builder.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/subscription_content_filter_options.hpp:
+
+/usr/include/eigen3/Eigen/src/plugins/CommonCwiseUnaryOps.h:
 
 /opt/ros/humble/include/tf2/tf2/convert.hpp:
 
@@ -1820,7 +2295,11 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/collector/collector.hpp:
 
+/usr/include/eigen3/Eigen/src/Core/TriangularMatrix.h:
+
 /opt/ros/humble/include/tf2/tf2/LinearMath/Vector3.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h:
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp:
 
@@ -1842,11 +2321,15 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /opt/ros/humble/include/rclcpp/rclcpp/detail/cpp_callback_trampoline.hpp:
 
-/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/camera_info__struct.hpp:
+/usr/include/eigen3/Eigen/src/Core/MathFunctions.h:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/transform__struct.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/joint_state.hpp:
+
+/usr/include/eigen3/Eigen/src/Geometry/ParametrizedLine.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:
 
@@ -1876,31 +2359,33 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/get_node_parameters_interface.hpp:
 
+/usr/include/eigen3/Eigen/src/Core/MathFunctionsImpl.h:
+
 /opt/ros/humble/include/rcl/rcl/client.h:
 
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_event__traits.hpp:
 
+/usr/include/eigen3/Eigen/src/plugins/CommonCwiseBinaryOps.h:
+
+/usr/include/eigen3/Eigen/src/Core/Select.h:
+
 /usr/include/c++/12/tr1/riemann_zeta.tcc:
 
 /opt/ros/humble/include/rcutils/rcutils/macros.h:
 
-/usr/include/stdlib.h:
-
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp:
-
-/usr/include/math.h:
 
 /opt/ros/humble/include/rcutils/rcutils/shared_library.h:
 
 /opt/ros/humble/include/rcutils/rcutils/types.h:
 
-/usr/local/include/opencv4/opencv2/core/cvstd_wrapper.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
-
 /home/p/ws_demo2/src/ibvs/src/ibvs.cpp:
+
+/usr/include/eigen3/Eigen/src/Geometry/Transform.h:
+
+/usr/include/eigen3/Eigen/src/Cholesky/LDLT.h:
 
 /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__struct.hpp:
 
@@ -1914,21 +2399,25 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /opt/ros/humble/include/rmw/rmw/network_flow_endpoint_array.h:
 
-/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:
+/usr/include/eigen3/Eigen/src/Core/Visitor.h:
 
-/usr/include/features.h:
+/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:
 
+/usr/include/x86_64-linux-gnu/bits/math-vector.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/allocator/allocator_common.hpp:
+
 /opt/ros/humble/include/rmw/rmw/subscription_content_filter_options.h:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64_multi_array__struct.hpp:
 
 /usr/local/include/opencv4/opencv2/core/utility.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/clock.hpp:
 
 /usr/include/c++/12/bits/shared_ptr.h:
-
-/usr/include/x86_64-linux-gnu/bits/endian.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_type__builder.hpp:
 
@@ -1963,6 +2452,10 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 /usr/local/include/opencv4/opencv2/stitching/detail/util.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/list_parameters_result.hpp:
+
+/usr/include/eigen3/Eigen/src/Eigenvalues/ComplexEigenSolver.h:
+
+/usr/include/eigen3/Eigen/src/Core/DenseCoeffsBase.h:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/velocity_stamped.hpp:
 
@@ -2000,6 +2493,10 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/integer_range__traits.hpp:
 
+/usr/include/strings.h:
+
+/opt/ros/humble/include/rcutils/rcutils/visibility_control.h:
+
 /usr/include/c++/12/tr1/hypergeometric.tcc:
 
 /usr/lib/gcc/x86_64-linux-gnu/12/include/stdalign.h:
@@ -2007,6 +2504,8 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 /opt/ros/humble/include/rcpputils/rcpputils/join.hpp:
 
 /opt/ros/humble/include/rcl/rcl/macros.h:
+
+/usr/include/eigen3/Eigen/src/Core/IndexedView.h:
 
 /opt/ros/humble/include/rcl/rcl/types.h:
 
@@ -2018,6 +2517,8 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /usr/include/c++/12/bits/char_traits.h:
 
+/usr/include/eigen3/Eigen/src/Core/products/SelfadjointProduct.h:
+
 /opt/ros/humble/include/rcutils/rcutils/types/char_array.h:
 
 /opt/ros/humble/include/rcl/rcl/publisher.h:
@@ -2028,7 +2529,11 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__builder.hpp:
 
+/usr/include/eigen3/Eigen/src/Householder/BlockHouseholder.h:
+
 /opt/ros/humble/include/rclcpp/rclcpp/timer.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/Dot.h:
 
 /usr/include/x86_64-linux-gnu/bits/sched.h:
 
@@ -2054,13 +2559,19 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /usr/include/c++/12/pstl/pstl_config.h:
 
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64_multi_array__type_support.hpp:
+
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/intra_process_manager.hpp:
 
 /usr/include/c++/12/bits/refwrap.h:
 
 /opt/ros/humble/include/rcl/rcl/domain_id.h:
 
+/usr/include/eigen3/Eigen/src/Core/Reverse.h:
+
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/parameter.hpp:
+
+/usr/include/eigen3/Eigen/src/LU/InverseImpl.h:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__struct.hpp:
 
@@ -2076,6 +2587,12 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /opt/ros/humble/include/libstatistics_collector/libstatistics_collector/visibility_control.hpp:
 
+/usr/include/x86_64-linux-gnu/bits/confname.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/publisher_options.hpp:
+
+/opt/ros/humble/include/rcpputils/rcpputils/shared_library.hpp:
+
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/camera_info__type_support.hpp:
 
 /usr/local/include/opencv4/opencv2/flann/saving.h:
@@ -2088,13 +2605,13 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__type_support.hpp:
 
+/usr/include/eigen3/Eigen/src/plugins/IndexedViewMethods.h:
+
 /usr/include/c++/12/queue:
 
 /opt/ros/humble/include/rcl/rcl/log_level.h:
 
 /usr/include/c++/12/set:
-
-/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/set_parameters_result.hpp:
 
 /usr/local/include/opencv4/opencv2/flann/lsh_index.h:
 
@@ -2113,6 +2630,8 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 /opt/ros/humble/include/rcl_yaml_param_parser/rcl_yaml_param_parser/parser.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_clock_interface.hpp:
+
+/usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h:
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.hpp:
 
@@ -2172,7 +2691,13 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__type_support.hpp:
 
+/usr/include/eigen3/Eigen/src/Core/CwiseBinaryOp.h:
+
+/usr/include/eigen3/Eigen/src/LU/arch/InverseSize4.h:
+
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/velocity_stamped__builder.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/NestByValue.h:
 
 /usr/include/c++/12/iosfwd:
 
@@ -2216,6 +2741,8 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /opt/ros/humble/include/rclcpp/rclcpp/create_generic_publisher.hpp:
 
+/usr/include/eigen3/Eigen/src/SVD/UpperBidiagonalization.h:
+
 /opt/ros/humble/include/rclcpp/rclcpp/create_generic_subscription.hpp:
 
 /opt/ros/humble/include/rcl/rcl/subscription.h:
@@ -2242,7 +2769,7 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /opt/ros/humble/include/rmw/rmw/topic_endpoint_info_array.h:
 
-/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
+/usr/include/eigen3/Eigen/src/Core/EigenBase.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/subscription_wait_set_mask.hpp:
 
@@ -2250,9 +2777,17 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h:
 
+/usr/include/eigen3/Eigen/src/Eigenvalues/ComplexSchur.h:
+
 /usr/include/c++/12/bits/atomic_base.h:
 
 /usr/include/c++/12/bits/basic_string.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
+
+/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/sequence_bound.h:
+
+/usr/include/eigen3/Eigen/Cholesky:
 
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h:
 
@@ -2276,13 +2811,15 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /opt/ros/humble/include/tf2/tf2/impl/convert.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/byteswap.h:
-
 /usr/local/include/opencv4/opencv2/imgproc/imgproc.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/arch/SSE/TypeCasting.h:
 
 /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_typesupport_cpp/service_type_support.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/service.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/Block.h:
 
 /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h:
 
@@ -2294,13 +2831,37 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/camera_info__traits.hpp:
 
+/usr/include/eigen3/Eigen/src/Core/BooleanRedux.h:
+
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__struct.hpp:
 
 /opt/ros/humble/include/rcl/rcl/event.h:
 
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/compressed_image__traits.hpp:
 
+/usr/include/eigen3/Eigen/src/SVD/BDCSVD.h:
+
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/image__builder.hpp:
+
+/usr/local/include/opencv4/opencv2/flann.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/ArrayBase.h:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__builder.hpp:
+
+/usr/local/include/visp3/core/vpRGBf.h:
+
+/opt/ros/humble/include/tf2_ros/tf2_ros/create_timer_interface.h:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__struct.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/publisher_factory.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/CwiseTernaryOp.h:
+
+/usr/include/c++/12/debug/debug.h:
+
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joint_state__type_support.hpp:
 
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/image.hpp:
 
@@ -2310,17 +2871,15 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /usr/include/c++/12/exception:
 
+/usr/include/eigen3/Eigen/src/Core/DiagonalProduct.h:
+
 /usr/include/c++/12/typeinfo:
-
-/usr/include/features-time64.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/allocator/allocator_common.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/math-vector.h:
 
 /usr/local/include/opencv4/opencv2/flann/kdtree_index.h:
 
 /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/metrics_message__builder.hpp:
+
+/usr/include/eigen3/Eigen/src/plugins/ReshapedMethods.h:
 
 /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/detail/statistic_data_point__struct.hpp:
 
@@ -2334,7 +2893,27 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /opt/ros/humble/include/statistics_msgs/statistics_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64_multi_array__traits.hpp:
+
 /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__traits.hpp:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/multi_array_dimension__struct.hpp:
+
+/opt/ros/humble/include/rclcpp/rclcpp/macros.hpp:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/multi_array_dimension__traits.hpp:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/multi_array_layout__struct.hpp:
+
+/usr/include/c++/12/bits/stl_algo.h:
+
+/usr/include/c++/12/ext/string_conversions.h:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/float64_multi_array.hpp:
+
+/opt/ros/humble/include/rmw/rmw/localhost.h:
+
+/opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
 /opt/ros/humble/include/tf2/tf2/LinearMath/Matrix3x3.hpp:
 
@@ -2364,6 +2943,10 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /opt/ros/humble/include/tf2/tf2/buffer_core_interface.hpp:
 
+/opt/ros/humble/include/rclcpp/rclcpp/create_service.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/CwiseNullaryOp.h:
+
 /opt/ros/humble/include/tf2/tf2/exceptions.hpp:
 
 /opt/ros/humble/include/tf2/tf2/time.hpp:
@@ -2380,6 +2963,8 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__builder.hpp:
 
+/usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrix.h:
+
 /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/rosidl_generator_cpp__visibility_control.hpp:
 
 /opt/ros/humble/include/tf2_msgs/tf2_msgs/srv/detail/frame_graph__builder.hpp:
@@ -2392,19 +2977,19 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:
 
-/usr/include/unistd.h:
-
-/usr/local/include/visp3/core/vpRGBf.h:
-
-/opt/ros/humble/include/tf2_ros/tf2_ros/create_timer_interface.h:
-
 /opt/ros/humble/include/tf2_ros/tf2_ros/qos.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/ProductEvaluators.h:
 
 /opt/ros/humble/include/tf2_ros/tf2_ros/visibility_control.h:
 
 /opt/ros/humble/include/tracetools/tracetools/tracetools.h:
 
 /opt/ros/humble/include/tracetools/tracetools/utils.hpp:
+
+/usr/include/eigen3/Eigen/src/LU/Determinant.h:
+
+/usr/include/eigen3/Eigen/src/Core/Transpose.h:
 
 /opt/ros/humble/include/tracetools/tracetools/visibility_control.hpp:
 
@@ -2413,6 +2998,18 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 /usr/include/asm-generic/errno-base.h:
 
 /usr/include/asm-generic/errno.h:
+
+/opt/ros/humble/include/rcutils/rcutils/types/string_array.h:
+
+/usr/include/eigen3/Eigen/src/Core/Inverse.h:
+
+/usr/local/include/visp3/core/vpRowVector.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
+
+/usr/include/eigen3/Eigen/src/Core/Array.h:
+
+/usr/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.h:
 
 /opt/ros/humble/include/rclcpp/rclcpp/node_interfaces/node_topics_interface.hpp:
 
@@ -2436,13 +3033,15 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /usr/include/c++/12/bit:
 
+/usr/include/eigen3/Eigen/src/Core/PlainObjectBase.h:
+
 /usr/include/c++/12/bits/align.h:
+
+/usr/include/eigen3/Eigen/src/Core/SolverBase.h:
 
 /opt/ros/humble/include/rcutils/rcutils/time.h:
 
 /usr/include/c++/12/bits/alloc_traits.h:
-
-/usr/include/locale.h:
 
 /usr/include/c++/12/bits/allocated_ptr.h:
 
@@ -2452,27 +3051,17 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /usr/include/c++/12/bits/allocator.h:
 
-/usr/local/include/visp3/core/vpForceTwistMatrix.h:
-
-/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
-
-/usr/include/c++/12/bits/atomic_futex.h:
-
 /usr/include/c++/12/stdexcept:
+
+/usr/include/eigen3/Eigen/src/Core/CoreEvaluators.h:
 
 /usr/include/c++/12/bits/stl_construct.h:
 
 /usr/include/c++/12/bits/atomic_lockfree_defines.h:
 
-/usr/include/c++/12/tr1/gamma.tcc:
-
 /usr/include/c++/12/bits/basic_ios.tcc:
 
 /usr/include/c++/12/cxxabi.h:
-
-/opt/ros/humble/include/rcl/rcl/logging_rosout.h:
-
-/usr/include/c++/12/bits/chrono.h:
 
 /opt/ros/humble/include/tf2_ros/tf2_ros/async_buffer_interface.h:
 
@@ -2487,6 +3076,10 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 /usr/include/c++/12/bits/locale_conv.h:
 
 /usr/include/c++/12/stdlib.h:
+
+/usr/include/pthread.h:
+
+/usr/include/c++/12/bits/enable_special_members.h:
 
 /usr/include/c++/12/bits/erase_if.h:
 
@@ -2505,6 +3098,8 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 /usr/local/include/opencv4/opencv2/flann/dist.h:
 
 /usr/include/c++/12/bits/hash_bytes.h:
+
+/usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixVector.h:
 
 /usr/include/c++/12/bits/hashtable.h:
 
@@ -2542,9 +3137,7 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /usr/include/c++/12/bits/locale_classes.h:
 
-/usr/include/c++/12/map:
-
-/usr/include/x86_64-linux-gnu/bits/errno.h:
+/usr/include/eigen3/Eigen/Jacobi:
 
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/region_of_interest__traits.hpp:
 
@@ -2562,9 +3155,15 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /usr/lib/gcc/x86_64-linux-gnu/12/include/stdint.h:
 
+/opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float64_multi_array__builder.hpp:
+
 /opt/ros/humble/include/tf2_ros/tf2_ros/transform_listener.h:
 
 /usr/include/c++/12/bits/move.h:
+
+/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/set_parameters_result.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/DenseStorage.h:
 
 /usr/local/include/visp3/core/vpRotationMatrix.h:
 
@@ -2582,13 +3181,13 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /usr/include/c++/12/bits/ostream_insert.h:
 
-/usr/include/c++/12/bits/ptr_traits.h:
-
 /usr/include/c++/12/bits/regex_automaton.tcc:
 
 /usr/include/c++/12/cstdlib:
 
 /usr/include/c++/12/bits/regex_compiler.tcc:
+
+/usr/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h:
 
 /usr/include/c++/12/iomanip:
 
@@ -2602,9 +3201,9 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /usr/include/c++/12/bits/shared_ptr_base.h:
 
-/opt/ros/humble/include/rclcpp/rclcpp/any_subscription_callback.hpp:
-
 /usr/include/wchar.h:
+
+/opt/ros/humble/include/rclcpp/rclcpp/any_subscription_callback.hpp:
 
 /usr/include/c++/12/bits/specfun.h:
 
@@ -2613,6 +3212,8 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 /usr/include/c++/12/bits/stl_algobase.h:
 
 /usr/include/c++/12/bits/stl_bvector.h:
+
+/usr/include/eigen3/Eigen/src/Core/arch/Default/GenericPacketMathFunctionsFwd.h:
 
 /usr/include/c++/12/bits/stl_tempbuf.h:
 
@@ -2656,6 +3257,10 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /usr/include/c++/12/cstddef:
 
+/usr/include/x86_64-linux-gnu/bits/locale.h:
+
+/usr/include/c++/12/ext/alloc_traits.h:
+
 /opt/ros/humble/include/rclcpp/rclcpp/waitable.hpp:
 
 /usr/include/c++/12/bits/stl_stack.h:
@@ -2666,7 +3271,13 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /usr/include/c++/12/bits/streambuf_iterator.h:
 
+/usr/include/eigen3/Eigen/src/Core/Diagonal.h:
+
 /usr/include/c++/12/bits/string_view.tcc:
+
+/usr/include/eigen3/Eigen/src/QR/ColPivHouseholderQR.h:
+
+/usr/include/eigen3/Eigen/src/Core/CwiseUnaryOp.h:
 
 /usr/include/c++/12/new:
 
@@ -2690,13 +3301,19 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /usr/include/c++/12/cerrno:
 
-/usr/include/x86_64-linux-gnu/bits/setjmp.h:
+/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
+
+/usr/include/c++/12/cmath:
 
 /usr/include/x86_64-linux-gnu/bits/signal_ext.h:
 
 /usr/include/c++/12/codecvt:
 
 /usr/include/c++/12/compare:
+
+/opt/ros/humble/include/rclcpp/rclcpp/type_adapter.hpp:
+
+/usr/include/eigen3/Eigen/Eigenvalues:
 
 /usr/include/c++/12/condition_variable:
 
@@ -2714,21 +3331,9 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /usr/include/c++/12/cwchar:
 
-/usr/local/include/opencv4/opencv2/objdetect/detection_based_tracker.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
-
 /usr/include/c++/12/cwctype:
 
-/usr/include/c++/12/bits/enable_special_members.h:
-
-/usr/include/pthread.h:
-
-/opt/ros/humble/include/rclcpp/rclcpp/publisher_factory.hpp:
-
-/usr/include/c++/12/debug/debug.h:
-
-/usr/include/inttypes.h:
+/usr/include/eigen3/Eigen/src/Core/products/SelfadjointRank2Update.h:
 
 /usr/include/c++/12/ext/concurrence.h:
 
@@ -2744,17 +3349,27 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /usr/include/c++/12/future:
 
+/usr/include/eigen3/Eigen/src/Core/arch/Default/GenericPacketMathFunctions.h:
+
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/parameter_value__struct.hpp:
 
 /usr/include/c++/12/initializer_list:
+
+/usr/include/eigen3/Eigen/src/Core/products/GeneralBlockPanelKernel.h:
 
 /usr/include/c++/12/bits/basic_ios.h:
 
 /usr/include/c++/12/ios:
 
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/camera_info__struct.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/Map.h:
+
 /usr/include/c++/12/iostream:
 
 /usr/local/include/opencv4/opencv2/flann/heap.h:
+
+/usr/include/eigen3/Eigen/src/Core/Product.h:
 
 /usr/include/c++/12/istream:
 
@@ -2768,17 +3383,15 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /usr/include/c++/12/type_traits:
 
+/usr/include/stdc-predef.h:
+
+/usr/include/c++/12/locale:
+
 /usr/include/c++/12/numeric:
 
 /opt/ros/humble/include/rcpputils/rcpputils/filesystem_helper.hpp:
 
 /usr/include/c++/12/optional:
-
-/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/camera_info.hpp:
-
-/usr/include/c++/12/bitset:
-
-/usr/include/c++/12/ostream:
 
 /usr/include/c++/12/stack:
 
@@ -2789,6 +3402,10 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 /usr/include/c++/12/streambuf:
 
 /usr/include/c++/12/system_error:
+
+/usr/local/include/opencv4/opencv2/dnn/layer.hpp:
+
+/usr/include/eigen3/Eigen/src/Core/ArithmeticSequence.h:
 
 /usr/include/c++/12/tr1/bessel_function.tcc:
 
@@ -2804,84 +3421,64 @@ CMakeFiles/ibvs.dir/src/ibvs.cpp.o: /home/p/ws_demo2/src/ibvs/src/ibvs.cpp \
 
 /usr/include/c++/12/unordered_set:
 
-/usr/include/limits.h:
+/opt/ros/humble/include/rcl/rcl/logging_rosout.h:
 
-/usr/include/linux/limits.h:
+/usr/include/c++/12/bits/chrono.h:
 
-/usr/include/c++/12/memory:
+/usr/include/eigen3/Eigen/Dense:
 
-/usr/include/sched.h:
+/usr/include/c++/12/tr1/gamma.tcc:
 
-/usr/include/signal.h:
+/usr/include/eigen3/Eigen/Geometry:
 
-/usr/include/c++/12/locale:
+/opt/ros/humble/include/rclcpp/rclcpp/is_ros_compatible_type.hpp:
 
-/usr/include/stdc-predef.h:
+/usr/include/eigen3/Eigen/Householder:
 
-/usr/include/string.h:
+/usr/include/eigen3/Eigen/LU:
 
-/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
+/usr/include/eigen3/Eigen/QR:
 
-/opt/ros/humble/include/rcutils/rcutils/visibility_control.h:
+/usr/include/eigen3/Eigen/SVD:
 
-/usr/include/strings.h:
+/usr/include/eigen3/Eigen/src/Core/ArrayWrapper.h:
 
-/opt/ros/humble/include/rclcpp/rclcpp/publisher_options.hpp:
+/usr/include/c++/12/bits/algorithmfwd.h:
 
-/opt/ros/humble/include/rcpputils/rcpputils/shared_library.hpp:
+/usr/include/c++/12/iterator:
 
-/usr/include/x86_64-linux-gnu/bits/confname.h:
+/usr/include/eigen3/Eigen/src/Core/Assign.h:
 
-/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
+/usr/include/c++/12/bits/ptr_traits.h:
 
-/opt/ros/humble/include/rcl/rcl/error_handling.h:
+/usr/include/eigen3/Eigen/src/Core/CwiseUnaryView.h:
 
-/usr/include/x86_64-linux-gnu/bits/cpu-set.h:
+/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h:
 
-/usr/include/x86_64-linux-gnu/bits/fp-fast.h:
+/usr/include/eigen3/Eigen/src/Core/BandMatrix.h:
 
-/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
+/usr/include/eigen3/Eigen/src/Core/ConditionEstimator.h:
 
-/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
+/usr/include/eigen3/Eigen/src/Core/CoreIterators.h:
 
-/opt/ros/humble/include/tf2/tf2/LinearMath/Transform.hpp:
+/usr/include/eigen3/Eigen/src/Core/DenseBase.h:
 
-/usr/include/x86_64-linux-gnu/bits/iscanonical.h:
+/opt/ros/humble/include/rclcpp/rclcpp/experimental/subscription_intra_process_base.hpp:
 
-/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
+/usr/include/eigen3/Eigen/src/Core/Fuzzy.h:
 
-/usr/include/x86_64-linux-gnu/bits/local_lim.h:
+/opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/camera_info.hpp:
 
-/usr/include/c++/12/ext/alloc_traits.h:
+/usr/include/c++/12/bitset:
 
-/usr/include/x86_64-linux-gnu/bits/locale.h:
+/usr/include/c++/12/ostream:
 
-/usr/local/include/opencv4/opencv2/core/version.hpp:
+/usr/include/eigen3/Eigen/src/Core/GeneralProduct.h:
 
-/usr/include/x86_64-linux-gnu/bits/long-double.h:
+/usr/include/eigen3/Eigen/src/Core/functors/UnaryFunctors.h:
 
-/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
+/usr/include/c++/12/bits/atomic_futex.h:
 
-/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
+/usr/include/eigen3/Eigen/src/Core/GlobalFunctions.h:
 
-/opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/sequence_bound.h:
-
-/usr/include/x86_64-linux-gnu/bits/mathcalls.h:
-
-/opt/ros/humble/include/rmw/rmw/events_statuses/incompatible_qos.h:
-
-/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
-
-/usr/include/c++/12/cmath:
-
-/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/12/include/xmmintrin.h:
-
-/usr/include/x86_64-linux-gnu/bits/select.h:
-
-/opt/ros/humble/include/rcl/rcl/time.h:
-
-/usr/include/stdint.h:
-
-/usr/include/x86_64-linux-gnu/bits/sigaction.h:
+/usr/include/eigen3/Eigen/src/Core/IO.h:

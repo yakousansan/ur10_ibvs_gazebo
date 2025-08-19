@@ -1,0 +1,26 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from service_interfaces/srv/SendGripperRequest.srv
+// generated code does not contain a copyright notice
+
+
+module service_interfaces {
+  module srv {
+    @verbatim (language="comment", text=
+      "Request part")
+    struct SendGripperRequest_Request {
+      @verbatim (language="comment", text=
+        "0表示关闭夹爪, 1表示打开夹爪")
+      int32 state;
+    };
+    struct SendGripperRequest_Response {
+      @verbatim (language="comment", text=
+        "Response part" "\n"
+        "当前夹爪的状态，0表示关闭，1表示打开")
+      int32 state;
+
+      @verbatim (language="comment", text=
+        "返回的结果信息")
+      string message;
+    };
+  };
+};

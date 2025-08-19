@@ -1,7 +1,0 @@
-[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:[m[K In member function ‘[01m[Kvoid VisualServoInit::rgb_callback(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
-[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:129:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kcorner[m[K’ was not declared in this scope
-  129 |                         feature.set_x([01;31m[Kcorner[m[K.get_u());
-      |                                       [01;31m[K^~~~~~[m[K
-gmake[2]: *** [CMakeFiles/ibvs.dir/build.make:79：CMakeFiles/ibvs.dir/src/ibvs.cpp.o] 错误 1
-gmake[1]: *** [CMakeFiles/Makefile2:153：CMakeFiles/ibvs.dir/all] 错误 2
-gmake: *** [Makefile:146：all] 错误 2

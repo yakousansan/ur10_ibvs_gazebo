@@ -1,0 +1,10 @@
+/home/p/ws_demo2/build/movegroup/CMakeFiles/uninstall.dir
+/home/p/ws_demo2/build/movegroup/CMakeFiles/movegroup_uninstall.dir
+/home/p/ws_demo2/build/movegroup/CMakeFiles/movegroup.dir
+/home/p/ws_demo2/build/movegroup/CMakeFiles/test.dir
+/home/p/ws_demo2/build/movegroup/CMakeFiles/edit_cache.dir
+/home/p/ws_demo2/build/movegroup/CMakeFiles/rebuild_cache.dir
+/home/p/ws_demo2/build/movegroup/CMakeFiles/list_install_components.dir
+/home/p/ws_demo2/build/movegroup/CMakeFiles/install.dir
+/home/p/ws_demo2/build/movegroup/CMakeFiles/install/local.dir
+/home/p/ws_demo2/build/movegroup/CMakeFiles/install/strip.dir

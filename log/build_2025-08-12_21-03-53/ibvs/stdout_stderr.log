@@ -1,8 +1,0 @@
-[ 50%] [32mBuilding CXX object CMakeFiles/ibvs.dir/src/ibvs.cpp.o[0m
-[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:12:10:[m[K [01;31m[Kfatal error: [m[Ktf2/transform_datatypes.h: 没有那个文件或目录
-   12 | #include [01;31m[K"tf2/transform_datatypes.h"[m[K
-      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
-compilation terminated.
-gmake[2]: *** [CMakeFiles/ibvs.dir/build.make:79：CMakeFiles/ibvs.dir/src/ibvs.cpp.o] 错误 1
-gmake[1]: *** [CMakeFiles/Makefile2:153：CMakeFiles/ibvs.dir/all] 错误 2
-gmake: *** [Makefile:146：all] 错误 2

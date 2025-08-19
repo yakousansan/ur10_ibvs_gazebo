@@ -1,0 +1,50 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from service_interfaces/srv/SendGraspRequest.srv
+// generated code does not contain a copyright notice
+
+
+module service_interfaces {
+  module srv {
+    @verbatim (language="comment", text=
+      "Request part")
+    struct SendGraspRequest_Request {
+      @verbatim (language="comment", text=
+        "机器人操作器端点的x坐标")
+      double x;
+
+      @verbatim (language="comment", text=
+        "机器人操作器端点的y坐标")
+      double y;
+
+      @verbatim (language="comment", text=
+        "机器人操作器端点的z坐标")
+      double z;
+
+      @verbatim (language="comment", text=
+        "四元数w分量")
+      double qw;
+
+      @verbatim (language="comment", text=
+        "四元数x分量")
+      double qx;
+
+      @verbatim (language="comment", text=
+        "四元数y分量")
+      double qy;
+
+      @verbatim (language="comment", text=
+        "四元数z分量")
+      double qz;
+    };
+    struct SendGraspRequest_Response {
+      @verbatim (language="comment", text=
+        "Response part" "\n"
+        "规划是否成功")
+      boolean success;
+
+      @verbatim (language="comment", text=
+        "返回的结果信息")
+      string message;
+    };
+  };
+};

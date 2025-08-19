@@ -54,7 +54,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/ibvs/ibvs")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/ibvs/ibvs"
-         OLD_RPATH "/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:"
+         OLD_RPATH "/opt/ros/humble/lib/x86_64-linux-gnu:/home/p/ws_moveit2/install/moveit_core/lib:/opt/ros/humble/lib:/home/p/ws_moveit2/install/moveit_ros_planning_interface/lib:/home/p/ws_demo2/install/service_interfaces/lib:/usr/local/lib:/home/p/ws_moveit2/install/moveit_ros_move_group/lib:/home/p/ws_moveit2/install/moveit_ros_warehouse/lib:/home/p/ws_moveit2/install/moveit_ros_planning/lib:/home/p/ws_moveit2/install/moveit_ros_occupancy_map_monitor/lib:/home/p/ws_moveit2/install/srdfdom/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/ibvs/ibvs")

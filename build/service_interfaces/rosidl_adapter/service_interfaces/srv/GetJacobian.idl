@@ -1,0 +1,25 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from service_interfaces/srv/GetJacobian.srv
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Float64MultiArray.idl"
+
+module service_interfaces {
+  module srv {
+    typedef double double__6[6];
+    struct GetJacobian_Request {
+      @verbatim (language="comment", text=
+        "Request: 关节角度" "\n"
+        "关节角度是一个包含所有关节角度的数组")
+      double__6 joint_angles;
+    };
+    @verbatim (language="comment", text=
+      "Response: 雅可比矩阵" "\n"
+      "雅可比矩阵是一个6xN的矩阵，这里使用二维数组表示")
+    struct GetJacobian_Response {
+      std_msgs::msg::Float64MultiArray jacobian_matrix;
+
+      boolean success;
+    };
+  };
+};

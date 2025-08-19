@@ -1,0 +1,37 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from service_interfaces/msg/MomentFeatures.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module service_interfaces {
+  module msg {
+    struct MomentFeatures {
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        "重心X坐标")
+      double x_gravity;
+
+      @verbatim (language="comment", text=
+        "重心Y坐标")
+      double y_gravity;
+
+      @verbatim (language="comment", text=
+        "区域面积（零阶矩）")
+      double area;
+
+      @verbatim (language="comment", text=
+        "sx")
+      double sx;
+
+      @verbatim (language="comment", text=
+        "sy")
+      double sy;
+
+      @verbatim (language="comment", text=
+        "方向角")
+      double alpha;
+    };
+  };
+};
