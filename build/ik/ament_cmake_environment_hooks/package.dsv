@@ -1,0 +1,4 @@
+source;share/ik/local_setup.bash
+source;share/ik/local_setup.dsv
+source;share/ik/local_setup.sh
+source;share/ik/local_setup.zsh

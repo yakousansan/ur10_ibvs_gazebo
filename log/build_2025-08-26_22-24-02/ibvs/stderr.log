@@ -1,0 +1,33 @@
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:[m[K In member function ‘[01m[Kvoid VisualServoInit::jointStateCallback(sensor_msgs::msg::JointState_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:264:75:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  264 |     void jointStateCallback([01;35m[Kconst sensor_msgs::msg::JointState::SharedPtr msg[m[K)
+      |                             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:[m[K In member function ‘[01m[Kvoid VisualServoInit::ConvertCameraVelToBaseVel(const std::string&, const std::string&)[m[K’:
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:571:81:[m[K [01;31m[Kerror: [m[K‘[01m[Kω_base[m[K’ was not declared in this scope
+  571 |             Eigen::Vector3d angular_velocity = rotationMatWorldCam * v_camera + [01;31m[Kω_base[m[K.cross(arrWorldCamTrans);
+      |                                                                                 [01;31m[K^~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.h:48[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:42[m[K,
+                 from [01m[K/home/p/ws_demo2/src/ibvs/include/ibvs.h:18[m[K,
+                 from [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:1[m[K:
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:582:85:[m[K [01;31m[Kerror: [m[K‘[01m[Ke[m[K’ was not declared in this scope; did you mean ‘[01m[Kex[m[K’?
+  582 |             RCLCPP_WARN(this->get_logger(), "相机速度转换为机器人末端速度失败: %s", [01;31m[Ke[m[K.what());
+      |                                                                                     [01;31m[K^[m[K
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:[m[K In member function ‘[01m[Kvoid VisualServoInit::convertBaseVelToJointVel()[m[K’:
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:595:61:[m[K [01;31m[Kerror: [m[K‘[01m[Ke[m[K’ was not declared in this scope
+  595 |         RCLCPP_INFO(this->get_logger(), "伪逆计算成功: %s", [01;31m[Ke[m[K.what());
+      |                                                             [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/ibvs.dir/build.make:79：CMakeFiles/ibvs.dir/src/ibvs.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:153：CMakeFiles/ibvs.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

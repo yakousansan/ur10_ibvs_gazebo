@@ -1,0 +1,21 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/ik.dir/src/ik.cpp.o[0m
+[100%] [32m[1mLinking CXX executable ik[0m
+[100%] Built target ik
+-- Install configuration: ""
+-- Installing: /home/p/ws_demo2/install/ik/lib/ik/ik
+-- Set non-toolchain portion of runtime path of "/home/p/ws_demo2/install/ik/lib/ik/ik" to ""
+-- Installing: /home/p/ws_demo2/install/ik/share/ament_index/resource_index/package_run_dependencies/ik
+-- Installing: /home/p/ws_demo2/install/ik/share/ament_index/resource_index/parent_prefix_path/ik
+-- Up-to-date: /home/p/ws_demo2/install/ik/share/ik/environment/ament_prefix_path.sh
+-- Installing: /home/p/ws_demo2/install/ik/share/ik/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/p/ws_demo2/install/ik/share/ik/environment/path.sh
+-- Installing: /home/p/ws_demo2/install/ik/share/ik/environment/path.dsv
+-- Up-to-date: /home/p/ws_demo2/install/ik/share/ik/local_setup.bash
+-- Up-to-date: /home/p/ws_demo2/install/ik/share/ik/local_setup.sh
+-- Up-to-date: /home/p/ws_demo2/install/ik/share/ik/local_setup.zsh
+-- Installing: /home/p/ws_demo2/install/ik/share/ik/local_setup.dsv
+-- Installing: /home/p/ws_demo2/install/ik/share/ik/package.dsv
+-- Up-to-date: /home/p/ws_demo2/install/ik/share/ament_index/resource_index/packages/ik
+-- Up-to-date: /home/p/ws_demo2/install/ik/share/ik/cmake/ikConfig.cmake
+-- Up-to-date: /home/p/ws_demo2/install/ik/share/ik/cmake/ikConfig-version.cmake
+-- Installing: /home/p/ws_demo2/install/ik/share/ik/package.xml

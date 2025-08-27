@@ -3,6 +3,7 @@
 
 CMakeFiles/ibvs.dir/src/ibvs.cpp.o
  /home/p/ws_demo2/src/ibvs/src/ibvs.cpp
+ /home/p/ws_demo2/src/ibvs/include/ibvs.h
  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp
  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp
  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp

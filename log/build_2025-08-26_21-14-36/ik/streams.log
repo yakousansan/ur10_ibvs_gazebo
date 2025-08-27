@@ -1,0 +1,107 @@
+[0.025s] Invoking command in '/home/p/ws_demo2/build/ik': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --build /home/p/ws_demo2/build/ik -- -j16 -l16
+[0.038s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.065s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter
+[0.123s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.151s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.154s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.159s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.171s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.187s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.226s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.229s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.345s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.419s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.453s] -- Found std_srvs: 4.9.0 (/opt/ros/humble/share/std_srvs/cmake)
+[0.464s] -- pinocchio_default FOUND. pinocchio_default at /opt/ros/humble/lib/x86_64-linux-gnu/libpinocchio_default.so
+[0.465s] -- pinocchio_parsers FOUND. pinocchio_parsers at /opt/ros/humble/lib/x86_64-linux-gnu/libpinocchio_parsers.so
+[0.466s] -- boost_filesystem FOUND. boost_filesystem at /lib/x86_64-linux-gnu/libboost_filesystem.so
+[0.467s] -- boost_serialization FOUND. boost_serialization at /lib/x86_64-linux-gnu/libboost_serialization.so
+[0.468s] -- boost_system FOUND. boost_system at /lib/x86_64-linux-gnu/libboost_system.so
+[0.471s] [33mCMake Warning (dev) at /usr/local/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package):
+[0.471s]   Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+[0.471s]   --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+[0.471s]   set the policy and suppress this warning.
+[0.471s] 
+[0.471s] Call Stack (most recent call first):
+[0.471s]   /opt/ros/humble/lib/x86_64-linux-gnu/cmake/pinocchio/pinocchioConfig.cmake:160 (find_dependency)
+[0.471s]   CMakeLists.txt:16 (find_package)
+[0.471s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.471s] [0m
+[0.476s] -- Found Boost: /usr/include (found version "1.74.0") found components: filesystem serialization system
+[0.478s] -- eigenpy FOUND. eigenpy at /opt/ros/humble/lib/x86_64-linux-gnu/libeigenpy.so
+[0.498s] -- Checking for NumPy
+[0.678s] --   NUMPY_INCLUDE_DIRS=/usr/lib/python3/dist-packages/numpy/core/include
+[0.764s] --   NUMPY_VERSION=1.21.5
+[0.962s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter Development.Module NumPy
+[0.963s] -- PythonLibraryDirs: 
+[0.963s] -- PythonLibVersionString: 3.10.12
+[0.979s] -- Python site lib: lib/python3.10/site-packages
+[0.979s] -- Python include dirs: /usr/include/python3.10
+[1.014s] -- Checking for NumPy
+[1.099s] --   NUMPY_INCLUDE_DIRS=/usr/lib/python3/dist-packages/numpy/core/include
+[1.186s] --   NUMPY_VERSION=1.21.5
+[1.186s] -- NumPy include dir: /usr/lib/python3/dist-packages/numpy/core/include
+[1.186s] [33mCMake Warning (dev) at /opt/ros/humble/lib/x86_64-linux-gnu/cmake/eigenpy/boost.cmake:148 (find_package):
+[1.186s]   Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+[1.186s]   --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+[1.186s]   set the policy and suppress this warning.
+[1.186s] 
+[1.186s] Call Stack (most recent call first):
+[1.186s]   /opt/ros/humble/lib/x86_64-linux-gnu/cmake/eigenpy/eigenpyConfig.cmake:149 (SEARCH_FOR_BOOST_PYTHON)
+[1.186s]   /usr/local/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)
+[1.187s]   /opt/ros/humble/lib/x86_64-linux-gnu/cmake/pinocchio/pinocchioConfig.cmake:161 (find_dependency)
+[1.187s]   CMakeLists.txt:16 (find_package)
+[1.187s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.187s] [0m
+[1.191s] -- Found Boost: /usr/include (found version "1.74.0") found components: python310
+[1.473s] -- Default C++ standard: 201703
+[1.474s] -- C++ standard sufficient: Minimal required 11, currently defined: 17
+[1.474s] -- CMAKE_CXX_STANDARD was not set: automatically set to currently defined standard 17
+[1.475s] -- hpp-fcl FOUND. hpp-fcl at /opt/ros/humble/lib/x86_64-linux-gnu/libhpp-fcl.so
+[1.476s] [33mCMake Warning (dev) at /usr/local/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package):
+[1.476s]   Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+[1.476s]   --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+[1.476s]   set the policy and suppress this warning.
+[1.476s] 
+[1.476s] Call Stack (most recent call first):
+[1.476s]   /opt/ros/humble/lib/x86_64-linux-gnu/cmake/hpp-fcl/hpp-fclConfig.cmake:154 (find_dependency)
+[1.476s]   /usr/local/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)
+[1.476s]   /opt/ros/humble/lib/x86_64-linux-gnu/cmake/pinocchio/pinocchioConfig.cmake:163 (find_dependency)
+[1.476s]   CMakeLists.txt:16 (find_package)
+[1.476s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.476s] [0m
+[1.482s] -- Found Boost: /usr/include (found version "1.74.0") found components: chrono serialization filesystem
+[1.484s] -- C++ standard sufficient: Minimal required 11, currently defined: 17
+[1.485s] -- C++ standard sufficient: Minimal required 11, currently defined: 17
+[1.496s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.553s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.553s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/p/ws_demo2/src/ik/include>
+[1.553s] -- Configured cppcheck exclude dirs and/or files: 
+[1.553s] -- Added test 'lint_cmake' to check CMake code style
+[1.554s] -- Added test 'uncrustify' to check C / C++ code style
+[1.554s] -- Configured uncrustify additional arguments: 
+[1.554s] -- Added test 'xmllint' to check XML markup files
+[1.555s] -- Configuring done (1.5s)
+[1.566s] -- Generating done (0.0s)
+[1.568s] -- Build files have been written to: /home/p/ws_demo2/build/ik
+[1.605s] [100%] Built target ik
+[1.608s] Invoked command in '/home/p/ws_demo2/build/ik' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --build /home/p/ws_demo2/build/ik -- -j16 -l16
+[1.610s] Invoking command in '/home/p/ws_demo2/build/ik': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --install /home/p/ws_demo2/build/ik
+[1.612s] -- Install configuration: ""
+[1.612s] -- Up-to-date: /home/p/ws_demo2/install/ik/lib/ik/ik
+[1.612s] -- Installing: /home/p/ws_demo2/install/ik/share/ament_index/resource_index/package_run_dependencies/ik
+[1.612s] -- Up-to-date: /home/p/ws_demo2/install/ik/share/ament_index/resource_index/parent_prefix_path/ik
+[1.612s] -- Up-to-date: /home/p/ws_demo2/install/ik/share/ik/environment/ament_prefix_path.sh
+[1.612s] -- Installing: /home/p/ws_demo2/install/ik/share/ik/environment/ament_prefix_path.dsv
+[1.613s] -- Up-to-date: /home/p/ws_demo2/install/ik/share/ik/environment/path.sh
+[1.613s] -- Installing: /home/p/ws_demo2/install/ik/share/ik/environment/path.dsv
+[1.613s] -- Up-to-date: /home/p/ws_demo2/install/ik/share/ik/local_setup.bash
+[1.613s] -- Up-to-date: /home/p/ws_demo2/install/ik/share/ik/local_setup.sh
+[1.613s] -- Up-to-date: /home/p/ws_demo2/install/ik/share/ik/local_setup.zsh
+[1.613s] -- Installing: /home/p/ws_demo2/install/ik/share/ik/local_setup.dsv
+[1.613s] -- Installing: /home/p/ws_demo2/install/ik/share/ik/package.dsv
+[1.613s] -- Up-to-date: /home/p/ws_demo2/install/ik/share/ament_index/resource_index/packages/ik
+[1.613s] -- Up-to-date: /home/p/ws_demo2/install/ik/share/ik/cmake/ikConfig.cmake
+[1.613s] -- Up-to-date: /home/p/ws_demo2/install/ik/share/ik/cmake/ikConfig-version.cmake
+[1.613s] -- Installing: /home/p/ws_demo2/install/ik/share/ik/package.xml
+[1.615s] Invoked command in '/home/p/ws_demo2/build/ik' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --install /home/p/ws_demo2/build/ik

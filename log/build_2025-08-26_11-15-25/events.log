@@ -1,0 +1,272 @@
+[0.000000] (-) TimerEvent: {}
+[0.000296] (-) JobUnselected: {'identifier': 'camera_image'}
+[0.000430] (-) JobUnselected: {'identifier': 'ibvs'}
+[0.000512] (-) JobUnselected: {'identifier': 'service_interfaces'}
+[0.000527] (-) JobUnselected: {'identifier': 'ur_description'}
+[0.000541] (ik) JobQueued: {'identifier': 'ik', 'dependencies': OrderedDict([('service_interfaces', '/home/p/ws_demo2/install/service_interfaces')])}
+[0.000558] (ik) JobStarted: {'identifier': 'ik'}
+[0.014028] (ik) JobProgress: {'identifier': 'ik', 'progress': 'cmake'}
+[0.014619] (ik) JobProgress: {'identifier': 'ik', 'progress': 'build'}
+[0.015323] (ik) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/home/p/ws_demo2/build/ik', '--', '-j16', '-l16'], 'cwd': '/home/p/ws_demo2/build/ik', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LIBRARY_PATH', '/home/p/TensorRT_ws/TensorRT-8.6.1.6/lib:'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'p'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/p/ws_demo2/install/service_interfaces/lib:/home/p/TensorRT_ws/TensorRT-8.6.1.6/lib:/usr/local/cuda-11.8/lib64:/home/p/ws_moveit2/install/pilz_industrial_motion_planner_testutils/lib:/home/p/ws_moveit2/install/pilz_industrial_motion_planner/lib:/home/p/ws_moveit2/install/moveit_visual_tools/lib:/home/p/ws_moveit2/install/moveit_task_constructor_visualization/lib:/home/p/ws_moveit2/install/moveit_task_constructor_demo/lib:/home/p/ws_moveit2/install/moveit_task_constructor_capabilities/lib:/home/p/ws_moveit2/install/moveit_task_constructor_core/lib:/home/p/ws_moveit2/install/moveit_ros_control_interface/lib:/home/p/ws_moveit2/install/moveit_simple_controller_manager/lib:/home/p/ws_moveit2/install/moveit_setup_assistant/lib:/home/p/ws_moveit2/install/moveit_setup_srdf_plugins/lib:/home/p/ws_moveit2/install/moveit_setup_core_plugins/lib:/home/p/ws_moveit2/install/moveit_setup_controllers/lib:/home/p/ws_moveit2/install/moveit_setup_app_plugins/lib:/home/p/ws_moveit2/install/moveit_setup_framework/lib:/home/p/ws_moveit2/install/moveit_servo/lib:/home/p/ws_moveit2/install/moveit_ros_visualization/lib:/home/p/ws_moveit2/install/moveit_hybrid_planning/lib:/home/p/ws_moveit2/install/moveit_ros_planning_interface/lib:/home/p/ws_moveit2/install/moveit_ros_benchmarks/lib:/home/p/ws_moveit2/install/moveit_ros_warehouse/lib:/home/p/ws_moveit2/install/moveit_ros_robot_interaction/lib:/home/p/ws_moveit2/install/moveit_ros_perception/lib:/home/p/ws_moveit2/install/moveit_ros_move_group/lib:/home/p/ws_moveit2/install/moveit_planners_ompl/lib:/home/p/ws_moveit2/install/moveit_ros_planning/lib:/home/p/ws_moveit2/install/moveit_ros_occupancy_map_monitor/lib:/home/p/ws_moveit2/install/moveit_resources_prbt_ikfast_manipulator_plugin/lib:/home/p/ws_moveit2/install/moveit_planners_chomp/lib:/home/p/ws_moveit2/install/moveit_kinematics/lib:/home/p/ws_moveit2/install/moveit_chomp_optimizer_adapter/lib:/home/p/ws_moveit2/install/chomp_motion_planner/lib:/home/p/ws_moveit2/install/moveit_core/lib:/home/p/ws_moveit2/install/srdfdom/lib:/home/p/ws_moveit2/install/rviz_marker_tools/lib:/home/p/ws_moveit2/install/rosparam_shortcuts/lib:/home/p/ws_moveit2/install/moveit_task_constructor_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins'), ('HOME', '/home/p'), ('DESKTOP_SESSION', 'ubuntu'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1571'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=7dfbb6f56c29e2dfc8567d3c68ad135f'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/p/ws_demo2/install:/home/p/ws_demo1/install:/home/p/demo_ws2/install:/home/p/ws_moveit2/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'p'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo/../../share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/home/p/TensorRT_ws/TensorRT-8.6.1.6/bin:/usr/local/cuda-11.8/bin:/opt/qt/6.5.3/gcc_64/bin:/home/p/ws_moveit2/install/moveit_core/bin:/opt/ros/humble/bin:/usr/local/bin:/home/p/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/p:@/tmp/.ICE-unix/1571,unix/p:/tmp/.ICE-unix/1571'), ('GDM_LANG', 'zh_CN'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a3f44aed_dcbe_48ad_a4be_5d75078cc4c7'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/home/p/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.95'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/p'), ('AMENT_PREFIX_PATH', '/home/p/ws_moveit2/install/pilz_industrial_motion_planner_testutils:/home/p/ws_moveit2/install/moveit_runtime:/home/p/ws_moveit2/install/moveit2_tutorials:/home/p/ws_moveit2/install/moveit:/home/p/ws_moveit2/install/moveit_planners:/home/p/ws_moveit2/install/pilz_industrial_motion_planner:/home/p/ws_moveit2/install/moveit_visual_tools:/home/p/ws_moveit2/install/moveit_task_constructor_visualization:/home/p/ws_moveit2/install/moveit_task_constructor_demo:/home/p/ws_moveit2/install/moveit_task_constructor_capabilities:/home/p/ws_moveit2/install/moveit_task_constructor_core:/home/p/ws_moveit2/install/moveit_ros_control_interface:/home/p/ws_moveit2/install/moveit_plugins:/home/p/ws_moveit2/install/moveit_simple_controller_manager:/home/p/ws_moveit2/install/moveit_setup_assistant:/home/p/ws_moveit2/install/moveit_setup_srdf_plugins:/home/p/ws_moveit2/install/moveit_setup_core_plugins:/home/p/ws_moveit2/install/moveit_setup_controllers:/home/p/ws_moveit2/install/moveit_setup_app_plugins:/home/p/ws_moveit2/install/moveit_setup_framework:/home/p/ws_moveit2/install/moveit_servo:/home/p/ws_moveit2/install/moveit_ros:/home/p/ws_moveit2/install/moveit_ros_visualization:/home/p/ws_moveit2/install/moveit_hybrid_planning:/home/p/ws_moveit2/install/moveit_ros_planning_interface:/home/p/ws_moveit2/install/moveit_ros_benchmarks:/home/p/ws_moveit2/install/moveit_ros_warehouse:/home/p/ws_moveit2/install/moveit_ros_robot_interaction:/home/p/ws_moveit2/install/moveit_ros_perception:/home/p/ws_moveit2/install/moveit_resources_prbt_pg70_support:/home/p/ws_moveit2/install/moveit_resources_prbt_moveit_config:/home/p/ws_moveit2/install/moveit_ros_move_group:/home/p/ws_moveit2/install/moveit_planners_ompl:/home/p/ws_moveit2/install/moveit_ros_planning:/home/p/ws_moveit2/install/moveit_ros_occupancy_map_monitor:/home/p/ws_moveit2/install/moveit_resources_prbt_ikfast_manipulator_plugin:/home/p/ws_moveit2/install/moveit_planners_chomp:/home/p/ws_moveit2/install/moveit_kinematics:/home/p/ws_moveit2/install/moveit_chomp_optimizer_adapter:/home/p/ws_moveit2/install/chomp_motion_planner:/home/p/ws_moveit2/install/moveit_core:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/srdfdom:/home/p/ws_moveit2/install/rviz_marker_tools:/home/p/ws_moveit2/install/rosparam_shortcuts:/home/p/ws_moveit2/install/moveit_task_constructor_msgs:/home/p/ws_moveit2/install/moveit_resources_prbt_support:/home/p/ws_moveit2/install/moveit_resources:/home/p/ws_moveit2/install/moveit_resources_pr2_description:/home/p/ws_moveit2/install/moveit_resources_panda_moveit_config:/home/p/ws_moveit2/install/moveit_resources_panda_description:/home/p/ws_moveit2/install/moveit_resources_fanuc_moveit_config:/home/p/ws_moveit2/install/moveit_resources_fanuc_description:/home/p/ws_moveit2/install/moveit_common:/home/p/ws_moveit2/install/launch_param_builder:/home/p/ws_demo1/install/ibvs_test:/home/p/demo_ws2/install/ur20_moveit_config:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/ur20_description:/home/p/demo_ws2/install/robotiq_description:/home/p/demo_ws2/install/arm_joint_control:/home/p/ws_demo2/install/ur_description:/home/p/ws_demo2/install/ik:/home/p/ws_demo2/install/ibvs:/home/p/ws_demo2/install/service_interfaces:/home/p/ws_demo2/install/camera_image:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('VISP_DIR', '/build'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CMAKE_MODULE_PATH', '/home/p/ws_moveit2/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo/../../share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/p/ws_demo2/build/ik'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=7dfbb6f56c29e2dfc8567d3c68ad135f'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/p/ws_moveit2/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages:/home/p/ws_moveit2/install/moveit_configs_utils/lib/python3.10/site-packages:/home/p/ws_moveit2/install/srdfdom/local/lib/python3.10/dist-packages:/home/p/ws_moveit2/install/moveit_task_constructor_msgs/local/lib/python3.10/dist-packages:/home/p/ws_moveit2/install/launch_param_builder/lib/python3.10/site-packages:/home/p/demo_ws2/install/ur20_joint_control/lib/python3.10/site-packages:/home/p/demo_ws2/install/arm_joint_control/lib/python3.10/site-packages:/home/p/ws_demo2/install/service_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/p/ws_demo2/install/service_interfaces:/home/p/ws_moveit2/install/pilz_industrial_motion_planner_testutils:/home/p/ws_moveit2/install/moveit_runtime:/home/p/ws_moveit2/install/moveit2_tutorials:/home/p/ws_moveit2/install/moveit:/home/p/ws_moveit2/install/moveit_planners:/home/p/ws_moveit2/install/pilz_industrial_motion_planner:/home/p/ws_moveit2/install/moveit_visual_tools:/home/p/ws_moveit2/install/moveit_task_constructor_visualization:/home/p/ws_moveit2/install/moveit_task_constructor_demo:/home/p/ws_moveit2/install/moveit_task_constructor_capabilities:/home/p/ws_moveit2/install/moveit_task_constructor_core:/home/p/ws_moveit2/install/moveit_ros_control_interface:/home/p/ws_moveit2/install/moveit_plugins:/home/p/ws_moveit2/install/moveit_simple_controller_manager:/home/p/ws_moveit2/install/moveit_setup_assistant:/home/p/ws_moveit2/install/moveit_setup_srdf_plugins:/home/p/ws_moveit2/install/moveit_setup_core_plugins:/home/p/ws_moveit2/install/moveit_setup_controllers:/home/p/ws_moveit2/install/moveit_setup_app_plugins:/home/p/ws_moveit2/install/moveit_setup_framework:/home/p/ws_moveit2/install/moveit_servo:/home/p/ws_moveit2/install/moveit_ros:/home/p/ws_moveit2/install/moveit_ros_visualization:/home/p/ws_moveit2/install/moveit_hybrid_planning:/home/p/ws_moveit2/install/moveit_ros_planning_interface:/home/p/ws_moveit2/install/moveit_ros_benchmarks:/home/p/ws_moveit2/install/moveit_ros_warehouse:/home/p/ws_moveit2/install/moveit_ros_robot_interaction:/home/p/ws_moveit2/install/moveit_ros_perception:/home/p/ws_moveit2/install/moveit_resources_prbt_pg70_support:/home/p/ws_moveit2/install/moveit_resources_prbt_moveit_config:/home/p/ws_moveit2/install/moveit_ros_move_group:/home/p/ws_moveit2/install/moveit_planners_ompl:/home/p/ws_moveit2/install/moveit_ros_planning:/home/p/ws_moveit2/install/moveit_ros_occupancy_map_monitor:/home/p/ws_moveit2/install/moveit_resources_prbt_ikfast_manipulator_plugin:/home/p/ws_moveit2/install/moveit_planners_chomp:/home/p/ws_moveit2/install/moveit_kinematics:/home/p/ws_moveit2/install/moveit_chomp_optimizer_adapter:/home/p/ws_moveit2/install/chomp_motion_planner:/home/p/ws_moveit2/install/moveit_core:/home/p/ws_moveit2/install/srdfdom:/home/p/ws_moveit2/install/rviz_marker_tools:/home/p/ws_moveit2/install/rosparam_shortcuts:/home/p/ws_moveit2/install/moveit_task_constructor_msgs:/home/p/ws_moveit2/install/moveit_resources_prbt_support:/home/p/ws_moveit2/install/moveit_resources:/home/p/ws_moveit2/install/moveit_resources_pr2_description:/home/p/ws_moveit2/install/moveit_resources_panda_moveit_config:/home/p/ws_moveit2/install/moveit_resources_panda_description:/home/p/ws_moveit2/install/moveit_resources_fanuc_moveit_config:/home/p/ws_moveit2/install/moveit_resources_fanuc_description:/home/p/ws_moveit2/install/moveit_common:/home/p/ws_demo1/install/ibvs_test:/home/p/demo_ws2/install/ur20_moveit_config:/home/p/demo_ws2/install/ur20_description:/home/p/demo_ws2/install/robotiq_description:/home/p/ws_demo2/install/ur_description:/home/p/ws_demo2/install/ik:/home/p/ws_demo2/install/ibvs:/home/p/ws_demo2/install/camera_image:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble')]), 'shell': False}
+[0.049503] (ik) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/ik.dir/src/ik.cpp.o\x1b[0m\n'}
+[0.099869] (-) TimerEvent: {}
+[0.200066] (-) TimerEvent: {}
+[0.300261] (-) TimerEvent: {}
+[0.400465] (-) TimerEvent: {}
+[0.500875] (-) TimerEvent: {}
+[0.601075] (-) TimerEvent: {}
+[0.701274] (-) TimerEvent: {}
+[0.801533] (-) TimerEvent: {}
+[0.901727] (-) TimerEvent: {}
+[1.001924] (-) TimerEvent: {}
+[1.102123] (-) TimerEvent: {}
+[1.202369] (-) TimerEvent: {}
+[1.302593] (-) TimerEvent: {}
+[1.402807] (-) TimerEvent: {}
+[1.503042] (-) TimerEvent: {}
+[1.603262] (-) TimerEvent: {}
+[1.703518] (-) TimerEvent: {}
+[1.803715] (-) TimerEvent: {}
+[1.903914] (-) TimerEvent: {}
+[2.004113] (-) TimerEvent: {}
+[2.104344] (-) TimerEvent: {}
+[2.204576] (-) TimerEvent: {}
+[2.304773] (-) TimerEvent: {}
+[2.405000] (-) TimerEvent: {}
+[2.505197] (-) TimerEvent: {}
+[2.605390] (-) TimerEvent: {}
+[2.705590] (-) TimerEvent: {}
+[2.805788] (-) TimerEvent: {}
+[2.905986] (-) TimerEvent: {}
+[3.006183] (-) TimerEvent: {}
+[3.106385] (-) TimerEvent: {}
+[3.206582] (-) TimerEvent: {}
+[3.306809] (-) TimerEvent: {}
+[3.407042] (-) TimerEvent: {}
+[3.507251] (-) TimerEvent: {}
+[3.607514] (-) TimerEvent: {}
+[3.707711] (-) TimerEvent: {}
+[3.807949] (-) TimerEvent: {}
+[3.818001] (ik) StderrLine: {'line': b'\x1b[01m\x1b[K/home/p/ws_demo2/src/ik/src/ik.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.818125] (ik) StderrLine: {'line': b'\x1b[01m\x1b[K/home/p/ws_demo2/src/ik/src/ik.cpp:24:31:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kpinocchio::JointIndex\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.818178] (ik) StderrLine: {'line': b'   24 |   for (JointIndex idx= 1; \x1b[01;35m\x1b[Kidx < model.njoints\x1b[m\x1b[K; ++idx){\n'}
+[3.818223] (ik) StderrLine: {'line': b'      |                           \x1b[01;35m\x1b[K~~~~^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.827205] (ik) StderrLine: {'line': b'\x1b[01m\x1b[K/home/p/ws_demo2/src/ik/src/ik.cpp:8:14:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kargc\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.827286] (ik) StderrLine: {'line': b'    8 | int main(\x1b[01;35m\x1b[Kint argc\x1b[m\x1b[K, char ** argv)\n'}
+[3.827333] (ik) StderrLine: {'line': b'      |          \x1b[01;35m\x1b[K~~~~^~~~\x1b[m\x1b[K\n'}
+[3.827385] (ik) StderrLine: {'line': b'\x1b[01m\x1b[K/home/p/ws_demo2/src/ik/src/ik.cpp:8:28:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kargv\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.827431] (ik) StderrLine: {'line': b'    8 | int main(int argc, \x1b[01;35m\x1b[Kchar ** argv\x1b[m\x1b[K)\n'}
+[3.827472] (ik) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K~~~~~~~~^~~~\x1b[m\x1b[K\n'}
+[3.908033] (-) TimerEvent: {}
+[4.008233] (-) TimerEvent: {}
+[4.108504] (-) TimerEvent: {}
+[4.208721] (-) TimerEvent: {}
+[4.308961] (-) TimerEvent: {}
+[4.409204] (-) TimerEvent: {}
+[4.509449] (-) TimerEvent: {}
+[4.609663] (-) TimerEvent: {}
+[4.709883] (-) TimerEvent: {}
+[4.810292] (-) TimerEvent: {}
+[4.910593] (-) TimerEvent: {}
+[5.010862] (-) TimerEvent: {}
+[5.111102] (-) TimerEvent: {}
+[5.211344] (-) TimerEvent: {}
+[5.311591] (-) TimerEvent: {}
+[5.411851] (-) TimerEvent: {}
+[5.512095] (-) TimerEvent: {}
+[5.612385] (-) TimerEvent: {}
+[5.712654] (-) TimerEvent: {}
+[5.812922] (-) TimerEvent: {}
+[5.913146] (-) TimerEvent: {}
+[6.013387] (-) TimerEvent: {}
+[6.113598] (-) TimerEvent: {}
+[6.213827] (-) TimerEvent: {}
+[6.314053] (-) TimerEvent: {}
+[6.414282] (-) TimerEvent: {}
+[6.514605] (-) TimerEvent: {}
+[6.614832] (-) TimerEvent: {}
+[6.715056] (-) TimerEvent: {}
+[6.815288] (-) TimerEvent: {}
+[6.915526] (-) TimerEvent: {}
+[7.015805] (-) TimerEvent: {}
+[7.116035] (-) TimerEvent: {}
+[7.216261] (-) TimerEvent: {}
+[7.316571] (-) TimerEvent: {}
+[7.416808] (-) TimerEvent: {}
+[7.517034] (-) TimerEvent: {}
+[7.617272] (-) TimerEvent: {}
+[7.717546] (-) TimerEvent: {}
+[7.817835] (-) TimerEvent: {}
+[7.918117] (-) TimerEvent: {}
+[8.018390] (-) TimerEvent: {}
+[8.118680] (-) TimerEvent: {}
+[8.218928] (-) TimerEvent: {}
+[8.319183] (-) TimerEvent: {}
+[8.419431] (-) TimerEvent: {}
+[8.519698] (-) TimerEvent: {}
+[8.619945] (-) TimerEvent: {}
+[8.720260] (-) TimerEvent: {}
+[8.820513] (-) TimerEvent: {}
+[8.928276] (-) TimerEvent: {}
+[9.028605] (-) TimerEvent: {}
+[9.128826] (-) TimerEvent: {}
+[9.229045] (-) TimerEvent: {}
+[9.329270] (-) TimerEvent: {}
+[9.429535] (-) TimerEvent: {}
+[9.529759] (-) TimerEvent: {}
+[9.629981] (-) TimerEvent: {}
+[9.730224] (-) TimerEvent: {}
+[9.830488] (-) TimerEvent: {}
+[9.930737] (-) TimerEvent: {}
+[10.030969] (-) TimerEvent: {}
+[10.131189] (-) TimerEvent: {}
+[10.231451] (-) TimerEvent: {}
+[10.331673] (-) TimerEvent: {}
+[10.431894] (-) TimerEvent: {}
+[10.532185] (-) TimerEvent: {}
+[10.632405] (-) TimerEvent: {}
+[10.732626] (-) TimerEvent: {}
+[10.832850] (-) TimerEvent: {}
+[10.933075] (-) TimerEvent: {}
+[11.033304] (-) TimerEvent: {}
+[11.133599] (-) TimerEvent: {}
+[11.233822] (-) TimerEvent: {}
+[11.334040] (-) TimerEvent: {}
+[11.389681] (ik) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/pinocchio/parsers/urdf.hpp:351\x1b[m\x1b[K,\n'}
+[11.389807] (ik) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/p/ws_demo2/src/ik/src/ik.cpp:1\x1b[m\x1b[K:\n'}
+[11.389858] (ik) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/pinocchio/parsers/urdf/model.hxx:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kpinocchio::JointIndex pinocchio::urdf::details::UrdfVisitor<Scalar, Options, JointCollectionTpl>::addMimicJoint(const Frame&, const SE3&, const std::string&, const VectorConstRef&, const VectorConstRef&, const VectorConstRef&, const VectorConstRef&, const VectorConstRef&, const VectorConstRef&, const MimicInfo_&) [with TypeX = pinocchio::JointModelRevoluteTpl<double, 0, 0>; TypeY = pinocchio::JointModelRevoluteTpl<double, 0, 1>; TypeZ = pinocchio::JointModelRevoluteTpl<double, 0, 2>; TypeUnaligned = pinocchio::JointModelRevoluteUnalignedTpl<double>; Scalar = double; int Options = 0; JointCollectionTpl = pinocchio::JointCollectionDefaultTpl]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[11.389919] (ik) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/pinocchio/parsers/urdf/model.hxx:543:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcontrol reaches end of non-void function [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type\x07-Wreturn-type\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[11.389967] (ik) StderrLine: {'line': b'  543 |         \x1b[01;35m\x1b[K}\x1b[m\x1b[K\n'}
+[11.390012] (ik) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[11.394658] (ik) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/pinocchio/parsers/urdf/model.hxx:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kpinocchio::JointIndex pinocchio::urdf::details::UrdfVisitor<Scalar, Options, JointCollectionTpl>::addMimicJoint(const Frame&, const SE3&, const std::string&, const VectorConstRef&, const VectorConstRef&, const VectorConstRef&, const VectorConstRef&, const VectorConstRef&, const VectorConstRef&, const MimicInfo_&) [with TypeX = pinocchio::JointModelPrismaticTpl<double, 0, 0>; TypeY = pinocchio::JointModelPrismaticTpl<double, 0, 1>; TypeZ = pinocchio::JointModelPrismaticTpl<double, 0, 2>; TypeUnaligned = pinocchio::JointModelPrismaticUnalignedTpl<double>; Scalar = double; int Options = 0; JointCollectionTpl = pinocchio::JointCollectionDefaultTpl]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[11.394734] (ik) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/pinocchio/parsers/urdf/model.hxx:543:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcontrol reaches end of non-void function [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type\x07-Wreturn-type\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[11.394785] (ik) StderrLine: {'line': b'  543 |         \x1b[01;35m\x1b[K}\x1b[m\x1b[K\n'}
+[11.394831] (ik) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[11.434160] (-) TimerEvent: {}
+[11.534389] (-) TimerEvent: {}
+[11.634611] (-) TimerEvent: {}
+[11.734833] (-) TimerEvent: {}
+[11.835055] (-) TimerEvent: {}
+[11.935283] (-) TimerEvent: {}
+[12.035547] (-) TimerEvent: {}
+[12.135769] (-) TimerEvent: {}
+[12.236004] (-) TimerEvent: {}
+[12.336230] (-) TimerEvent: {}
+[12.436460] (-) TimerEvent: {}
+[12.536688] (-) TimerEvent: {}
+[12.636910] (-) TimerEvent: {}
+[12.737134] (-) TimerEvent: {}
+[12.837365] (-) TimerEvent: {}
+[12.937717] (-) TimerEvent: {}
+[13.037940] (-) TimerEvent: {}
+[13.138189] (-) TimerEvent: {}
+[13.238472] (-) TimerEvent: {}
+[13.338755] (-) TimerEvent: {}
+[13.438976] (-) TimerEvent: {}
+[13.539204] (-) TimerEvent: {}
+[13.639453] (-) TimerEvent: {}
+[13.739666] (-) TimerEvent: {}
+[13.840052] (-) TimerEvent: {}
+[13.941289] (-) TimerEvent: {}
+[14.041522] (-) TimerEvent: {}
+[14.141733] (-) TimerEvent: {}
+[14.241947] (-) TimerEvent: {}
+[14.342165] (-) TimerEvent: {}
+[14.442386] (-) TimerEvent: {}
+[14.542656] (-) TimerEvent: {}
+[14.642902] (-) TimerEvent: {}
+[14.743192] (-) TimerEvent: {}
+[14.843422] (-) TimerEvent: {}
+[14.943648] (-) TimerEvent: {}
+[15.043862] (-) TimerEvent: {}
+[15.144106] (-) TimerEvent: {}
+[15.244318] (-) TimerEvent: {}
+[15.344661] (-) TimerEvent: {}
+[15.444877] (-) TimerEvent: {}
+[15.545091] (-) TimerEvent: {}
+[15.645304] (-) TimerEvent: {}
+[15.745563] (-) TimerEvent: {}
+[15.845778] (-) TimerEvent: {}
+[15.945995] (-) TimerEvent: {}
+[16.046210] (-) TimerEvent: {}
+[16.146485] (-) TimerEvent: {}
+[16.246724] (-) TimerEvent: {}
+[16.346936] (-) TimerEvent: {}
+[16.447149] (-) TimerEvent: {}
+[16.547367] (-) TimerEvent: {}
+[16.647667] (-) TimerEvent: {}
+[16.747881] (-) TimerEvent: {}
+[16.848092] (-) TimerEvent: {}
+[16.948316] (-) TimerEvent: {}
+[17.048650] (-) TimerEvent: {}
+[17.148882] (-) TimerEvent: {}
+[17.249096] (-) TimerEvent: {}
+[17.349307] (-) TimerEvent: {}
+[17.449569] (-) TimerEvent: {}
+[17.549784] (-) TimerEvent: {}
+[17.649995] (-) TimerEvent: {}
+[17.750237] (-) TimerEvent: {}
+[17.850475] (-) TimerEvent: {}
+[17.950725] (-) TimerEvent: {}
+[18.050963] (-) TimerEvent: {}
+[18.151195] (-) TimerEvent: {}
+[18.251408] (-) TimerEvent: {}
+[18.351621] (-) TimerEvent: {}
+[18.451835] (-) TimerEvent: {}
+[18.552071] (-) TimerEvent: {}
+[18.652285] (-) TimerEvent: {}
+[18.752582] (-) TimerEvent: {}
+[18.852797] (-) TimerEvent: {}
+[18.953010] (-) TimerEvent: {}
+[19.053228] (-) TimerEvent: {}
+[19.153492] (-) TimerEvent: {}
+[19.253708] (-) TimerEvent: {}
+[19.354040] (-) TimerEvent: {}
+[19.454252] (-) TimerEvent: {}
+[19.554510] (-) TimerEvent: {}
+[19.654724] (-) TimerEvent: {}
+[19.754987] (-) TimerEvent: {}
+[19.855290] (-) TimerEvent: {}
+[19.955568] (-) TimerEvent: {}
+[20.055831] (-) TimerEvent: {}
+[20.156056] (-) TimerEvent: {}
+[20.256299] (-) TimerEvent: {}
+[20.356571] (-) TimerEvent: {}
+[20.456793] (-) TimerEvent: {}
+[20.557019] (-) TimerEvent: {}
+[20.657248] (-) TimerEvent: {}
+[20.757504] (-) TimerEvent: {}
+[20.857773] (-) TimerEvent: {}
+[20.917299] (ik) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable ik\x1b[0m\n'}
+[20.957856] (-) TimerEvent: {}
+[21.058064] (-) TimerEvent: {}
+[21.158290] (-) TimerEvent: {}
+[21.258548] (-) TimerEvent: {}
+[21.358740] (-) TimerEvent: {}
+[21.458935] (-) TimerEvent: {}
+[21.559499] (-) TimerEvent: {}
+[21.620062] (ik) StdoutLine: {'line': b'[100%] Built target ik\n'}
+[21.630137] (ik) CommandEnded: {'returncode': 0}
+[21.630680] (ik) JobProgress: {'identifier': 'ik', 'progress': 'install'}
+[21.633178] (ik) Command: {'cmd': ['/usr/local/bin/cmake', '--install', '/home/p/ws_demo2/build/ik'], 'cwd': '/home/p/ws_demo2/build/ik', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LIBRARY_PATH', '/home/p/TensorRT_ws/TensorRT-8.6.1.6/lib:'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'p'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/p/ws_demo2/install/service_interfaces/lib:/home/p/TensorRT_ws/TensorRT-8.6.1.6/lib:/usr/local/cuda-11.8/lib64:/home/p/ws_moveit2/install/pilz_industrial_motion_planner_testutils/lib:/home/p/ws_moveit2/install/pilz_industrial_motion_planner/lib:/home/p/ws_moveit2/install/moveit_visual_tools/lib:/home/p/ws_moveit2/install/moveit_task_constructor_visualization/lib:/home/p/ws_moveit2/install/moveit_task_constructor_demo/lib:/home/p/ws_moveit2/install/moveit_task_constructor_capabilities/lib:/home/p/ws_moveit2/install/moveit_task_constructor_core/lib:/home/p/ws_moveit2/install/moveit_ros_control_interface/lib:/home/p/ws_moveit2/install/moveit_simple_controller_manager/lib:/home/p/ws_moveit2/install/moveit_setup_assistant/lib:/home/p/ws_moveit2/install/moveit_setup_srdf_plugins/lib:/home/p/ws_moveit2/install/moveit_setup_core_plugins/lib:/home/p/ws_moveit2/install/moveit_setup_controllers/lib:/home/p/ws_moveit2/install/moveit_setup_app_plugins/lib:/home/p/ws_moveit2/install/moveit_setup_framework/lib:/home/p/ws_moveit2/install/moveit_servo/lib:/home/p/ws_moveit2/install/moveit_ros_visualization/lib:/home/p/ws_moveit2/install/moveit_hybrid_planning/lib:/home/p/ws_moveit2/install/moveit_ros_planning_interface/lib:/home/p/ws_moveit2/install/moveit_ros_benchmarks/lib:/home/p/ws_moveit2/install/moveit_ros_warehouse/lib:/home/p/ws_moveit2/install/moveit_ros_robot_interaction/lib:/home/p/ws_moveit2/install/moveit_ros_perception/lib:/home/p/ws_moveit2/install/moveit_ros_move_group/lib:/home/p/ws_moveit2/install/moveit_planners_ompl/lib:/home/p/ws_moveit2/install/moveit_ros_planning/lib:/home/p/ws_moveit2/install/moveit_ros_occupancy_map_monitor/lib:/home/p/ws_moveit2/install/moveit_resources_prbt_ikfast_manipulator_plugin/lib:/home/p/ws_moveit2/install/moveit_planners_chomp/lib:/home/p/ws_moveit2/install/moveit_kinematics/lib:/home/p/ws_moveit2/install/moveit_chomp_optimizer_adapter/lib:/home/p/ws_moveit2/install/chomp_motion_planner/lib:/home/p/ws_moveit2/install/moveit_core/lib:/home/p/ws_moveit2/install/srdfdom/lib:/home/p/ws_moveit2/install/rviz_marker_tools/lib:/home/p/ws_moveit2/install/rosparam_shortcuts/lib:/home/p/ws_moveit2/install/moveit_task_constructor_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins'), ('HOME', '/home/p'), ('DESKTOP_SESSION', 'ubuntu'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('XDG_SEAT_PATH', '/org/freedesktop/DisplayManager/Seat0'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1571'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=7dfbb6f56c29e2dfc8567d3c68ad135f'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/p/ws_demo2/install:/home/p/ws_demo1/install:/home/p/demo_ws2/install:/home/p/ws_moveit2/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'p'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo/../../share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/home/p/TensorRT_ws/TensorRT-8.6.1.6/bin:/usr/local/cuda-11.8/bin:/opt/qt/6.5.3/gcc_64/bin:/home/p/ws_moveit2/install/moveit_core/bin:/opt/ros/humble/bin:/usr/local/bin:/home/p/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/p:@/tmp/.ICE-unix/1571,unix/p:/tmp/.ICE-unix/1571'), ('GDM_LANG', 'zh_CN'), ('XDG_SESSION_PATH', '/org/freedesktop/DisplayManager/Session0'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a3f44aed_dcbe_48ad_a4be_5d75078cc4c7'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/home/p/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.95'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XDG_GREETER_DATA_DIR', '/var/lib/lightdm-data/p'), ('AMENT_PREFIX_PATH', '/home/p/ws_moveit2/install/pilz_industrial_motion_planner_testutils:/home/p/ws_moveit2/install/moveit_runtime:/home/p/ws_moveit2/install/moveit2_tutorials:/home/p/ws_moveit2/install/moveit:/home/p/ws_moveit2/install/moveit_planners:/home/p/ws_moveit2/install/pilz_industrial_motion_planner:/home/p/ws_moveit2/install/moveit_visual_tools:/home/p/ws_moveit2/install/moveit_task_constructor_visualization:/home/p/ws_moveit2/install/moveit_task_constructor_demo:/home/p/ws_moveit2/install/moveit_task_constructor_capabilities:/home/p/ws_moveit2/install/moveit_task_constructor_core:/home/p/ws_moveit2/install/moveit_ros_control_interface:/home/p/ws_moveit2/install/moveit_plugins:/home/p/ws_moveit2/install/moveit_simple_controller_manager:/home/p/ws_moveit2/install/moveit_setup_assistant:/home/p/ws_moveit2/install/moveit_setup_srdf_plugins:/home/p/ws_moveit2/install/moveit_setup_core_plugins:/home/p/ws_moveit2/install/moveit_setup_controllers:/home/p/ws_moveit2/install/moveit_setup_app_plugins:/home/p/ws_moveit2/install/moveit_setup_framework:/home/p/ws_moveit2/install/moveit_servo:/home/p/ws_moveit2/install/moveit_ros:/home/p/ws_moveit2/install/moveit_ros_visualization:/home/p/ws_moveit2/install/moveit_hybrid_planning:/home/p/ws_moveit2/install/moveit_ros_planning_interface:/home/p/ws_moveit2/install/moveit_ros_benchmarks:/home/p/ws_moveit2/install/moveit_ros_warehouse:/home/p/ws_moveit2/install/moveit_ros_robot_interaction:/home/p/ws_moveit2/install/moveit_ros_perception:/home/p/ws_moveit2/install/moveit_resources_prbt_pg70_support:/home/p/ws_moveit2/install/moveit_resources_prbt_moveit_config:/home/p/ws_moveit2/install/moveit_ros_move_group:/home/p/ws_moveit2/install/moveit_planners_ompl:/home/p/ws_moveit2/install/moveit_ros_planning:/home/p/ws_moveit2/install/moveit_ros_occupancy_map_monitor:/home/p/ws_moveit2/install/moveit_resources_prbt_ikfast_manipulator_plugin:/home/p/ws_moveit2/install/moveit_planners_chomp:/home/p/ws_moveit2/install/moveit_kinematics:/home/p/ws_moveit2/install/moveit_chomp_optimizer_adapter:/home/p/ws_moveit2/install/chomp_motion_planner:/home/p/ws_moveit2/install/moveit_core:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/srdfdom:/home/p/ws_moveit2/install/rviz_marker_tools:/home/p/ws_moveit2/install/rosparam_shortcuts:/home/p/ws_moveit2/install/moveit_task_constructor_msgs:/home/p/ws_moveit2/install/moveit_resources_prbt_support:/home/p/ws_moveit2/install/moveit_resources:/home/p/ws_moveit2/install/moveit_resources_pr2_description:/home/p/ws_moveit2/install/moveit_resources_panda_moveit_config:/home/p/ws_moveit2/install/moveit_resources_panda_description:/home/p/ws_moveit2/install/moveit_resources_fanuc_moveit_config:/home/p/ws_moveit2/install/moveit_resources_fanuc_description:/home/p/ws_moveit2/install/moveit_common:/home/p/ws_moveit2/install/launch_param_builder:/home/p/ws_demo1/install/ibvs_test:/home/p/demo_ws2/install/ur20_moveit_config:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/ur20_description:/home/p/demo_ws2/install/robotiq_description:/home/p/demo_ws2/install/arm_joint_control:/home/p/ws_demo2/install/ur_description:/home/p/ws_demo2/install/ik:/home/p/ws_demo2/install/ibvs:/home/p/ws_demo2/install/service_interfaces:/home/p/ws_demo2/install/camera_image:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('VISP_DIR', '/build'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CMAKE_MODULE_PATH', '/home/p/ws_moveit2/install/moveit_task_constructor_core/share/moveit_task_constructor_core/cmake'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo/../../share/gazebo-11:'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/p/ws_demo2/build/ik'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=7dfbb6f56c29e2dfc8567d3c68ad135f'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/p/ws_moveit2/install/moveit_task_constructor_core/local/lib/python3.10/dist-packages:/home/p/ws_moveit2/install/moveit_configs_utils/lib/python3.10/site-packages:/home/p/ws_moveit2/install/srdfdom/local/lib/python3.10/dist-packages:/home/p/ws_moveit2/install/moveit_task_constructor_msgs/local/lib/python3.10/dist-packages:/home/p/ws_moveit2/install/launch_param_builder/lib/python3.10/site-packages:/home/p/demo_ws2/install/ur20_joint_control/lib/python3.10/site-packages:/home/p/demo_ws2/install/arm_joint_control/lib/python3.10/site-packages:/home/p/ws_demo2/install/service_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/p/ws_demo2/install/service_interfaces:/home/p/ws_moveit2/install/pilz_industrial_motion_planner_testutils:/home/p/ws_moveit2/install/moveit_runtime:/home/p/ws_moveit2/install/moveit2_tutorials:/home/p/ws_moveit2/install/moveit:/home/p/ws_moveit2/install/moveit_planners:/home/p/ws_moveit2/install/pilz_industrial_motion_planner:/home/p/ws_moveit2/install/moveit_visual_tools:/home/p/ws_moveit2/install/moveit_task_constructor_visualization:/home/p/ws_moveit2/install/moveit_task_constructor_demo:/home/p/ws_moveit2/install/moveit_task_constructor_capabilities:/home/p/ws_moveit2/install/moveit_task_constructor_core:/home/p/ws_moveit2/install/moveit_ros_control_interface:/home/p/ws_moveit2/install/moveit_plugins:/home/p/ws_moveit2/install/moveit_simple_controller_manager:/home/p/ws_moveit2/install/moveit_setup_assistant:/home/p/ws_moveit2/install/moveit_setup_srdf_plugins:/home/p/ws_moveit2/install/moveit_setup_core_plugins:/home/p/ws_moveit2/install/moveit_setup_controllers:/home/p/ws_moveit2/install/moveit_setup_app_plugins:/home/p/ws_moveit2/install/moveit_setup_framework:/home/p/ws_moveit2/install/moveit_servo:/home/p/ws_moveit2/install/moveit_ros:/home/p/ws_moveit2/install/moveit_ros_visualization:/home/p/ws_moveit2/install/moveit_hybrid_planning:/home/p/ws_moveit2/install/moveit_ros_planning_interface:/home/p/ws_moveit2/install/moveit_ros_benchmarks:/home/p/ws_moveit2/install/moveit_ros_warehouse:/home/p/ws_moveit2/install/moveit_ros_robot_interaction:/home/p/ws_moveit2/install/moveit_ros_perception:/home/p/ws_moveit2/install/moveit_resources_prbt_pg70_support:/home/p/ws_moveit2/install/moveit_resources_prbt_moveit_config:/home/p/ws_moveit2/install/moveit_ros_move_group:/home/p/ws_moveit2/install/moveit_planners_ompl:/home/p/ws_moveit2/install/moveit_ros_planning:/home/p/ws_moveit2/install/moveit_ros_occupancy_map_monitor:/home/p/ws_moveit2/install/moveit_resources_prbt_ikfast_manipulator_plugin:/home/p/ws_moveit2/install/moveit_planners_chomp:/home/p/ws_moveit2/install/moveit_kinematics:/home/p/ws_moveit2/install/moveit_chomp_optimizer_adapter:/home/p/ws_moveit2/install/chomp_motion_planner:/home/p/ws_moveit2/install/moveit_core:/home/p/ws_moveit2/install/srdfdom:/home/p/ws_moveit2/install/rviz_marker_tools:/home/p/ws_moveit2/install/rosparam_shortcuts:/home/p/ws_moveit2/install/moveit_task_constructor_msgs:/home/p/ws_moveit2/install/moveit_resources_prbt_support:/home/p/ws_moveit2/install/moveit_resources:/home/p/ws_moveit2/install/moveit_resources_pr2_description:/home/p/ws_moveit2/install/moveit_resources_panda_moveit_config:/home/p/ws_moveit2/install/moveit_resources_panda_description:/home/p/ws_moveit2/install/moveit_resources_fanuc_moveit_config:/home/p/ws_moveit2/install/moveit_resources_fanuc_description:/home/p/ws_moveit2/install/moveit_common:/home/p/ws_demo1/install/ibvs_test:/home/p/demo_ws2/install/ur20_moveit_config:/home/p/demo_ws2/install/ur20_description:/home/p/demo_ws2/install/robotiq_description:/home/p/ws_demo2/install/ur_description:/home/p/ws_demo2/install/ik:/home/p/ws_demo2/install/ibvs:/home/p/ws_demo2/install/camera_image:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble')]), 'shell': False}
+[21.635756] (ik) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[21.635905] (ik) StdoutLine: {'line': b'-- Installing: /home/p/ws_demo2/install/ik/lib/ik/ik\n'}
+[21.644544] (ik) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/p/ws_demo2/install/ik/lib/ik/ik" to ""\n'}
+[21.644642] (ik) StdoutLine: {'line': b'-- Up-to-date: /home/p/ws_demo2/install/ik/share/ament_index/resource_index/package_run_dependencies/ik\n'}
+[21.644735] (ik) StdoutLine: {'line': b'-- Up-to-date: /home/p/ws_demo2/install/ik/share/ament_index/resource_index/parent_prefix_path/ik\n'}
+[21.644786] (ik) StdoutLine: {'line': b'-- Up-to-date: /home/p/ws_demo2/install/ik/share/ik/environment/ament_prefix_path.sh\n'}
+[21.644871] (ik) StdoutLine: {'line': b'-- Up-to-date: /home/p/ws_demo2/install/ik/share/ik/environment/ament_prefix_path.dsv\n'}
+[21.644935] (ik) StdoutLine: {'line': b'-- Up-to-date: /home/p/ws_demo2/install/ik/share/ik/environment/path.sh\n'}
+[21.644999] (ik) StdoutLine: {'line': b'-- Up-to-date: /home/p/ws_demo2/install/ik/share/ik/environment/path.dsv\n'}
+[21.645044] (ik) StdoutLine: {'line': b'-- Up-to-date: /home/p/ws_demo2/install/ik/share/ik/local_setup.bash\n'}
+[21.645087] (ik) StdoutLine: {'line': b'-- Up-to-date: /home/p/ws_demo2/install/ik/share/ik/local_setup.sh\n'}
+[21.645130] (ik) StdoutLine: {'line': b'-- Up-to-date: /home/p/ws_demo2/install/ik/share/ik/local_setup.zsh\n'}
+[21.645173] (ik) StdoutLine: {'line': b'-- Up-to-date: /home/p/ws_demo2/install/ik/share/ik/local_setup.dsv\n'}
+[21.645216] (ik) StdoutLine: {'line': b'-- Installing: /home/p/ws_demo2/install/ik/share/ik/package.dsv\n'}
+[21.645298] (ik) StdoutLine: {'line': b'-- Up-to-date: /home/p/ws_demo2/install/ik/share/ament_index/resource_index/packages/ik\n'}
+[21.645378] (ik) StdoutLine: {'line': b'-- Up-to-date: /home/p/ws_demo2/install/ik/share/ik/cmake/ikConfig.cmake\n'}
+[21.645452] (ik) StdoutLine: {'line': b'-- Up-to-date: /home/p/ws_demo2/install/ik/share/ik/cmake/ikConfig-version.cmake\n'}
+[21.645498] (ik) StdoutLine: {'line': b'-- Up-to-date: /home/p/ws_demo2/install/ik/share/ik/package.xml\n'}
+[21.645926] (ik) CommandEnded: {'returncode': 0}
+[21.658300] (ik) JobEnded: {'identifier': 'ik', 'rc': 0}
+[21.658991] (-) EventReactorShutdown: {}

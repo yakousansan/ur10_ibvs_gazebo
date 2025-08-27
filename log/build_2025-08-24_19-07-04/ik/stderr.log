@@ -1,0 +1,42 @@
+[01m[K/home/p/ws_demo2/src/ik/src/ik.cpp:[m[K In constructor ‘[01m[KIKNode::IKNode()[m[K’:
+[01m[K/home/p/ws_demo2/src/ik/src/ik.cpp:30:49:[m[K [01;31m[Kerror: [m[K‘[01m[KINVALID_FRAME[m[K’ is not a member of ‘[01m[Kpinocchio[m[K’
+   30 |         if (end_effector_frame_id == pinocchio::[01;31m[KINVALID_FRAME[m[K) {
+      |                                                 [01;31m[K^~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/p/ws_demo2/src/ik/include/ik.h:4[m[K,
+                 from [01m[K/home/p/ws_demo2/src/ik/src/ik.cpp:1[m[K:
+[01m[K/home/p/ws_demo2/src/ik/src/ik.cpp:31:100:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kc_str[m[K’ in ‘[01m[K((IKNode*)this)->IKNode::end_effector_frame_id[m[K’, which is of non-class type ‘[01m[Kpinocchio::FrameIndex[m[K’ {aka ‘[01m[Klong unsigned int[m[K’}
+   31 | gger(), "未找到末端执行器 '%s' 的帧ID", end_effector_frame_id.[01;31m[Kc_str[m[K());
+      |                                                               [01;31m[K^~~~~[m[K
+
+[01m[K/home/p/ws_demo2/src/ik/src/ik.cpp:34:94:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kc_str[m[K’ in ‘[01m[K((IKNode*)this)->IKNode::end_effector_frame_id[m[K’, which is of non-class type ‘[01m[Kpinocchio::FrameIndex[m[K’ {aka ‘[01m[Klong unsigned int[m[K’}
+   34 | ger(), "末端执行器 '%s' 的帧ID: %zu", end_effector_frame_id.[01;31m[Kc_str[m[K(), end_effector_frame_id);
+      |                                                             [01;31m[K^~~~~[m[K
+
+[01m[K/home/p/ws_demo2/src/ik/src/ik.cpp:[m[K In member function ‘[01m[Kvoid IKNode::computeEndEffectorJacobian(const Eigen::VectorXd&)[m[K’:
+[01m[K/home/p/ws_demo2/src/ik/src/ik.cpp:70:64:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kq[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   70 | void IKNode::computeEndEffectorJacobian([01;35m[Kconst Eigen::VectorXd& q[m[K)
+      |                                         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+In file included from [01m[K/opt/ros/humble/include/pinocchio/parsers/urdf.hpp:351[m[K,
+                 from [01m[K/home/p/ws_demo2/src/ik/include/ik.h:15[m[K:
+[01m[K/opt/ros/humble/include/pinocchio/parsers/urdf/model.hxx:[m[K In member function ‘[01m[Kpinocchio::JointIndex pinocchio::urdf::details::UrdfVisitor<Scalar, Options, JointCollectionTpl>::addMimicJoint(const Frame&, const SE3&, const std::string&, const VectorConstRef&, const VectorConstRef&, const VectorConstRef&, const VectorConstRef&, const VectorConstRef&, const VectorConstRef&, const MimicInfo_&) [with TypeX = pinocchio::JointModelRevoluteTpl<double, 0, 0>; TypeY = pinocchio::JointModelRevoluteTpl<double, 0, 1>; TypeZ = pinocchio::JointModelRevoluteTpl<double, 0, 2>; TypeUnaligned = pinocchio::JointModelRevoluteUnalignedTpl<double>; Scalar = double; int Options = 0; JointCollectionTpl = pinocchio::JointCollectionDefaultTpl][m[K’:
+[01m[K/opt/ros/humble/include/pinocchio/parsers/urdf/model.hxx:543:9:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+  543 |         [01;35m[K}[m[K
+      |         [01;35m[K^[m[K
+[01m[K/opt/ros/humble/include/pinocchio/parsers/urdf/model.hxx:[m[K In member function ‘[01m[Kpinocchio::JointIndex pinocchio::urdf::details::UrdfVisitor<Scalar, Options, JointCollectionTpl>::addMimicJoint(const Frame&, const SE3&, const std::string&, const VectorConstRef&, const VectorConstRef&, const VectorConstRef&, const VectorConstRef&, const VectorConstRef&, const VectorConstRef&, const MimicInfo_&) [with TypeX = pinocchio::JointModelPrismaticTpl<double, 0, 0>; TypeY = pinocchio::JointModelPrismaticTpl<double, 0, 1>; TypeZ = pinocchio::JointModelPrismaticTpl<double, 0, 2>; TypeUnaligned = pinocchio::JointModelPrismaticUnalignedTpl<double>; Scalar = double; int Options = 0; JointCollectionTpl = pinocchio::JointCollectionDefaultTpl][m[K’:
+[01m[K/opt/ros/humble/include/pinocchio/parsers/urdf/model.hxx:543:9:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+  543 |         [01;35m[K}[m[K
+      |         [01;35m[K^[m[K
+gmake[2]: *** [CMakeFiles/ik.dir/build.make:79：CMakeFiles/ik.dir/src/ik.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:153：CMakeFiles/ik.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

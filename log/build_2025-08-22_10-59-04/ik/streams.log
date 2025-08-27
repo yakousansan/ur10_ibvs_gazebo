@@ -1,0 +1,98 @@
+[0.019s] Invoking command in '/home/p/ws_demo2/build/ik': CMAKE_PREFIX_PATH=/home/p/ws_demo2/install/service_interfaces:/home/p/ws_moveit2/install/pilz_industrial_motion_planner_testutils:/home/p/ws_moveit2/install/moveit_runtime:/home/p/ws_moveit2/install/moveit2_tutorials:/home/p/ws_moveit2/install/moveit:/home/p/ws_moveit2/install/moveit_planners:/home/p/ws_moveit2/install/pilz_industrial_motion_planner:/home/p/ws_moveit2/install/moveit_visual_tools:/home/p/ws_moveit2/install/moveit_task_constructor_visualization:/home/p/ws_moveit2/install/moveit_task_constructor_demo:/home/p/ws_moveit2/install/moveit_task_constructor_capabilities:/home/p/ws_moveit2/install/moveit_task_constructor_core:/home/p/ws_moveit2/install/moveit_ros_control_interface:/home/p/ws_moveit2/install/moveit_plugins:/home/p/ws_moveit2/install/moveit_simple_controller_manager:/home/p/ws_moveit2/install/moveit_setup_assistant:/home/p/ws_moveit2/install/moveit_setup_srdf_plugins:/home/p/ws_moveit2/install/moveit_setup_core_plugins:/home/p/ws_moveit2/install/moveit_setup_controllers:/home/p/ws_moveit2/install/moveit_setup_app_plugins:/home/p/ws_moveit2/install/moveit_setup_framework:/home/p/ws_moveit2/install/moveit_servo:/home/p/ws_moveit2/install/moveit_ros:/home/p/ws_moveit2/install/moveit_ros_visualization:/home/p/ws_moveit2/install/moveit_hybrid_planning:/home/p/ws_moveit2/install/moveit_ros_planning_interface:/home/p/ws_moveit2/install/moveit_ros_benchmarks:/home/p/ws_moveit2/install/moveit_ros_warehouse:/home/p/ws_moveit2/install/moveit_ros_robot_interaction:/home/p/ws_moveit2/install/moveit_ros_perception:/home/p/ws_moveit2/install/moveit_resources_prbt_pg70_support:/home/p/ws_moveit2/install/moveit_resources_prbt_moveit_config:/home/p/ws_moveit2/install/moveit_ros_move_group:/home/p/ws_moveit2/install/moveit_planners_ompl:/home/p/ws_moveit2/install/moveit_ros_planning:/home/p/ws_moveit2/install/moveit_ros_occupancy_map_monitor:/home/p/ws_moveit2/install/moveit_resources_prbt_ikfast_manipulator_plugin:/home/p/ws_moveit2/install/moveit_planners_chomp:/home/p/ws_moveit2/install/moveit_kinematics:/home/p/ws_moveit2/install/moveit_chomp_optimizer_adapter:/home/p/ws_moveit2/install/chomp_motion_planner:/home/p/ws_moveit2/install/moveit_core:/home/p/ws_moveit2/install/srdfdom:/home/p/ws_moveit2/install/rviz_marker_tools:/home/p/ws_moveit2/install/rosparam_shortcuts:/home/p/ws_moveit2/install/moveit_task_constructor_msgs:/home/p/ws_moveit2/install/moveit_resources_prbt_support:/home/p/ws_moveit2/install/moveit_resources:/home/p/ws_moveit2/install/moveit_resources_pr2_description:/home/p/ws_moveit2/install/moveit_resources_panda_moveit_config:/home/p/ws_moveit2/install/moveit_resources_panda_description:/home/p/ws_moveit2/install/moveit_resources_fanuc_moveit_config:/home/p/ws_moveit2/install/moveit_resources_fanuc_description:/home/p/ws_moveit2/install/moveit_common:/home/p/ws_demo1/install/ibvs_test:/home/p/demo_ws2/install/ur20_moveit_config:/home/p/demo_ws2/install/ur20_description:/home/p/demo_ws2/install/robotiq_description:/home/p/ws_demo2/install/ur_description:/home/p/ws_demo2/install/ik:/home/p/ws_demo2/install/ibvs:/home/p/ws_demo2/install/camera_image:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble LD_LIBRARY_PATH=/home/p/ws_demo2/install/service_interfaces/lib:/home/p/TensorRT_ws/TensorRT-8.6.1.6/lib:/usr/local/cuda-11.8/lib64:/home/p/ws_moveit2/install/pilz_industrial_motion_planner_testutils/lib:/home/p/ws_moveit2/install/pilz_industrial_motion_planner/lib:/home/p/ws_moveit2/install/moveit_visual_tools/lib:/home/p/ws_moveit2/install/moveit_task_constructor_visualization/lib:/home/p/ws_moveit2/install/moveit_task_constructor_demo/lib:/home/p/ws_moveit2/install/moveit_task_constructor_capabilities/lib:/home/p/ws_moveit2/install/moveit_task_constructor_core/lib:/home/p/ws_moveit2/install/moveit_ros_control_interface/lib:/home/p/ws_moveit2/install/moveit_simple_controller_manager/lib:/home/p/ws_moveit2/install/moveit_setup_assistant/lib:/home/p/ws_moveit2/install/moveit_setup_srdf_plugins/lib:/home/p/ws_moveit2/install/moveit_setup_core_plugins/lib:/home/p/ws_moveit2/install/moveit_setup_controllers/lib:/home/p/ws_moveit2/install/moveit_setup_app_plugins/lib:/home/p/ws_moveit2/install/moveit_setup_framework/lib:/home/p/ws_moveit2/install/moveit_servo/lib:/home/p/ws_moveit2/install/moveit_ros_visualization/lib:/home/p/ws_moveit2/install/moveit_hybrid_planning/lib:/home/p/ws_moveit2/install/moveit_ros_planning_interface/lib:/home/p/ws_moveit2/install/moveit_ros_benchmarks/lib:/home/p/ws_moveit2/install/moveit_ros_warehouse/lib:/home/p/ws_moveit2/install/moveit_ros_robot_interaction/lib:/home/p/ws_moveit2/install/moveit_ros_perception/lib:/home/p/ws_moveit2/install/moveit_ros_move_group/lib:/home/p/ws_moveit2/install/moveit_planners_ompl/lib:/home/p/ws_moveit2/install/moveit_ros_planning/lib:/home/p/ws_moveit2/install/moveit_ros_occupancy_map_monitor/lib:/home/p/ws_moveit2/install/moveit_resources_prbt_ikfast_manipulator_plugin/lib:/home/p/ws_moveit2/install/moveit_planners_chomp/lib:/home/p/ws_moveit2/install/moveit_kinematics/lib:/home/p/ws_moveit2/install/moveit_chomp_optimizer_adapter/lib:/home/p/ws_moveit2/install/chomp_motion_planner/lib:/home/p/ws_moveit2/install/moveit_core/lib:/home/p/ws_moveit2/install/srdfdom/lib:/home/p/ws_moveit2/install/rviz_marker_tools/lib:/home/p/ws_moveit2/install/rosparam_shortcuts/lib:/home/p/ws_moveit2/install/moveit_task_constructor_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins /usr/local/bin/cmake --build /home/p/ws_demo2/build/ik -- -j16 -l16
+[0.035s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.057s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter
+[0.113s] -- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+[0.142s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.145s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.151s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.163s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.178s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.215s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.219s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.327s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.383s] -- Found image_transport: 3.1.12 (/opt/ros/humble/share/image_transport/cmake)
+[0.440s] -- Found tf2: 0.25.13 (/opt/ros/humble/share/tf2/cmake)
+[0.444s] -- Found tf2_ros: 0.25.13 (/opt/ros/humble/share/tf2_ros/cmake)
+[0.530s] -- Found service_interfaces: 0.0.0 (/home/p/ws_demo2/install/service_interfaces/share/service_interfaces/cmake)
+[0.544s] -- Found std_srvs: 4.9.0 (/opt/ros/humble/share/std_srvs/cmake)
+[0.554s] -- pinocchio_default FOUND. pinocchio_default at /opt/ros/humble/lib/x86_64-linux-gnu/libpinocchio_default.so
+[0.555s] -- pinocchio_parsers FOUND. pinocchio_parsers at /opt/ros/humble/lib/x86_64-linux-gnu/libpinocchio_parsers.so
+[0.556s] -- boost_filesystem FOUND. boost_filesystem at /lib/x86_64-linux-gnu/libboost_filesystem.so
+[0.557s] -- boost_serialization FOUND. boost_serialization at /lib/x86_64-linux-gnu/libboost_serialization.so
+[0.558s] -- boost_system FOUND. boost_system at /lib/x86_64-linux-gnu/libboost_system.so
+[0.560s] [33mCMake Warning (dev) at /usr/local/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package):
+[0.560s]   Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+[0.560s]   --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+[0.560s]   set the policy and suppress this warning.
+[0.560s] 
+[0.560s] Call Stack (most recent call first):
+[0.560s]   /opt/ros/humble/lib/x86_64-linux-gnu/cmake/pinocchio/pinocchioConfig.cmake:160 (find_dependency)
+[0.560s]   CMakeLists.txt:19 (find_package)
+[0.560s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[0.560s] [0m
+[0.565s] -- Found Boost: /usr/include (found version "1.74.0") found components: filesystem serialization system
+[0.567s] -- eigenpy FOUND. eigenpy at /opt/ros/humble/lib/x86_64-linux-gnu/libeigenpy.so
+[0.587s] -- Checking for NumPy
+[0.756s] --   NUMPY_INCLUDE_DIRS=/usr/lib/python3/dist-packages/numpy/core/include
+[0.845s] --   NUMPY_VERSION=1.21.5
+[1.036s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter Development.Module NumPy
+[1.037s] -- PythonLibraryDirs: 
+[1.037s] -- PythonLibVersionString: 3.10.12
+[1.052s] -- Python site lib: lib/python3.10/site-packages
+[1.052s] -- Python include dirs: /usr/include/python3.10
+[1.085s] -- Checking for NumPy
+[1.170s] --   NUMPY_INCLUDE_DIRS=/usr/lib/python3/dist-packages/numpy/core/include
+[1.256s] --   NUMPY_VERSION=1.21.5
+[1.256s] -- NumPy include dir: /usr/lib/python3/dist-packages/numpy/core/include
+[1.256s] [33mCMake Warning (dev) at /opt/ros/humble/lib/x86_64-linux-gnu/cmake/eigenpy/boost.cmake:148 (find_package):
+[1.256s]   Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+[1.256s]   --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+[1.256s]   set the policy and suppress this warning.
+[1.256s] 
+[1.256s] Call Stack (most recent call first):
+[1.256s]   /opt/ros/humble/lib/x86_64-linux-gnu/cmake/eigenpy/eigenpyConfig.cmake:149 (SEARCH_FOR_BOOST_PYTHON)
+[1.256s]   /usr/local/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)
+[1.256s]   /opt/ros/humble/lib/x86_64-linux-gnu/cmake/pinocchio/pinocchioConfig.cmake:161 (find_dependency)
+[1.256s]   CMakeLists.txt:19 (find_package)
+[1.256s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.257s] [0m
+[1.261s] -- Found Boost: /usr/include (found version "1.74.0") found components: python310
+[1.543s] -- Default C++ standard: 201703
+[1.543s] -- C++ standard sufficient: Minimal required 11, currently defined: 17
+[1.545s] -- hpp-fcl FOUND. hpp-fcl at /opt/ros/humble/lib/x86_64-linux-gnu/libhpp-fcl.so
+[1.545s] [33mCMake Warning (dev) at /usr/local/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package):
+[1.545s]   Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+[1.545s]   --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+[1.545s]   set the policy and suppress this warning.
+[1.545s] 
+[1.545s] Call Stack (most recent call first):
+[1.545s]   /opt/ros/humble/lib/x86_64-linux-gnu/cmake/hpp-fcl/hpp-fclConfig.cmake:154 (find_dependency)
+[1.545s]   /usr/local/share/cmake-3.31/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)
+[1.545s]   /opt/ros/humble/lib/x86_64-linux-gnu/cmake/pinocchio/pinocchioConfig.cmake:163 (find_dependency)
+[1.545s]   CMakeLists.txt:19 (find_package)
+[1.546s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.546s] [0m
+[1.551s] -- Found Boost: /usr/include (found version "1.74.0") found components: chrono serialization filesystem
+[1.552s] -- C++ standard sufficient: Minimal required 11, currently defined: 17
+[1.553s] -- C++ standard sufficient: Minimal required 11, currently defined: 17
+[1.569s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.630s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.630s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/p/ws_demo2/src/ik/include>
+[1.630s] -- Configured cppcheck exclude dirs and/or files: 
+[1.631s] -- Added test 'lint_cmake' to check CMake code style
+[1.631s] -- Added test 'uncrustify' to check C / C++ code style
+[1.631s] -- Configured uncrustify additional arguments: 
+[1.632s] -- Added test 'xmllint' to check XML markup files
+[1.632s] -- Configuring done (1.6s)
+[1.646s] -- Generating done (0.0s)
+[1.648s] -- Build files have been written to: /home/p/ws_demo2/build/ik
+[1.675s] [ 50%] [32mBuilding CXX object CMakeFiles/ik.dir/src/ik.cpp.o[0m
+[3.326s] In file included from [01m[K/home/p/ws_demo2/src/ik/src/ik.cpp:1[m[K:
+[3.326s] [01m[K/home/p/ws_demo2/src/ik/include/ik.h:13:10:[m[K [01;31m[Kfatal error: [m[Kpinocchio/robot-model.hpp: 没有那个文件或目录
+[3.326s]    13 | #include [01;31m[K<pinocchio/robot-model.hpp>[m[K
+[3.326s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.326s] compilation terminated.
+[3.349s] gmake[2]: *** [CMakeFiles/ik.dir/build.make:79：CMakeFiles/ik.dir/src/ik.cpp.o] 错误 1
+[3.349s] gmake[1]: *** [CMakeFiles/Makefile2:153：CMakeFiles/ik.dir/all] 错误 2
+[3.349s] gmake: *** [Makefile:146：all] 错误 2
+[3.351s] Invoked command in '/home/p/ws_demo2/build/ik' returned '2': CMAKE_PREFIX_PATH=/home/p/ws_demo2/install/service_interfaces:/home/p/ws_moveit2/install/pilz_industrial_motion_planner_testutils:/home/p/ws_moveit2/install/moveit_runtime:/home/p/ws_moveit2/install/moveit2_tutorials:/home/p/ws_moveit2/install/moveit:/home/p/ws_moveit2/install/moveit_planners:/home/p/ws_moveit2/install/pilz_industrial_motion_planner:/home/p/ws_moveit2/install/moveit_visual_tools:/home/p/ws_moveit2/install/moveit_task_constructor_visualization:/home/p/ws_moveit2/install/moveit_task_constructor_demo:/home/p/ws_moveit2/install/moveit_task_constructor_capabilities:/home/p/ws_moveit2/install/moveit_task_constructor_core:/home/p/ws_moveit2/install/moveit_ros_control_interface:/home/p/ws_moveit2/install/moveit_plugins:/home/p/ws_moveit2/install/moveit_simple_controller_manager:/home/p/ws_moveit2/install/moveit_setup_assistant:/home/p/ws_moveit2/install/moveit_setup_srdf_plugins:/home/p/ws_moveit2/install/moveit_setup_core_plugins:/home/p/ws_moveit2/install/moveit_setup_controllers:/home/p/ws_moveit2/install/moveit_setup_app_plugins:/home/p/ws_moveit2/install/moveit_setup_framework:/home/p/ws_moveit2/install/moveit_servo:/home/p/ws_moveit2/install/moveit_ros:/home/p/ws_moveit2/install/moveit_ros_visualization:/home/p/ws_moveit2/install/moveit_hybrid_planning:/home/p/ws_moveit2/install/moveit_ros_planning_interface:/home/p/ws_moveit2/install/moveit_ros_benchmarks:/home/p/ws_moveit2/install/moveit_ros_warehouse:/home/p/ws_moveit2/install/moveit_ros_robot_interaction:/home/p/ws_moveit2/install/moveit_ros_perception:/home/p/ws_moveit2/install/moveit_resources_prbt_pg70_support:/home/p/ws_moveit2/install/moveit_resources_prbt_moveit_config:/home/p/ws_moveit2/install/moveit_ros_move_group:/home/p/ws_moveit2/install/moveit_planners_ompl:/home/p/ws_moveit2/install/moveit_ros_planning:/home/p/ws_moveit2/install/moveit_ros_occupancy_map_monitor:/home/p/ws_moveit2/install/moveit_resources_prbt_ikfast_manipulator_plugin:/home/p/ws_moveit2/install/moveit_planners_chomp:/home/p/ws_moveit2/install/moveit_kinematics:/home/p/ws_moveit2/install/moveit_chomp_optimizer_adapter:/home/p/ws_moveit2/install/chomp_motion_planner:/home/p/ws_moveit2/install/moveit_core:/home/p/ws_moveit2/install/srdfdom:/home/p/ws_moveit2/install/rviz_marker_tools:/home/p/ws_moveit2/install/rosparam_shortcuts:/home/p/ws_moveit2/install/moveit_task_constructor_msgs:/home/p/ws_moveit2/install/moveit_resources_prbt_support:/home/p/ws_moveit2/install/moveit_resources:/home/p/ws_moveit2/install/moveit_resources_pr2_description:/home/p/ws_moveit2/install/moveit_resources_panda_moveit_config:/home/p/ws_moveit2/install/moveit_resources_panda_description:/home/p/ws_moveit2/install/moveit_resources_fanuc_moveit_config:/home/p/ws_moveit2/install/moveit_resources_fanuc_description:/home/p/ws_moveit2/install/moveit_common:/home/p/ws_demo1/install/ibvs_test:/home/p/demo_ws2/install/ur20_moveit_config:/home/p/demo_ws2/install/ur20_description:/home/p/demo_ws2/install/robotiq_description:/home/p/ws_demo2/install/ur_description:/home/p/ws_demo2/install/ik:/home/p/ws_demo2/install/ibvs:/home/p/ws_demo2/install/camera_image:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble LD_LIBRARY_PATH=/home/p/ws_demo2/install/service_interfaces/lib:/home/p/TensorRT_ws/TensorRT-8.6.1.6/lib:/usr/local/cuda-11.8/lib64:/home/p/ws_moveit2/install/pilz_industrial_motion_planner_testutils/lib:/home/p/ws_moveit2/install/pilz_industrial_motion_planner/lib:/home/p/ws_moveit2/install/moveit_visual_tools/lib:/home/p/ws_moveit2/install/moveit_task_constructor_visualization/lib:/home/p/ws_moveit2/install/moveit_task_constructor_demo/lib:/home/p/ws_moveit2/install/moveit_task_constructor_capabilities/lib:/home/p/ws_moveit2/install/moveit_task_constructor_core/lib:/home/p/ws_moveit2/install/moveit_ros_control_interface/lib:/home/p/ws_moveit2/install/moveit_simple_controller_manager/lib:/home/p/ws_moveit2/install/moveit_setup_assistant/lib:/home/p/ws_moveit2/install/moveit_setup_srdf_plugins/lib:/home/p/ws_moveit2/install/moveit_setup_core_plugins/lib:/home/p/ws_moveit2/install/moveit_setup_controllers/lib:/home/p/ws_moveit2/install/moveit_setup_app_plugins/lib:/home/p/ws_moveit2/install/moveit_setup_framework/lib:/home/p/ws_moveit2/install/moveit_servo/lib:/home/p/ws_moveit2/install/moveit_ros_visualization/lib:/home/p/ws_moveit2/install/moveit_hybrid_planning/lib:/home/p/ws_moveit2/install/moveit_ros_planning_interface/lib:/home/p/ws_moveit2/install/moveit_ros_benchmarks/lib:/home/p/ws_moveit2/install/moveit_ros_warehouse/lib:/home/p/ws_moveit2/install/moveit_ros_robot_interaction/lib:/home/p/ws_moveit2/install/moveit_ros_perception/lib:/home/p/ws_moveit2/install/moveit_ros_move_group/lib:/home/p/ws_moveit2/install/moveit_planners_ompl/lib:/home/p/ws_moveit2/install/moveit_ros_planning/lib:/home/p/ws_moveit2/install/moveit_ros_occupancy_map_monitor/lib:/home/p/ws_moveit2/install/moveit_resources_prbt_ikfast_manipulator_plugin/lib:/home/p/ws_moveit2/install/moveit_planners_chomp/lib:/home/p/ws_moveit2/install/moveit_kinematics/lib:/home/p/ws_moveit2/install/moveit_chomp_optimizer_adapter/lib:/home/p/ws_moveit2/install/chomp_motion_planner/lib:/home/p/ws_moveit2/install/moveit_core/lib:/home/p/ws_moveit2/install/srdfdom/lib:/home/p/ws_moveit2/install/rviz_marker_tools/lib:/home/p/ws_moveit2/install/rosparam_shortcuts/lib:/home/p/ws_moveit2/install/moveit_task_constructor_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins /usr/local/bin/cmake --build /home/p/ws_demo2/build/ik -- -j16 -l16

@@ -1,0 +1,70 @@
+In file included from [01m[K/home/p/ws_demo2/src/ik/src/ik.cpp:1[m[K:
+[01m[K/home/p/ws_demo2/src/ik/include/ik.h:53:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeometry_msgs[m[K’ was not declared in this scope
+   53 |     rclcpp::Publisher<[01;31m[Kgeometry_msgs[m[K::msg::Point>::SharedPtr ee_position_publisher_;
+      |                       [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/p/ws_demo2/src/ik/include/ik.h:53:48:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   53 |     rclcpp::Publisher<geometry_msgs::msg::Point[01;31m[K>[m[K::SharedPtr ee_position_publisher_;
+      |                                                [01;31m[K^[m[K
+[01m[K/home/p/ws_demo2/src/ik/include/ik.h:53:51:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+   53 |     rclcpp::Publisher<geometry_msgs::msg::Point>::[01;31m[KSharedPtr[m[K ee_position_publisher_;
+      |                                                   [01;31m[K^~~~~~~~~[m[K
+      |                                                            [32m[K;[m[K
+[01m[K/home/p/ws_demo2/src/ik/include/ik.h:53:61:[m[K [01;31m[Kerror: [m[K‘[01m[Kee_position_publisher_[m[K’ does not name a type
+   53 |     rclcpp::Publisher<geometry_msgs::msg::Point>::SharedPtr [01;31m[Kee_position_publisher_[m[K;
+      |                                                             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/p/ws_demo2/src/ik/src/ik.cpp:[m[K In constructor ‘[01m[KIKNode::IKNode()[m[K’:
+[01m[K/home/p/ws_demo2/src/ik/src/ik.cpp:89:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kee_position_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Kjacobian_publisher_[m[K’?
+   89 |     [01;31m[Kee_position_publisher_[m[K = this->create_publisher<geometry_msgs::msg::Point>("end_effector_position", 10);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+      |     [32m[Kjacobian_publisher_[m[K
+[01m[K/home/p/ws_demo2/src/ik/src/ik.cpp:89:53:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeometry_msgs[m[K’ was not declared in this scope
+   89 |     ee_position_publisher_ = this->create_publisher<[01;31m[Kgeometry_msgs[m[K::msg::Point>("end_effector_position", 10);
+      |                                                     [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/p/ws_demo2/src/ik/src/ik.cpp:89:36:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+   89 |     ee_position_publisher_ = this->[01;31m[Kcreate_publisher<geometry_msgs::msg::Point>[m[K("end_effector_position", 10);
+      |                                    [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/p/ws_demo2/src/ik/src/ik.cpp:89:79:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KIKNode::create_publisher<<expression error> >(const char [22], int)[m[K’
+   89 | blisher_ = [01;31m[Kthis->create_publisher<geometry_msgs::msg::Point>("end_effector_position", 10)[m[K;
+      |            [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1321[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/p/ws_demo2/src/ik/include/ik.h:4[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:73:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const std::string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+   73 | [01;36m[KNode[m[K::create_publisher(
+      | [01;36m[K^~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:73:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/p/ws_demo2/src/ik/src/ik.cpp:89:79:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   89 | blisher_ = [01;31m[Kthis->create_publisher<geometry_msgs::msg::Point>("end_effector_position", 10)[m[K;
+      |            [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/p/ws_demo2/src/ik/src/ik.cpp:96:55:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublish_rate[m[K’ was not declared in this scope
+   96 |     auto period = std::chrono::duration<double>(1.0 / [01;31m[Kpublish_rate[m[K);
+      |                                                       [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/p/ws_demo2/src/ik/src/ik.cpp:97:5:[m[K [01;31m[Kerror: [m[K‘[01m[Ktimer_[m[K’ was not declared in this scope; did you mean ‘[01m[Ktimer_t[m[K’?
+   97 |     [01;31m[Ktimer_[m[K = this->create_wall_timer(period, timer_callback);
+      |     [01;31m[K^~~~~~[m[K
+      |     [32m[Ktimer_t[m[K
+[01m[K/home/p/ws_demo2/src/ik/src/ik.cpp:[m[K In member function ‘[01m[Kvoid IKNode::publishJacobianAndPosition()[m[K’:
+[01m[K/home/p/ws_demo2/src/ik/src/ik.cpp:214:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeometry_msgs[m[K’ has not been declared
+  214 |     auto position_msg = [01;31m[Kgeometry_msgs[m[K::msg::Point();
+      |                         [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/p/ws_demo2/src/ik/src/ik.cpp:219:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kee_position_publisher_[m[K’ was not declared in this scope; did you mean ‘[01m[Kjacobian_publisher_[m[K’?
+  219 |     [01;31m[Kee_position_publisher_[m[K->publish(position_msg);
+      |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+      |     [32m[Kjacobian_publisher_[m[K
+In file included from [01m[K/opt/ros/humble/include/pinocchio/parsers/urdf.hpp:351[m[K,
+                 from [01m[K/home/p/ws_demo2/src/ik/include/ik.h:15[m[K:
+[01m[K/opt/ros/humble/include/pinocchio/parsers/urdf/model.hxx:[m[K In member function ‘[01m[Kpinocchio::JointIndex pinocchio::urdf::details::UrdfVisitor<Scalar, Options, JointCollectionTpl>::addMimicJoint(const Frame&, const SE3&, const std::string&, const VectorConstRef&, const VectorConstRef&, const VectorConstRef&, const VectorConstRef&, const VectorConstRef&, const VectorConstRef&, const MimicInfo_&) [with TypeX = pinocchio::JointModelRevoluteTpl<double, 0, 0>; TypeY = pinocchio::JointModelRevoluteTpl<double, 0, 1>; TypeZ = pinocchio::JointModelRevoluteTpl<double, 0, 2>; TypeUnaligned = pinocchio::JointModelRevoluteUnalignedTpl<double>; Scalar = double; int Options = 0; JointCollectionTpl = pinocchio::JointCollectionDefaultTpl][m[K’:
+[01m[K/opt/ros/humble/include/pinocchio/parsers/urdf/model.hxx:543:9:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+  543 |         [01;35m[K}[m[K
+      |         [01;35m[K^[m[K
+[01m[K/opt/ros/humble/include/pinocchio/parsers/urdf/model.hxx:[m[K In member function ‘[01m[Kpinocchio::JointIndex pinocchio::urdf::details::UrdfVisitor<Scalar, Options, JointCollectionTpl>::addMimicJoint(const Frame&, const SE3&, const std::string&, const VectorConstRef&, const VectorConstRef&, const VectorConstRef&, const VectorConstRef&, const VectorConstRef&, const VectorConstRef&, const MimicInfo_&) [with TypeX = pinocchio::JointModelPrismaticTpl<double, 0, 0>; TypeY = pinocchio::JointModelPrismaticTpl<double, 0, 1>; TypeZ = pinocchio::JointModelPrismaticTpl<double, 0, 2>; TypeUnaligned = pinocchio::JointModelPrismaticUnalignedTpl<double>; Scalar = double; int Options = 0; JointCollectionTpl = pinocchio::JointCollectionDefaultTpl][m[K’:
+[01m[K/opt/ros/humble/include/pinocchio/parsers/urdf/model.hxx:543:9:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+  543 |         [01;35m[K}[m[K
+      |         [01;35m[K^[m[K
+gmake[2]: *** [CMakeFiles/ik.dir/build.make:79：CMakeFiles/ik.dir/src/ik.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:153：CMakeFiles/ik.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

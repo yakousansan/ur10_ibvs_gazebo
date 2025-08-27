@@ -1,0 +1,10 @@
+/home/p/ws_demo2/build/ik/CMakeFiles/uninstall.dir
+/home/p/ws_demo2/build/ik/CMakeFiles/ik_uninstall.dir
+/home/p/ws_demo2/build/ik/CMakeFiles/ik.dir
+/home/p/ws_demo2/build/ik/CMakeFiles/test.dir
+/home/p/ws_demo2/build/ik/CMakeFiles/edit_cache.dir
+/home/p/ws_demo2/build/ik/CMakeFiles/rebuild_cache.dir
+/home/p/ws_demo2/build/ik/CMakeFiles/list_install_components.dir
+/home/p/ws_demo2/build/ik/CMakeFiles/install.dir
+/home/p/ws_demo2/build/ik/CMakeFiles/install/local.dir
+/home/p/ws_demo2/build/ik/CMakeFiles/install/strip.dir

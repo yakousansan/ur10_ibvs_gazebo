@@ -1,0 +1,284 @@
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found std_msgs: 4.9.0 (/opt/ros/humble/share/std_msgs/cmake)
+-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[33mCMake Warning (dev) at /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:20 (find_package):
+  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+  the cmake_policy command to set the policy and suppress this warning.
+
+Call Stack (most recent call first):
+  /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+  /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+  CMakeLists.txt:13 (rosidl_generate_interfaces)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[33mCMake Warning (dev) at /opt/ros/humble/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:52 (find_package):
+  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+  the cmake_policy command to set the policy and suppress this warning.
+
+Call Stack (most recent call first):
+  /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+  /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+  /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+  CMakeLists.txt:13 (rosidl_generate_interfaces)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[33mCMake Warning (dev) at /opt/ros/humble/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:140 (find_package):
+  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+  the cmake_policy command to set the policy and suppress this warning.
+
+Call Stack (most recent call first):
+  /opt/ros/humble/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+  /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+  /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+  CMakeLists.txt:13 (rosidl_generate_interfaces)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: 
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (1.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/p/ws_demo2/build/service_interfaces
+[  1%] Built target service_interfaces__cpp
+[ 12%] Built target service_interfaces__rosidl_generator_c
+[ 12%] Built target ament_cmake_python_copy_service_interfaces
+[ 23%] Built target service_interfaces__rosidl_typesupport_c
+[ 34%] Built target service_interfaces__rosidl_typesupport_introspection_c
+[ 45%] Built target service_interfaces__rosidl_typesupport_cpp
+[ 56%] Built target service_interfaces__rosidl_typesupport_fastrtps_cpp
+[ 67%] Built target service_interfaces__rosidl_typesupport_introspection_cpp
+[ 78%] Built target service_interfaces__rosidl_typesupport_fastrtps_c
+[ 78%] Built target service_interfaces
+[ 80%] Built target service_interfaces__py
+[ 89%] Built target service_interfaces__rosidl_generator_py
+[ 92%] Built target service_interfaces__rosidl_typesupport_introspection_c__pyext
+[ 96%] Built target service_interfaces__rosidl_typesupport_c__pyext
+[100%] Built target service_interfaces__rosidl_typesupport_fastrtps_c__pyext
+running egg_info
+writing service_interfaces.egg-info/PKG-INFO
+writing dependency_links to service_interfaces.egg-info/dependency_links.txt
+writing top-level names to service_interfaces.egg-info/top_level.txt
+reading manifest file 'service_interfaces.egg-info/SOURCES.txt'
+writing manifest file 'service_interfaces.egg-info/SOURCES.txt'
+[100%] Built target ament_cmake_python_build_service_interfaces_egg
+-- Install configuration: ""
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/share/ament_index/resource_index/rosidl_interfaces/service_interfaces
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/srv
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/srv/detail
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/srv/detail/send_grasp_request__struct.h
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/srv/detail/send_gripper_request__type_support.h
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/srv/detail/send_gripper_request__struct.h
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/srv/detail/send_gripper_request__functions.h
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/srv/detail/get_jacobian__functions.h
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/srv/detail/get_jacobian__functions.c
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/srv/detail/send_grasp_request__functions.c
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/srv/detail/send_grasp_request__functions.h
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/srv/detail/get_jacobian__struct.h
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/srv/detail/get_jacobian__type_support.h
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/srv/detail/send_gripper_request__functions.c
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/srv/detail/send_grasp_request__type_support.h
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/srv/send_grasp_request.h
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/srv/send_gripper_request.h
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/srv/get_jacobian.h
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/msg
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/msg/detail
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/msg/detail/moment_features__type_support.h
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/msg/detail/moment_features__functions.h
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/msg/detail/moment_features__struct.h
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/msg/detail/moment_features__functions.c
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/msg/moment_features.h
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/msg/rosidl_generator_c__visibility_control.h
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/share/service_interfaces/environment/library_path.sh
+-- Installing: /home/p/ws_demo2/install/service_interfaces/share/service_interfaces/environment/library_path.dsv
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/lib/libservice_interfaces__rosidl_generator_c.so
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/srv
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/srv/detail
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/srv/detail/get_jacobian__rosidl_typesupport_fastrtps_c.h
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/srv/detail/send_grasp_request__rosidl_typesupport_fastrtps_c.h
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/srv/detail/send_gripper_request__rosidl_typesupport_fastrtps_c.h
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/msg
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/msg/detail
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/msg/detail/moment_features__rosidl_typesupport_fastrtps_c.h
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/lib/libservice_interfaces__rosidl_typesupport_fastrtps_c.so
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/srv
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/srv/detail
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/srv/detail/send_gripper_request__rosidl_typesupport_introspection_c.h
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/srv/detail/get_jacobian__rosidl_typesupport_introspection_c.h
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/srv/detail/send_gripper_request__type_support.c
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/srv/detail/send_grasp_request__type_support.c
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/srv/detail/get_jacobian__type_support.c
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/srv/detail/send_grasp_request__rosidl_typesupport_introspection_c.h
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/msg
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/msg/detail
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/msg/detail/moment_features__type_support.c
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/msg/detail/moment_features__rosidl_typesupport_introspection_c.h
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/lib/libservice_interfaces__rosidl_typesupport_introspection_c.so
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/lib/libservice_interfaces__rosidl_typesupport_c.so
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/srv
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/srv/detail
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/srv/detail/send_gripper_request__builder.hpp
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/srv/detail/send_grasp_request__builder.hpp
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/srv/detail/send_grasp_request__type_support.hpp
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/srv/detail/get_jacobian__traits.hpp
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/srv/detail/get_jacobian__struct.hpp
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/srv/detail/send_grasp_request__struct.hpp
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/srv/detail/get_jacobian__builder.hpp
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/srv/detail/send_gripper_request__traits.hpp
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/srv/detail/send_grasp_request__traits.hpp
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/srv/detail/send_gripper_request__struct.hpp
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/srv/detail/send_gripper_request__type_support.hpp
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/srv/detail/get_jacobian__type_support.hpp
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/srv/send_gripper_request.hpp
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/srv/get_jacobian.hpp
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/srv/send_grasp_request.hpp
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/msg
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/msg/detail
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/msg/detail/moment_features__traits.hpp
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/msg/detail/moment_features__struct.hpp
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/msg/detail/moment_features__builder.hpp
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/msg/detail/moment_features__type_support.hpp
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/msg/moment_features.hpp
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/srv
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/srv/detail
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/srv/detail/dds_fastrtps
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/srv/detail/get_jacobian__rosidl_typesupport_fastrtps_cpp.hpp
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/srv/detail/send_gripper_request__rosidl_typesupport_fastrtps_cpp.hpp
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/srv/detail/send_grasp_request__rosidl_typesupport_fastrtps_cpp.hpp
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/msg
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/msg/detail
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/msg/detail/dds_fastrtps
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/msg/detail/moment_features__rosidl_typesupport_fastrtps_cpp.hpp
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/lib/libservice_interfaces__rosidl_typesupport_fastrtps_cpp.so
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/srv
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/srv/detail
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/srv/detail/send_grasp_request__type_support.cpp
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/srv/detail/send_gripper_request__type_support.cpp
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/srv/detail/get_jacobian__rosidl_typesupport_introspection_cpp.hpp
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/srv/detail/get_jacobian__type_support.cpp
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/srv/detail/send_gripper_request__rosidl_typesupport_introspection_cpp.hpp
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/srv/detail/send_grasp_request__rosidl_typesupport_introspection_cpp.hpp
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/msg
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/msg/detail
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/msg/detail/moment_features__type_support.cpp
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/include/service_interfaces/service_interfaces/msg/detail/moment_features__rosidl_typesupport_introspection_cpp.hpp
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/lib/libservice_interfaces__rosidl_typesupport_introspection_cpp.so
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/lib/libservice_interfaces__rosidl_typesupport_cpp.so
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/share/service_interfaces/environment/pythonpath.sh
+-- Installing: /home/p/ws_demo2/install/service_interfaces/share/service_interfaces/environment/pythonpath.dsv
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/local/lib/python3.10/dist-packages/service_interfaces-0.0.0-py3.10.egg-info
+-- Installing: /home/p/ws_demo2/install/service_interfaces/local/lib/python3.10/dist-packages/service_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+-- Installing: /home/p/ws_demo2/install/service_interfaces/local/lib/python3.10/dist-packages/service_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+-- Installing: /home/p/ws_demo2/install/service_interfaces/local/lib/python3.10/dist-packages/service_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+-- Installing: /home/p/ws_demo2/install/service_interfaces/local/lib/python3.10/dist-packages/service_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/local/lib/python3.10/dist-packages/service_interfaces
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/local/lib/python3.10/dist-packages/service_interfaces/_service_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+-- Installing: /home/p/ws_demo2/install/service_interfaces/local/lib/python3.10/dist-packages/service_interfaces/__init__.py
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/local/lib/python3.10/dist-packages/service_interfaces/_service_interfaces_s.ep.rosidl_typesupport_c.c
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/local/lib/python3.10/dist-packages/service_interfaces/service_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/local/lib/python3.10/dist-packages/service_interfaces/srv
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/local/lib/python3.10/dist-packages/service_interfaces/srv/_get_jacobian.py
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/local/lib/python3.10/dist-packages/service_interfaces/srv/__init__.py
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/local/lib/python3.10/dist-packages/service_interfaces/srv/_get_jacobian_s.c
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/local/lib/python3.10/dist-packages/service_interfaces/srv/_send_grasp_request_s.c
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/local/lib/python3.10/dist-packages/service_interfaces/srv/_send_gripper_request.py
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/local/lib/python3.10/dist-packages/service_interfaces/srv/_send_grasp_request.py
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/local/lib/python3.10/dist-packages/service_interfaces/srv/_send_gripper_request_s.c
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/local/lib/python3.10/dist-packages/service_interfaces/service_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/local/lib/python3.10/dist-packages/service_interfaces/service_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/local/lib/python3.10/dist-packages/service_interfaces/libservice_interfaces__rosidl_generator_py.so
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/local/lib/python3.10/dist-packages/service_interfaces/_service_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/local/lib/python3.10/dist-packages/service_interfaces/msg
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/local/lib/python3.10/dist-packages/service_interfaces/msg/_moment_features_s.c
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/local/lib/python3.10/dist-packages/service_interfaces/msg/__init__.py
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/local/lib/python3.10/dist-packages/service_interfaces/msg/_moment_features.py
+Listing '/home/p/ws_demo2/install/service_interfaces/local/lib/python3.10/dist-packages/service_interfaces'...
+Compiling '/home/p/ws_demo2/install/service_interfaces/local/lib/python3.10/dist-packages/service_interfaces/__init__.py'...
+Listing '/home/p/ws_demo2/install/service_interfaces/local/lib/python3.10/dist-packages/service_interfaces/msg'...
+Listing '/home/p/ws_demo2/install/service_interfaces/local/lib/python3.10/dist-packages/service_interfaces/srv'...
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/local/lib/python3.10/dist-packages/service_interfaces/service_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/local/lib/python3.10/dist-packages/service_interfaces/service_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/local/lib/python3.10/dist-packages/service_interfaces/service_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/lib/libservice_interfaces__rosidl_generator_py.so
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/share/service_interfaces/srv/SendGraspRequest.idl
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/share/service_interfaces/srv/SendGripperRequest.idl
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/share/service_interfaces/srv/GetJacobian.idl
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/share/service_interfaces/msg/MomentFeatures.idl
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/share/service_interfaces/srv/SendGraspRequest.srv
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/share/service_interfaces/srv/SendGraspRequest_Request.msg
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/share/service_interfaces/srv/SendGraspRequest_Response.msg
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/share/service_interfaces/srv/SendGripperRequest.srv
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/share/service_interfaces/srv/SendGripperRequest_Request.msg
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/share/service_interfaces/srv/SendGripperRequest_Response.msg
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/share/service_interfaces/srv/GetJacobian.srv
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/share/service_interfaces/srv/GetJacobian_Request.msg
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/share/service_interfaces/srv/GetJacobian_Response.msg
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/share/service_interfaces/msg/MomentFeatures.msg
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/share/ament_index/resource_index/package_run_dependencies/service_interfaces
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/share/ament_index/resource_index/parent_prefix_path/service_interfaces
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/share/service_interfaces/environment/ament_prefix_path.sh
+-- Installing: /home/p/ws_demo2/install/service_interfaces/share/service_interfaces/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/share/service_interfaces/environment/path.sh
+-- Installing: /home/p/ws_demo2/install/service_interfaces/share/service_interfaces/environment/path.dsv
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/share/service_interfaces/local_setup.bash
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/share/service_interfaces/local_setup.sh
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/share/service_interfaces/local_setup.zsh
+-- Installing: /home/p/ws_demo2/install/service_interfaces/share/service_interfaces/local_setup.dsv
+-- Installing: /home/p/ws_demo2/install/service_interfaces/share/service_interfaces/package.dsv
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/share/ament_index/resource_index/packages/service_interfaces
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/share/service_interfaces/cmake/export_service_interfaces__rosidl_generator_cExport.cmake
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/share/service_interfaces/cmake/export_service_interfaces__rosidl_generator_cExport-noconfig.cmake
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/share/service_interfaces/cmake/export_service_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/share/service_interfaces/cmake/export_service_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/share/service_interfaces/cmake/service_interfaces__rosidl_typesupport_introspection_cExport.cmake
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/share/service_interfaces/cmake/service_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/share/service_interfaces/cmake/service_interfaces__rosidl_typesupport_cExport.cmake
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/share/service_interfaces/cmake/service_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/share/service_interfaces/cmake/export_service_interfaces__rosidl_generator_cppExport.cmake
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/share/service_interfaces/cmake/export_service_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/share/service_interfaces/cmake/export_service_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/share/service_interfaces/cmake/service_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/share/service_interfaces/cmake/service_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/share/service_interfaces/cmake/service_interfaces__rosidl_typesupport_cppExport.cmake
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/share/service_interfaces/cmake/service_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/share/service_interfaces/cmake/export_service_interfaces__rosidl_generator_pyExport.cmake
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/share/service_interfaces/cmake/export_service_interfaces__rosidl_generator_pyExport-noconfig.cmake
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/share/service_interfaces/cmake/rosidl_cmake-extras.cmake
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/share/service_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/share/service_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/share/service_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/share/service_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/share/service_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/share/service_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/share/service_interfaces/cmake/service_interfacesConfig.cmake
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/share/service_interfaces/cmake/service_interfacesConfig-version.cmake
+-- Up-to-date: /home/p/ws_demo2/install/service_interfaces/share/service_interfaces/package.xml

@@ -15,6 +15,8 @@ def generate_launch_description():
     # URDF/XACRO文件路径
     share_dir = get_package_share_directory('ur_description')
     xacro_file = os.path.join(share_dir, 'urdf', 'ur10.urdf.xacro')
+
+    # 生成robot_description
     robot_description_config = xacro.process_file(xacro_file)
     robot_description = robot_description_config.toxml()
 
@@ -42,7 +44,10 @@ def generate_launch_description():
         package='robot_state_publisher',
         executable='robot_state_publisher',
         output='screen',
-        parameters=[{'robot_description': robot_description}, use_sim_time]
+        parameters=[
+            {'robot_description': robot_description}, 
+            use_sim_time
+            ]
     )
 
     # 在Gazebo中生成机器人实体
@@ -110,7 +115,15 @@ def generate_launch_description():
         output='screen',           
         parameters=[{'use_sim_time': True}]
     )
-
+    # 启动ik节点
+    ik_node = Node(
+        package='ik',
+        executable='ik',
+        name='ik_node', 
+        output='screen',           
+        parameters=[{'robot_description': robot_description, 'use_sim_time': True}]
+    )
+    
     return LaunchDescription([
         declare_use_sim_time_cmd,
         gazebo,
@@ -119,6 +132,7 @@ def generate_launch_description():
         controller_manager,
         spawn_joint_state_broadcaster,
         spawn_velocity_controller,
-        #camera_image_node,
-        ibvs_node
+        # camera_image_node,
+        ibvs_node,
+        ik_node
     ])

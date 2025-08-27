@@ -1,0 +1,114 @@
+[0.013s] Invoking command in '/home/p/ws_demo2/build/ur_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake /home/p/ws_demo2/src/ur_description -DCMAKE_INSTALL_PREFIX=/home/p/ws_demo2/install/ur_description
+[0.057s] -- The C compiler identification is GNU 12.3.0
+[0.115s] -- The CXX compiler identification is GNU 12.3.0
+[0.123s] -- Detecting C compiler ABI info
+[0.170s] -- Detecting C compiler ABI info - done
+[0.184s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.185s] -- Detecting C compile features
+[0.185s] -- Detecting C compile features - done
+[0.195s] -- Detecting CXX compiler ABI info
+[0.252s] -- Detecting CXX compiler ABI info - done
+[0.276s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.276s] -- Detecting CXX compile features
+[0.277s] -- Detecting CXX compile features - done
+[0.287s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.406s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter
+[0.527s] -- Found ament_cmake_pytest: 1.3.11 (/opt/ros/humble/share/ament_cmake_pytest/cmake)
+[1.117s] -- Configuring done (1.1s)
+[1.120s] -- Generating done (0.0s)
+[1.121s] -- Build files have been written to: /home/p/ws_demo2/build/ur_description
+[1.124s] Invoked command in '/home/p/ws_demo2/build/ur_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake /home/p/ws_demo2/src/ur_description -DCMAKE_INSTALL_PREFIX=/home/p/ws_demo2/install/ur_description
+[1.125s] Invoking command in '/home/p/ws_demo2/build/ur_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --build /home/p/ws_demo2/build/ur_description -- -j16 -l16
+[1.139s] Invoked command in '/home/p/ws_demo2/build/ur_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --build /home/p/ws_demo2/build/ur_description -- -j16 -l16
+[1.143s] Invoking command in '/home/p/ws_demo2/build/ur_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --install /home/p/ws_demo2/build/ur_description
+[1.144s] -- Install configuration: ""
+[1.144s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/config
+[1.144s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/config/initial_positions.yaml
+[1.145s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/config/ur10_gazebo_controllers.yaml
+[1.145s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/config/ur10
+[1.145s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/config/ur10/joint_limits.yaml
+[1.145s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/config/ur10/physical_parameters.yaml
+[1.146s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/config/ur10/default_kinematics.yaml
+[1.146s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/config/ur10/visual_parameters.yaml
+[1.146s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/launch
+[1.146s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/launch/__pycache__
+[1.146s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/launch/__pycache__/ur10_gazebo.launch.cpython-310.pyc
+[1.146s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/launch/__pycache__/view_ur.launch.cpython-310.pyc
+[1.147s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/launch/ur10_gazebo.launch.py
+[1.147s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/launch/view_ur.launch.py
+[1.147s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/meshes
+[1.147s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/meshes/ur10
+[1.147s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/meshes/ur10/collision
+[1.147s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/meshes/ur10/collision/upperarm.stl
+[1.147s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/meshes/ur10/collision/shoulder.stl
+[1.148s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/meshes/ur10/collision/base.stl
+[1.148s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/meshes/ur10/collision/wrist2.stl
+[1.149s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/meshes/ur10/collision/wrist1.stl
+[1.150s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/meshes/ur10/collision/forearm.stl
+[1.150s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/meshes/ur10/collision/wrist3.stl
+[1.150s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/meshes/ur10/visual
+[1.150s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/meshes/ur10/visual/wrist2.dae
+[1.153s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/meshes/ur10/visual/wrist1.dae
+[1.154s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/meshes/ur10/visual/wrist3.dae
+[1.155s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/meshes/ur10/visual/forearm.dae
+[1.157s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/meshes/ur10/visual/upperarm.dae
+[1.159s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/meshes/ur10/visual/shoulder.dae
+[1.161s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/meshes/ur10/visual/d455.dae
+[1.165s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/meshes/ur10/visual/base.dae
+[1.166s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/rviz
+[1.166s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/rviz/view_robot.rviz
+[1.167s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/urdf
+[1.167s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/urdf/ur_macro.xacro
+[1.167s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/urdf/ur10.urdf
+[1.167s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/urdf/inc
+[1.167s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/urdf/inc/ur_common.xacro
+[1.167s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/urdf/inc/ur_transmissions.xacro
+[1.168s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/urdf/install
+[1.168s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/urdf/install/local_setup.ps1
+[1.168s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/urdf/install/.colcon_install_layout
+[1.168s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/urdf/install/local_setup.bash
+[1.168s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/urdf/install/setup.sh
+[1.168s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/urdf/install/_local_setup_util_sh.py
+[1.168s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/urdf/install/_local_setup_util_ps1.py
+[1.169s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/urdf/install/setup.bash
+[1.169s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/urdf/install/COLCON_IGNORE
+[1.169s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/urdf/install/setup.ps1
+[1.169s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/urdf/install/local_setup.zsh
+[1.169s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/urdf/install/local_setup.sh
+[1.170s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/urdf/install/setup.zsh
+[1.170s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/urdf/ur.urdf.xacro
+[1.170s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/urdf/ur.ros2_control.xacro
+[1.170s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/urdf/build
+[1.170s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/urdf/build/COLCON_IGNORE
+[1.170s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/urdf/build/.built_by
+[1.170s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/urdf/ur10.p.urdf
+[1.170s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/urdf/ur10.urdf.xacro
+[1.171s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/urdf/ur10.p.urdf.xacro
+[1.171s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/urdf/log
+[1.171s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/urdf/log/latest_build
+[1.171s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/urdf/log/latest
+[1.171s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/urdf/log/build_2025-07-19_11-55-38
+[1.171s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/urdf/log/build_2025-07-19_11-55-38/events.log
+[1.172s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/urdf/log/build_2025-07-19_11-55-38/logger_all.log
+[1.172s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/urdf/log/COLCON_IGNORE
+[1.172s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/test
+[1.172s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/test/test_view_ur_launch.py
+[1.172s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/test/test_ur_urdf_xacro.py
+[1.172s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/worlds
+[1.172s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/worlds/gazebo_world.world
+[1.172s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ament_index/resource_index/package_run_dependencies/ur_description
+[1.172s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ament_index/resource_index/parent_prefix_path/ur_description
+[1.173s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/environment/ament_prefix_path.sh
+[1.173s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/environment/ament_prefix_path.dsv
+[1.173s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/environment/path.sh
+[1.173s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/environment/path.dsv
+[1.173s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/local_setup.bash
+[1.173s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/local_setup.sh
+[1.173s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/local_setup.zsh
+[1.173s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/local_setup.dsv
+[1.173s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/package.dsv
+[1.173s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ament_index/resource_index/packages/ur_description
+[1.173s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/cmake/ur_descriptionConfig.cmake
+[1.173s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/cmake/ur_descriptionConfig-version.cmake
+[1.174s] -- Installing: /home/p/ws_demo2/install/ur_description/share/ur_description/package.xml
+[1.175s] Invoked command in '/home/p/ws_demo2/build/ur_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --install /home/p/ws_demo2/build/ur_description

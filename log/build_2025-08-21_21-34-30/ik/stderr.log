@@ -1,0 +1,7 @@
+[01m[K/home/p/ws_demo2/src/ik/src/ik.cpp:[m[K In constructor ‘[01m[KIKNode::IKNode()[m[K’:
+[01m[K/home/p/ws_demo2/src/ik/src/ik.cpp:11:49:[m[K [01;31m[Kerror: [m[K‘[01m[KjointStateCallback[m[K’ is not a member of ‘[01m[KIKNode[m[K’
+   11 |         "/joint_states", 10, std::bind(&IKNode::[01;31m[KjointStateCallback[m[K, this, std::placeholders::_1));
+      |                                                 [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/ik.dir/build.make:79：CMakeFiles/ik.dir/src/ik.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:153：CMakeFiles/ik.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

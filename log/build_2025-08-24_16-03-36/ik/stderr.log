@@ -1,0 +1,12 @@
+[01m[K/home/p/ws_demo2/src/ik/src/ik.cpp:[m[K In constructor ‘[01m[KIKNode::IKNode()[m[K’:
+[01m[K/home/p/ws_demo2/src/ik/src/ik.cpp:11:9:[m[K [01;31m[Kerror: [m[K‘[01m[Krobot_description[m[K’ was not declared in this scope; did you mean ‘[01m[Krobot_description_param[m[K’?
+   11 |     if ([01;31m[Krobot_description[m[K.empty()) {
+      |         [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |         [32m[Krobot_description_param[m[K
+[01m[K/home/p/ws_demo2/src/ik/src/ik.cpp:18:44:[m[K [01;31m[Kerror: [m[K‘[01m[Krobot_description[m[K’ was not declared in this scope; did you mean ‘[01m[Krobot_description_param[m[K’?
+   18 |         pinocchio::urdf::buildModelFromXML([01;31m[Krobot_description[m[K, model);
+      |                                            [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |                                            [32m[Krobot_description_param[m[K
+gmake[2]: *** [CMakeFiles/ik.dir/build.make:79：CMakeFiles/ik.dir/src/ik.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:153：CMakeFiles/ik.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

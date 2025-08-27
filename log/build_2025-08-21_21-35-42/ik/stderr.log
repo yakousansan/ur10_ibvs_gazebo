@@ -1,0 +1,4 @@
+[01m[K/home/p/ws_demo2/src/ik/src/ik.cpp:[m[K In member function ‘[01m[Kvoid IKNode::jointStateCallback(sensor_msgs::msg::JointState_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/p/ws_demo2/src/ik/src/ik.cpp:21:79:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   21 | void IKNode::jointStateCallback([01;35m[Kconst sensor_msgs::msg::JointState::SharedPtr msg[m[K)
+      |                                 [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K

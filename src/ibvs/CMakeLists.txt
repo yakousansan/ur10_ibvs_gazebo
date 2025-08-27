@@ -16,9 +16,6 @@ find_package(VISP REQUIRED)
 find_package(tf2 REQUIRED)
 find_package(tf2_ros REQUIRED)
 find_package(Eigen3 REQUIRED)
-find_package(moveit_core REQUIRED)
-find_package(moveit_ros_planning_interface REQUIRED)
-find_package(moveit_ros_planning REQUIRED)
 find_package(service_interfaces REQUIRED)
 add_executable(ibvs src/ibvs.cpp)
 
@@ -33,9 +30,6 @@ ament_target_dependencies(
   tf2
   tf2_ros
   Eigen3
-  moveit_core
-  moveit_ros_planning_interface
-  moveit_ros_planning
   service_interfaces
     
 )

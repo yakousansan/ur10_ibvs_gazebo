@@ -1,21 +1,7 @@
+#include"ibvs.h"
 #include "rclcpp/rclcpp.hpp"
-#include "sensor_msgs/msg/image.hpp"
-#include "sensor_msgs/msg/joint_state.hpp"
-#include "sensor_msgs/msg/camera_info.hpp"
-#include "std_msgs/msg/float64_multi_array.hpp"
-#include "geometry_msgs/msg/transform_stamped.hpp"
-#include <visp3/core/vpCameraParameters.h>
-#include <visp3/core/vpPoint.h>
-#include <visp3/visual_features/vpFeaturePoint.h>
-#include <visp3/vs/vpServo.h>
-#include <opencv2/opencv.hpp>
-#include <cv_bridge/cv_bridge.h>
-#include <vector>
-#include "tf2/transform_datatypes.h"
-#include "tf2/exceptions.h"
-#include "tf2_ros/buffer.h"
-#include "tf2_ros/transform_listener.h"
-#include <Eigen/Dense>
+
+
 
 class VisualServoInit : public rclcpp::Node
 {
@@ -34,11 +20,12 @@ public:
     // 订阅深度图像话题
     depth_subscriber = this->create_subscription<sensor_msgs::msg::Image>("/depth/image_raw",10,
             std::bind(&VisualServoInit::depth_callback, this, std::placeholders::_1));
-     // 订阅机械臂当前的关节角度
+    // 订阅机械臂当前的关节角度
     joint_state_subscriber_ = this->create_subscription<sensor_msgs::msg::JointState>("/joint_states", 10, 
             std::bind(&VisualServoInit::jointStateCallback, this, std::placeholders::_1));
-    // // 订阅机械臂的雅可比矩阵
-    // jacobian_client_ = this->create_client<service_interfaces::srv::GetJacobian>("get_jacobian");
+    // 订阅机械臂的雅可比矩阵
+    jacobian_subscriber_ = this->create_subscription<std_msgs::msg::Float64MultiArray>("/jacobian_matrix",10,
+            std::bind(&VisualServoInit::jacobianCallback, this, std::placeholders::_1));
     // // 创建一个定时器，用于周期性地发布关节速度指令
     // velocity_publisher_timer_ = this->create_wall_timer(std::chrono::milliseconds(10),std::bind(&VisualServoInit::velocity_publisher_callback, this));
     // 发布关节速度指令
@@ -47,8 +34,9 @@ public:
     cv::namedWindow("Detected Corners", cv::WINDOW_NORMAL);
     // 调整窗口大小
     cv::resizeWindow("Detected Corners", 640, 480);
-
-    //RCLCPP_INFO(this->get_logger(), "节点初始化完成");   
+    // 初始化雅可比
+    current_jacobian_.setZero(6, 6);
+    RCLCPP_INFO(this->get_logger(), "ibvs节点初始化完成");   
     }
     
     ~VisualServoInit()
@@ -59,11 +47,12 @@ public:
             rgb_cam_info_sub_.reset();
             joint_state_subscriber_.reset();
             velocity_publisher_.reset();
+            jacobian_subscriber_.reset();
             // 销毁OpenCV窗口
             cv::destroyWindow("Detected Corners");
             // 释放OpenCV资源
             cv::waitKey(1); 
-            //RCLCPP_INFO(this->get_logger(), "节点已关闭");
+            RCLCPP_INFO(this->get_logger(), "ibvs节点已关闭");
     }
     
 private:
@@ -72,6 +61,7 @@ private:
     rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr depth_subscriber;
     rclcpp::Subscription<sensor_msgs::msg::CameraInfo>::SharedPtr rgb_cam_info_sub_;
     rclcpp::Subscription<sensor_msgs::msg::JointState>::SharedPtr joint_state_subscriber_;
+    rclcpp::Subscription<std_msgs::msg::Float64MultiArray>::SharedPtr jacobian_subscriber_;
     rclcpp::Publisher<std_msgs::msg::Float64MultiArray>::SharedPtr velocity_publisher_;
     //声明一个类型为 vpCameraParameters 的成员变量 cam_params_，用于存储相机内参数据。
     vpCameraParameters cam_params_;
@@ -106,6 +96,9 @@ private:
     // 定义TF2相关变量
     tf2_ros::Buffer tf_buffer_;
     tf2_ros::TransformListener tf_listener_;
+    // 存储当前雅可比矩阵
+    Eigen::MatrixXd current_jacobian_;
+
     // 定义回调函数（当收到话题的消息，会自动调用回调函数） 
     void rgb_callback(const sensor_msgs::msg::Image::SharedPtr msg)
     {
@@ -271,7 +264,8 @@ private:
     void jointStateCallback(const sensor_msgs::msg::JointState::SharedPtr msg)
     {
         try
-        {
+        {   
+
             // current_angles_.clear();
             // for (size_t i = 0; i < msg->position.size(); ++i) {
             //     current_angles_.push_back(msg->position[i]);
@@ -285,6 +279,39 @@ private:
     // 速度发布器回调函数
     void velocity_publisher_callback()
     {
+        try
+        {
+
+        }
+        catch(const std::exception& e)
+        {
+
+        }
+
+    }
+    // 解析雅可比矩阵回调函数
+    void jacobianCallback(const std_msgs::msg::Float64MultiArray::SharedPtr msg)
+    {
+        try
+        {
+          // 检查数据大小是否正确
+        if (msg->data.size() != 36) {
+            RCLCPP_INFO(this->get_logger(), "雅可比矩阵数据大小不正确: 期望36，实际%zu", msg->data.size());
+            return;
+        }
+        // 将一维数组转换为6x6矩阵
+        for (int i = 0; i < 6; ++i) {
+            for (int j = 0; j < 6; ++j) {
+                current_jacobian_(i, j) = msg->data[i * 6 + j];
+            }
+        }
+        // RCLCPP_INFO(this->get_logger(), "收到雅可比矩阵");
+        }
+        catch(const std::exception& e)
+        {
+           RCLCPP_INFO(this->get_logger(), "解析雅可比矩阵失败: %s", e.what());
+        }
+        
 
     }
     // 矩形四个角点检测函数
@@ -437,35 +464,39 @@ private:
         // }
     }
     // 配置伺服参数
-     void init_visual_servo(){
+    void init_visual_servo(){
         // 1.伺服控制器初始化
         task.setServo(vpServo::EYEINHAND_CAMERA); // 设置伺服模式为相机在手眼坐标系下
         // 2.交互矩阵
         task.setInteractionMatrixType(vpServo::CURRENT); 
         // 3.增益
         task.setLambda(lambda_);
-        // 4.
+        // 4.特征计算
+        task.kill();
         for (size_t i = 0; i < current_features_.size(); ++i) {
             task.addFeature(current_features_[i], target_features_[i]);
          }
         // 5.计算相机速度
         cam_velocity_cmd = task.computeControlLaw();
-        // 6.打印相机速度指令
-        // RCLCPP_INFO(this->get_logger(), "转换前相机速度指令: [%.6f, %.6f, %.6f, %.6f, %.6f, %.6f]", 
-        //             cam_velocity_cmd[0], cam_velocity_cmd[1], cam_velocity_cmd[2],cam_velocity_cmd[3],cam_velocity_cmd[4],cam_velocity_cmd[5]);
-        camera_vel_cmd.linear.x = cam_velocity_cmd[0];
-        camera_vel_cmd.linear.y = cam_velocity_cmd[1];
-        camera_vel_cmd.linear.z = cam_velocity_cmd[2];
-        camera_vel_cmd.angular.x = cam_velocity_cmd[3];
-        camera_vel_cmd.angular.y = cam_velocity_cmd[4];
-        camera_vel_cmd.angular.z = cam_velocity_cmd[5];
+    
+        camera_vel_cmd.linear.x = -cam_velocity_cmd[0];
+        camera_vel_cmd.linear.y = -cam_velocity_cmd[1];
+        camera_vel_cmd.linear.z = -cam_velocity_cmd[2];
+        camera_vel_cmd.angular.x = -cam_velocity_cmd[3];
+        camera_vel_cmd.angular.y = -cam_velocity_cmd[4];
+        camera_vel_cmd.angular.z = -cam_velocity_cmd[5];
+        // 打印相机速度指令
+        RCLCPP_INFO(this->get_logger(), "相机速度: lin=[%.3f, %.3f, %.3f], ang=[%.3f, %.3f, %.3f]",
+                camera_vel_cmd.linear.x, camera_vel_cmd.linear.y, camera_vel_cmd.linear.z,
+                camera_vel_cmd.angular.x, camera_vel_cmd.angular.y, camera_vel_cmd.angular.z);
+
         // 将相机速度转换为机器人末端速度
         ConvertCameraVelToBaseVel("kinect_link", "base_link");
-        // 
-        send_robot_jacobian_request();
+        // 将机器人末端速度转换为关节速度
+        convertBaseVelToJointVel();
     }
     // 相机速度转换为机器人末端速度
-     void ConvertCameraVelToBaseVel(const std::string &camera_frame, const std::string &base_frame){
+    void ConvertCameraVelToBaseVel(const std::string &camera_frame, const std::string &base_frame){
         // 1.获取相机在机器人末端坐标系下的变换矩阵
         // 通过TF式获取相机在机器人末端坐标系下的变换矩阵
         // 获取相机到基坐标系的变换关系
@@ -505,11 +536,11 @@ private:
             // tf2::Transform transform(q, t);
 
             // 将四元数转换为Eigen的旋转矩阵 
-            Eigen::Quaterniond rotationWorldCam(tfCamWorld.transform.rotation.w, tfCamWorld.transform.rotation.x,tfCamWorld.transform.rotation.y, tfCamWorld.transform.rotation.z);
-            Eigen::Matrix3d rotationMatWorldCam = rotationWorldCam.toRotationMatrix();
+            Eigen::Quaterniond q_base_cam(tfCamWorld.transform.rotation.w, tfCamWorld.transform.rotation.x,tfCamWorld.transform.rotation.y, tfCamWorld.transform.rotation.z);
+            Eigen::Matrix3d R_base_cam = q_base_cam.toRotationMatrix();
             
             // 将平移向量转换为Eigen的向量  
-            Eigen::Vector3d arrWorldCamTrans(tfCamWorld.transform.translation.x,tfCamWorld.transform.translation.y,tfCamWorld.transform.translation.z);
+            Eigen::Vector3d p_base_cam(tfCamWorld.transform.translation.x,tfCamWorld.transform.translation.y,tfCamWorld.transform.translation.z);
             // 打印旋转矩阵和平移向量
             // RCLCPP_INFO(this->get_logger(), "Eigen方法：旋转矩阵:\n%.3f %.3f %.3f\n%.3f %.3f %.3f\n%.3f %.3f %.3f",
             //             rotationMatWorldCam(0, 0), rotationMatWorldCam(0, 1), rotationMatWorldCam(0, 2),
@@ -517,87 +548,79 @@ private:
             //             rotationMatWorldCam(2, 0), rotationMatWorldCam(2, 1), rotationMatWorldCam(2, 2));
             // RCLCPP_INFO(this->get_logger(), "Eigen方法：平移向量: x=%.3f, y=%.3f, z=%.3f",arrWorldCamTrans(0), arrWorldCamTrans(1), arrWorldCamTrans(2));
             // 创建一个4x4的变换矩阵，将旋转矩阵和平移向量组合起来
-            Eigen::Matrix4d transform_matrix = Eigen::Matrix4d::Identity();
+            // Eigen::Matrix4d transform_matrix = Eigen::Matrix4d::Identity();
             // 将旋转矩阵和平移向量填入变换矩阵
-            transform_matrix.block<3, 3>(0, 0) = rotationMatWorldCam;
-            transform_matrix(0, 3) = arrWorldCamTrans(0);
-            transform_matrix(1, 3) = arrWorldCamTrans(1);
-            transform_matrix(2, 3) = arrWorldCamTrans(2);
+            // transform_matrix.block<3, 3>(0, 0) = rotationMatWorldCam;
+            // transform_matrix(0, 3) = arrWorldCamTrans(0);
+            // transform_matrix(1, 3) = arrWorldCamTrans(1);
+            // transform_matrix(2, 3) = arrWorldCamTrans(2);
             // 转换相机速度到基坐标系速度
-            // 计算旋转后的速度（从相机坐标系到基坐标系）
-            Eigen::Vector4d linear_velocity = transform_matrix * Eigen::Vector4d(camera_vel_cmd.linear.x, camera_vel_cmd.linear.y , camera_vel_cmd.linear.z , 0); // 线速度
-            Eigen::Vector4d angular_velocity = transform_matrix * Eigen::Vector4d(camera_vel_cmd.angular.x, camera_vel_cmd.angular.y , camera_vel_cmd.angular.z , 0); // 角速度
             // 打印转换后的速度指令
             // RCLCPP_INFO(this->get_logger(), "转换后的机器人末端速度指令: linear=(%.2f, %.2f, %.2f), angular=(%.2f, %.2f, %.2f)", 
             //             linear_velocity(0), linear_velocity(1), linear_velocity(2),
             //             angular_velocity(0), angular_velocity(1), angular_velocity(2));
 
             // 将转换后的速度指令赋值给 camera_vel_cmd_in_base（将结果填充到Twist消息中）
+            // 创建速度向量
+            Eigen::Vector3d v_camera(camera_vel_cmd.linear.x,camera_vel_cmd.linear.y,camera_vel_cmd.linear.z);
+            Eigen::Vector3d ω_camera(camera_vel_cmd.angular.x,camera_vel_cmd.angular.y,camera_vel_cmd.angular.z);
+            // 转换线速度: v_base = R * v_camera + ω_base × p
+            // 转换角速度: ω_base = R * ω_camera
+            Eigen::Vector3d angular_velocity = R_base_cam * ω_camera;
+            Eigen::Vector3d linear_velocity = R_base_cam * v_camera + angular_velocity.cross(p_base_cam);
+            
+            
             camera_vel_cmd_in_base.linear.x = linear_velocity(0);
             camera_vel_cmd_in_base.linear.y = linear_velocity(1);
             camera_vel_cmd_in_base.linear.z = linear_velocity(2);
             camera_vel_cmd_in_base.angular.x = angular_velocity(0);
             camera_vel_cmd_in_base.angular.y = angular_velocity(1);
             camera_vel_cmd_in_base.angular.z = angular_velocity(2);
+            // 打印转换后的速度指令
+            RCLCPP_INFO(this->get_logger(), "转换后的机器人末端速度指令: 线速度=[%.3f, %.3f, %.3f], 角速度=[%.3f, %.3f, %.3f]",
+                        camera_vel_cmd_in_base.linear.x, camera_vel_cmd_in_base.linear.y, camera_vel_cmd_in_base.linear.z,
+                        camera_vel_cmd_in_base.angular.x, camera_vel_cmd_in_base.angular.y, camera_vel_cmd_in_base.angular.z);
         } 
         catch (tf2::TransformException &ex) 
         {
-            RCLCPP_WARN(this->get_logger(), "Transform failed: %s", ex.what());
+            RCLCPP_INFO(this->get_logger(), "相机速度转换为机器人末端速度失败: %s", ex.what());
+            camera_vel_cmd_in_base = geometry_msgs::msg::Twist();
         }
-        // // 2.发布机器人末端速度指令
-        // // 发布速度指令到机器人末端
-        // rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr base_velocity_publisher = this->create_publisher<geometry_msgs::msg::Twist>("/cmd_vel", 10);
-        // // 发布速度指令
-        // base_velocity_publisher->publish(camera_vel_cmd);
-        // // RCLCPP_INFO(this->get_logger(), "已发布机器人末端速度指令");
-        // // 3.打印速度指令
-        // RCLCPP_INFO(this->get_logger(), "机器人末端速度指令: linear=(%.2f, %.2f, %.2f), angular=(%.2f, %.2f, %.2f)", 
-        //             camera_vel_cmd.linear.x, camera_vel_cmd.linear.y, camera_vel_cmd.linear.z,
-        //             camera_vel_cmd.angular.x, camera_vel_cmd.angular.y, camera_vel_cmd.angular.z);
-
-    }
-    //
-     void send_robot_jacobian_request()
-    {
-        RCLCPP_INFO(this->get_logger(), "发送机器人雅可比矩阵请求");
 
     }
     // 将机器人末端速度转换为关节速度
-    // void convertBaseVelToJointVel(const service_interfaces::srv::GetJacobian::Response::SharedPtr result)
-    // {
-    //     // // 获取雅可比矩阵的值
-    //     // Eigen::MatrixXd robot_jacobian(6, 6);
-    //     // int index = 0;
-    //     // for (size_t i = 0; i < result->jacobian_matrix.layout.dim[0].size; ++i)
-    //     // {
-    //     //     for (size_t j = 0; j < result->jacobian_matrix.layout.dim[1].size; ++j)
-    //     //     {
-    //     //         robot_jacobian(i, j) = result->jacobian_matrix.data[index++];
-    //     //     }
-    //     // }
-    //     // // 计算雅可比矩阵的逆
-    //     // Eigen::MatrixXd robot_jacobian_inv = robot_jacobian.completeOrthogonalDecomposition().pseudoInverse();
-    //     // // 将相机速度指令转换为Eigen向量
-    //     // Eigen::VectorXd vector_camera_vel_cmd_in_base(6);
-    //     // vector_camera_vel_cmd_in_base << camera_vel_cmd_in_base.linear.x,
-    //     //                                 camera_vel_cmd_in_base.linear.y,
-    //     //                                 camera_vel_cmd_in_base.linear.z,
-    //     //                                 camera_vel_cmd_in_base.angular.x,
-    //     //                                 camera_vel_cmd_in_base.angular.y,
-    //     //                                 camera_vel_cmd_in_base.angular.z;
-    //     // // 计算关节速度q_dot = J⁺ * v_base
-    //     // Eigen::MatrixXd joint_vel_msg = robot_jacobian_inv * vector_camera_vel_cmd_in_base;
-    //     // // 打印关节速度
-    //     // joint_vel.data.resize(joint_vel_msg.rows());
-    //     // for (int i = 0; i < joint_vel_msg.rows(); ++i)
-    //     // {
-    //     //     joint_vel.data[i] = joint_vel_msg(i, 0);
-    //     //     if(std::abs(joint_vel.data[i]) > 1)
-    //     //     {
-    //     //         joint_vel.data[i] = (joint_vel.data[i] > 0) ? 1 : -1;
-    //     //     }
-    //     // }
-    // }
+    void convertBaseVelToJointVel()
+    {
+        try
+        {
+        // 检查雅可比
+        if (!current_jacobian_.allFinite()) {
+        RCLCPP_INFO(this->get_logger(), "雅可比矩阵包含非有限值");
+        return;
+        }
+        // 计算雅可比矩阵的逆
+        Eigen::MatrixXd jacobian_inv = current_jacobian_.completeOrthogonalDecomposition().pseudoInverse();
+        // 将相机速度指令转换为Eigen向量
+        Eigen::VectorXd vector_camera_vel_cmd_in_base(6);
+        vector_camera_vel_cmd_in_base << camera_vel_cmd_in_base.linear.x,
+                                        camera_vel_cmd_in_base.linear.y,
+                                        camera_vel_cmd_in_base.linear.z,
+                                        camera_vel_cmd_in_base.angular.x,
+                                        camera_vel_cmd_in_base.angular.y,
+                                        camera_vel_cmd_in_base.angular.z;
+        // 计算关节速度q_dot = J⁺ * v_base
+        Eigen::VectorXd joint_vel_msg = jacobian_inv * vector_camera_vel_cmd_in_base;
+        // 打印关节速度
+        RCLCPP_INFO(this->get_logger(), "发布关节速度: [%.3f, %.3f, %.3f, %.3f, %.3f, %.3f]",
+                    joint_vel_msg(0), joint_vel_msg(1), joint_vel_msg(2),
+                    joint_vel_msg(3), joint_vel_msg(4), joint_vel_msg(5));
+        }
+        catch(const std::exception& e)
+        {
+            RCLCPP_WARN(this->get_logger(), "末端速度转换为关节速度失败！: %s", e.what());
+        }
+    
+    }
 };
 
 int main(int argc, char **argv)
