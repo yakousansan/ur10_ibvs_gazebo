@@ -29,13 +29,21 @@ public:
     // // 创建一个定时器，用于周期性地发布关节速度指令
     // velocity_publisher_timer_ = this->create_wall_timer(std::chrono::milliseconds(10),std::bind(&VisualServoInit::velocity_publisher_callback, this));
     // 发布关节速度指令
-    velocity_publisher_ = this->create_publisher<std_msgs::msg::Float64MultiArray>("/ur5_arm_vel_controller/commands", 10);
+    joint_velocity_publisher_ = this->create_publisher<std_msgs::msg::Float64MultiArray>("/ur_joint_velocity_controller/commands", 10);
     // 创建显示窗口
     cv::namedWindow("Detected Corners", cv::WINDOW_NORMAL);
     // 调整窗口大小
     cv::resizeWindow("Detected Corners", 640, 480);
     // 初始化雅可比
     current_jacobian_.setZero(6, 6);
+    // 伺服控制器初始化
+        // 1.伺服控制器初始化
+        task.setServo(vpServo::EYEINHAND_CAMERA); // 设置伺服模式为相机在手眼坐标系下
+        // 2.交互矩阵
+        task.setInteractionMatrixType(vpServo::CURRENT); 
+        // 3.增益
+        task.setLambda(lambda_);
+
     RCLCPP_INFO(this->get_logger(), "ibvs节点初始化完成");   
     }
     
@@ -46,7 +54,7 @@ public:
             depth_subscriber.reset();
             rgb_cam_info_sub_.reset();
             joint_state_subscriber_.reset();
-            velocity_publisher_.reset();
+            joint_velocity_publisher_.reset();
             jacobian_subscriber_.reset();
             // 销毁OpenCV窗口
             cv::destroyWindow("Detected Corners");
@@ -62,7 +70,7 @@ private:
     rclcpp::Subscription<sensor_msgs::msg::CameraInfo>::SharedPtr rgb_cam_info_sub_;
     rclcpp::Subscription<sensor_msgs::msg::JointState>::SharedPtr joint_state_subscriber_;
     rclcpp::Subscription<std_msgs::msg::Float64MultiArray>::SharedPtr jacobian_subscriber_;
-    rclcpp::Publisher<std_msgs::msg::Float64MultiArray>::SharedPtr velocity_publisher_;
+    rclcpp::Publisher<std_msgs::msg::Float64MultiArray>::SharedPtr joint_velocity_publisher_;
     //声明一个类型为 vpCameraParameters 的成员变量 cam_params_，用于存储相机内参数据。
     vpCameraParameters cam_params_;
     // 存储检测到的角点
@@ -76,19 +84,20 @@ private:
     // 目标特征点的中心坐标和偏移量
     double center_u_ = 320.0; // 图像中心u坐标
     double center_v_ = 240.0; // 图像中心v坐标
-    double offset_u_ = 50.0;  // 水平偏移量
-    double offset_v_ = 50.0;  // 垂直偏移量
+    double offset_u_ = 100.0;  // 水平偏移量
+    double offset_v_ = 100.0;  // 垂直偏移量
     // 目标特征点的像素坐标（用于存储目标特征点的像素坐标）
     std::vector<vpImagePoint> target_pixels_; 
     // 定义当前特征点（用于存储当前检测到的特征点）
     std::vector<vpFeaturePoint> current_features_;
     // 定义特征误差（用于存储特征点的误差）
     vpColVector feature_error_;
-
+    // 特征误差阈值
+    double error_threshold_ = 0.1;
     // 定义伺服控制器
     vpServo task;
     // 定义伺服控制器的增益
-    double lambda_ = 1.0;
+    double lambda_ = 0.3;
     // 相机速度指令
     vpColVector cam_velocity_cmd;
     geometry_msgs::msg::Twist camera_vel_cmd;
@@ -187,8 +196,14 @@ private:
                     cv::putText(img_copy, status,
                     cv::Point(640 - 200, 30),
                     cv::FONT_HERSHEY_SIMPLEX, 0.4, 
-                    cv::Scalar(0, 0, 255), 2); 
+                    cv::Scalar(0, 0, 255), 2);
+
+                // 检测不到停止运行
+                std_msgs::msg::Float64MultiArray zero_vel;
+                zero_vel.data = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
+                joint_velocity_publisher_->publish(zero_vel); 
             }
+
             // 绘制目标特征点（期望的角点位置）
             for (size_t i = 0; i < target_features_.size(); ++i) {
                 // 获取容器中第 i 个目标特征点，用 target_pixel 作为临时别名方便后续操作
@@ -207,21 +222,19 @@ private:
                             cv::Point(pt.x + 10, pt.y - 10),
                             cv::FONT_HERSHEY_SIMPLEX, 0.5, cv::Scalar(255, 0, 0), 1);
             }
-            // 计算并打印特征误差
-            if (detection_success) {
-                compute_feature_error();
-            }
             // 伺服控制器初始化 
             init_visual_servo();
-
-
             // 显示处理后的图像
             cv::imshow("Detected Corners", img_copy);
             cv::waitKey(1);
         }
         catch (const std::exception& e)
         {
-            RCLCPP_ERROR(this->get_logger(), "未检测到角点catch: %s", e.what());
+            RCLCPP_INFO(this->get_logger(), "未检测到角点catch: %s", e.what());
+            std_msgs::msg::Float64MultiArray zero_vel;
+            zero_vel.data = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
+            joint_velocity_publisher_->publish(zero_vel);
+
         }
     }
     //  深度图回调函数
@@ -229,11 +242,11 @@ private:
     {
         try
         {   
-            (void)msg;
+
         }
         catch (const std::exception& e)
         {
-            RCLCPP_ERROR(this->get_logger(), "深度图回调函数出错: %s", e.what());
+            RCLCPP_INFO(this->get_logger(), "深度图回调函数出错: %s", e.what());
         }
     }
     // 相机内参回调函数
@@ -256,7 +269,7 @@ private:
         }
         catch (const std::exception& e)
         {
-            RCLCPP_ERROR(this->get_logger(), "相机内参回调函数出错: %s", e.what());      
+            RCLCPP_INFO(this->get_logger(), "相机内参回调函数出错: %s", e.what());      
         }
 
     }
@@ -265,19 +278,19 @@ private:
     {
         try
         {   
-
-            // current_angles_.clear();
-            // for (size_t i = 0; i < msg->position.size(); ++i) {
-            //     current_angles_.push_back(msg->position[i]);
+            // 打印关节速度
+            // for (int i = 0; i < 6; ++i)
+            // {
+            //     RCLCPP_INFO(this->get_logger(), "关节 %d 速度: %.4f rad/s", i+1, msg->velocity[i]);
             // }
         }
         catch (const std::exception& e)
         {
-
+            RCLCPP_INFO(this->get_logger(), "关节状态回调异常: %s", e.what());
         }
     }
     // 速度发布器回调函数
-    void velocity_publisher_callback()
+    void joint_velocity_publisher_callback()
     {
         try
         {
@@ -315,7 +328,7 @@ private:
 
     }
     // 矩形四个角点检测函数
-     bool detect_rectangle_corners(const cv::Mat& img, std::vector<vpImagePoint>& corners)
+    bool detect_rectangle_corners(const cv::Mat& img, std::vector<vpImagePoint>& corners)
      {
         //输入参数cv::Mat& img：OpencV格式的彩色图像img
         //输出参数std::vector<vpImagePoint>& corners：用于存储检测到的角点（ViSP 库的像素坐标格式），通过引用传递实现输出。核心作用是让函数能够将检测到的角点数据 “传递出去” 给函数外部使用。
@@ -354,7 +367,16 @@ private:
 
                     // 6. 判断是否为矩形（4个顶点）
                     if (approx.size() == 4)
-                    {
+                    {   
+                        // 计算中心点
+                        cv::Point2f center(0, 0);//
+                        for (const auto& p : approx)
+                        {
+                            center.x += p.x;
+                            center.y += p.y;
+                        }
+                            center.x /= 4;
+                            center.y /= 4;
                         // 7. 坐标转换为ViSP格式（y, x）
                         for (const auto& p : approx)
                             corners.push_back(vpImagePoint(p.y, p.x));
@@ -364,8 +386,8 @@ private:
             return false;
      
      }
-     // 目标特征点设定
-     void init_target_features() {
+    // 目标特征点设定
+    void init_target_features() {
             // 清空之前的目标特征点和像素坐标
             target_features_.clear();
             target_pixels_.clear(); 
@@ -421,15 +443,16 @@ private:
             //RCLCPP_INFO(this->get_logger(), "转换后（归一化坐标）：x=%.6f, y=%.6f", fp0.get_x(), fp0.get_y());
     }
     // 计算特征误差
-     void compute_feature_error(){   
+     bool compute_feature_error(){   
         // 检查target_features_ 和 current_features_ 特征点数量是否匹配
         if (target_features_.size() != current_features_.size() || target_features_.empty()) {
-            RCLCPP_ERROR(this->get_logger(), "特征点数量不匹配或为空，无法计算误差");
-            return;
+            RCLCPP_INFO(this->get_logger(), "特征点数量不匹配或为空，无法计算误差");
+            return false;
         }
         // 清空特征误差 
         feature_error_.resize(target_features_.size() * 2); // 每个特征点有两个误差分量（x和y）
         for (size_t i = 0; i < feature_error_.size(); ++i) {feature_error_[i] = 0.0;}
+        double total_error = 0.0;
         //RCLCPP_INFO(this->get_logger(), "特征点数量：%zu", target_features_.size());
         //RCLCPP_INFO(this->get_logger(), "特征误差向量大小：%zu", feature_error_.size());
         // 打印当前特征点和目标特征点
@@ -456,21 +479,41 @@ private:
             // 存储误差
             feature_error_[i * 2] = error_x;
             feature_error_[i * 2 + 1] = error_y;
+
+            total_error += error_x * error_x + error_y * error_y;
         }
         // 打印特征误差
         // for (size_t i = 0; i < target_features_.size(); ++i) {
         //     RCLCPP_INFO(this->get_logger(), "特征点 %zu: 误差 (x, y) = (%.6f, %.6f)", 
         //                 i + 1, feature_error_[i * 2], feature_error_[i * 2 + 1]);
         // }
+
+        // 计算均方根误差
+        double rmse = std::sqrt(total_error / target_features_.size());
+        // RCLCPP_INFO(this->get_logger(), "特征点RMSE: %.3f 像素（阈值: %.3f 像素）", 
+        //         rmse, error_threshold_);
+
+        // 仅单次RMSE小于阈值即判定收敛
+        if (rmse < error_threshold_) {
+            RCLCPP_INFO(this->get_logger(), "特征误差已收敛，停止视觉伺服");
+            return true; 
+    }
+
+    return false; 
+
     }
     // 配置伺服参数
     void init_visual_servo(){
-        // 1.伺服控制器初始化
-        task.setServo(vpServo::EYEINHAND_CAMERA); // 设置伺服模式为相机在手眼坐标系下
-        // 2.交互矩阵
-        task.setInteractionMatrixType(vpServo::CURRENT); 
-        // 3.增益
-        task.setLambda(lambda_);
+        // 计算是否收敛
+        if (compute_feature_error()) {
+            // 特征误差收敛，停止伺服
+            // 发布零速度指令
+            std_msgs::msg::Float64MultiArray joint_velocity_msg;
+            joint_velocity_msg.data = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
+            joint_velocity_publisher_->publish(joint_velocity_msg);
+            // RCLCPP_INFO(this->get_logger(), "发布零速度指令，视觉伺服停止");
+            return;
+        }
         // 4.特征计算
         task.kill();
         for (size_t i = 0; i < current_features_.size(); ++i) {
@@ -479,16 +522,16 @@ private:
         // 5.计算相机速度
         cam_velocity_cmd = task.computeControlLaw();
     
-        camera_vel_cmd.linear.x = -cam_velocity_cmd[0];
-        camera_vel_cmd.linear.y = -cam_velocity_cmd[1];
-        camera_vel_cmd.linear.z = -cam_velocity_cmd[2];
-        camera_vel_cmd.angular.x = -cam_velocity_cmd[3];
-        camera_vel_cmd.angular.y = -cam_velocity_cmd[4];
-        camera_vel_cmd.angular.z = -cam_velocity_cmd[5];
+        camera_vel_cmd.linear.x = cam_velocity_cmd[0];
+        camera_vel_cmd.linear.y = cam_velocity_cmd[1];
+        camera_vel_cmd.linear.z = cam_velocity_cmd[2];
+        camera_vel_cmd.angular.x = cam_velocity_cmd[3];
+        camera_vel_cmd.angular.y = cam_velocity_cmd[4];
+        camera_vel_cmd.angular.z = cam_velocity_cmd[5];
         // 打印相机速度指令
-        RCLCPP_INFO(this->get_logger(), "相机速度: lin=[%.3f, %.3f, %.3f], ang=[%.3f, %.3f, %.3f]",
-                camera_vel_cmd.linear.x, camera_vel_cmd.linear.y, camera_vel_cmd.linear.z,
-                camera_vel_cmd.angular.x, camera_vel_cmd.angular.y, camera_vel_cmd.angular.z);
+        // RCLCPP_INFO(this->get_logger(), "相机速度: 线速度=[%.3f, %.3f, %.3f], 角速度=[%.3f, %.3f, %.3f]",
+        //         camera_vel_cmd.linear.x, camera_vel_cmd.linear.y, camera_vel_cmd.linear.z,
+        //         camera_vel_cmd.angular.x, camera_vel_cmd.angular.y, camera_vel_cmd.angular.z);
 
         // 将相机速度转换为机器人末端速度
         ConvertCameraVelToBaseVel("kinect_link", "base_link");
@@ -577,9 +620,9 @@ private:
             camera_vel_cmd_in_base.angular.y = angular_velocity(1);
             camera_vel_cmd_in_base.angular.z = angular_velocity(2);
             // 打印转换后的速度指令
-            RCLCPP_INFO(this->get_logger(), "转换后的机器人末端速度指令: 线速度=[%.3f, %.3f, %.3f], 角速度=[%.3f, %.3f, %.3f]",
-                        camera_vel_cmd_in_base.linear.x, camera_vel_cmd_in_base.linear.y, camera_vel_cmd_in_base.linear.z,
-                        camera_vel_cmd_in_base.angular.x, camera_vel_cmd_in_base.angular.y, camera_vel_cmd_in_base.angular.z);
+            // RCLCPP_INFO(this->get_logger(), "转换后的机器人末端速度指令: 线速度=[%.3f, %.3f, %.3f], 角速度=[%.3f, %.3f, %.3f]",
+            //             camera_vel_cmd_in_base.linear.x, camera_vel_cmd_in_base.linear.y, camera_vel_cmd_in_base.linear.z,
+            //             camera_vel_cmd_in_base.angular.x, camera_vel_cmd_in_base.angular.y, camera_vel_cmd_in_base.angular.z);
         } 
         catch (tf2::TransformException &ex) 
         {
@@ -595,7 +638,7 @@ private:
         {
         // 检查雅可比
         if (!current_jacobian_.allFinite()) {
-        RCLCPP_INFO(this->get_logger(), "雅可比矩阵包含非有限值");
+            RCLCPP_INFO(this->get_logger(), "雅可比矩阵包含非有限值");
         return;
         }
         // 计算雅可比矩阵的逆
@@ -609,15 +652,27 @@ private:
                                         camera_vel_cmd_in_base.angular.y,
                                         camera_vel_cmd_in_base.angular.z;
         // 计算关节速度q_dot = J⁺ * v_base
-        Eigen::VectorXd joint_vel_msg = jacobian_inv * vector_camera_vel_cmd_in_base;
+        Eigen::VectorXd joint_vel = jacobian_inv * vector_camera_vel_cmd_in_base;
         // 打印关节速度
-        RCLCPP_INFO(this->get_logger(), "发布关节速度: [%.3f, %.3f, %.3f, %.3f, %.3f, %.3f]",
-                    joint_vel_msg(0), joint_vel_msg(1), joint_vel_msg(2),
-                    joint_vel_msg(3), joint_vel_msg(4), joint_vel_msg(5));
+        // RCLCPP_INFO(this->get_logger(), "发布关节速度: [%.3f, %.3f, %.3f, %.3f, %.3f, %.3f]",
+        //             joint_vel(0), joint_vel(1), joint_vel(2),
+        //             joint_vel(3), joint_vel(4), joint_vel(5));
+
+        // 发布关节速度
+        std_msgs::msg::Float64MultiArray joint_vel_msg;
+        joint_vel_msg.data.resize(6);
+        for (size_t i = 0; i < 6; ++i) {
+            joint_vel_msg.data[i] = joint_vel(i); 
+        }
+        joint_velocity_publisher_->publish(joint_vel_msg);
+        // RCLCPP_INFO(this->get_logger(), "关节速度已经发布：");
         }
         catch(const std::exception& e)
         {
-            RCLCPP_WARN(this->get_logger(), "末端速度转换为关节速度失败！: %s", e.what());
+            RCLCPP_INFO(this->get_logger(), "末端速度转换为关节速度失败！: %s", e.what());
+            std_msgs::msg::Float64MultiArray zero_vel;
+            zero_vel.data = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
+            joint_velocity_publisher_->publish(zero_vel);
         }
     
     }

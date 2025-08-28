@@ -104,6 +104,7 @@ IKNode::IKNode() : Node("ik_node")
 //  析沟函数
 IKNode::~IKNode()
 {
+    joint_state_subscriber_.reset();
     RCLCPP_INFO(this->get_logger(), "IK Node已关闭.");
 }
 

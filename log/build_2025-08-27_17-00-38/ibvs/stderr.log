@@ -1,0 +1,19 @@
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:[m[K In member function ‘[01m[Kvoid VisualServoInit::jointStateCallback(sensor_msgs::msg::JointState_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:259:75:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  259 |     void jointStateCallback([01;35m[Kconst sensor_msgs::msg::JointState::SharedPtr msg[m[K)
+      |                             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:[m[K In member function ‘[01m[Kbool VisualServoInit::compute_feature_error()[m[K’:
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:423:13:[m[K [01;31m[Kerror: [m[Kreturn-statement with no value, in function returning ‘[01m[Kbool[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+  423 |             [01;31m[Kreturn[m[K;
+      |             [01;31m[K^~~~~~[m[K
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:463:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kerror_x[m[K’ was not declared in this scope; did you mean ‘[01m[Kerror_t[m[K’?
+  463 |         total_error += [01;31m[Kerror_x[m[K * error_x + error_y * error_y;
+      |                        [01;31m[K^~~~~~~[m[K
+      |                        [32m[Kerror_t[m[K
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:463:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kerror_y[m[K’ was not declared in this scope; did you mean ‘[01m[Kerror_t[m[K’?
+  463 |         total_error += error_x * error_x + [01;31m[Kerror_y[m[K * error_y;
+      |                                            [01;31m[K^~~~~~~[m[K
+      |                                            [32m[Kerror_t[m[K
+gmake[2]: *** [CMakeFiles/ibvs.dir/build.make:79：CMakeFiles/ibvs.dir/src/ibvs.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:153：CMakeFiles/ibvs.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

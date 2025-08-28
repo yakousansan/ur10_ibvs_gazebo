@@ -1,0 +1,22 @@
+[0.030s] Invoking command in '/home/p/ws_demo2/build/ibvs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --build /home/p/ws_demo2/build/ibvs -- -j16 -l16
+[0.072s] [ 50%] [32mBuilding CXX object CMakeFiles/ibvs.dir/src/ibvs.cpp.o[0m
+[3.803s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:[m[K In member function ‘[01m[Kvoid VisualServoInit::jointStateCallback(sensor_msgs::msg::JointState_<std::allocator<void> >::SharedPtr)[m[K’:
+[3.804s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:259:75:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.804s]   259 |     void jointStateCallback([01;35m[Kconst sensor_msgs::msg::JointState::SharedPtr msg[m[K)
+[3.804s]       |                             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[3.814s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:[m[K In member function ‘[01m[Kbool VisualServoInit::compute_feature_error()[m[K’:
+[3.814s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:423:13:[m[K [01;31m[Kerror: [m[Kreturn-statement with no value, in function returning ‘[01m[Kbool[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[3.814s]   423 |             [01;31m[Kreturn[m[K;
+[3.814s]       |             [01;31m[K^~~~~~[m[K
+[3.820s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:463:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kerror_x[m[K’ was not declared in this scope; did you mean ‘[01m[Kerror_t[m[K’?
+[3.820s]   463 |         total_error += [01;31m[Kerror_x[m[K * error_x + error_y * error_y;
+[3.820s]       |                        [01;31m[K^~~~~~~[m[K
+[3.820s]       |                        [32m[Kerror_t[m[K
+[3.826s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:463:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kerror_y[m[K’ was not declared in this scope; did you mean ‘[01m[Kerror_t[m[K’?
+[3.826s]   463 |         total_error += error_x * error_x + [01;31m[Kerror_y[m[K * error_y;
+[3.826s]       |                                            [01;31m[K^~~~~~~[m[K
+[3.826s]       |                                            [32m[Kerror_t[m[K
+[11.882s] gmake[2]: *** [CMakeFiles/ibvs.dir/build.make:79：CMakeFiles/ibvs.dir/src/ibvs.cpp.o] 错误 1
+[11.882s] gmake[1]: *** [CMakeFiles/Makefile2:153：CMakeFiles/ibvs.dir/all] 错误 2
+[11.883s] gmake: *** [Makefile:146：all] 错误 2
+[11.884s] Invoked command in '/home/p/ws_demo2/build/ibvs' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --build /home/p/ws_demo2/build/ibvs -- -j16 -l16

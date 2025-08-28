@@ -1,0 +1,24 @@
+[0.027s] Invoking command in '/home/p/ws_demo2/build/ibvs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --build /home/p/ws_demo2/build/ibvs -- -j16 -l16
+[0.062s] [ 50%] [32mBuilding CXX object CMakeFiles/ibvs.dir/src/ibvs.cpp.o[0m
+[3.387s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:[m[K In member function ‘[01m[Kvoid VisualServoInit::depth_callback(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[3.387s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:231:66:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.387s]   231 |     void depth_callback([01;35m[Kconst sensor_msgs::msg::Image::SharedPtr msg[m[K)
+[3.387s]       |                         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[3.391s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:[m[K In member function ‘[01m[Kvoid VisualServoInit::jointStateCallback(sensor_msgs::msg::JointState_<std::allocator<void> >::SharedPtr)[m[K’:
+[3.391s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:271:17:[m[K [01;35m[Kwarning: [m[Kunnecessary parentheses in declaration of ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wparentheses-Wparentheses]8;;[m[K]
+[3.391s]   271 |             void[01;35m[K(msg)[m[K;
+[3.391s]       |                 [01;35m[K^~~~~[m[K
+[3.391s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:271:17:[m[K [01;36m[Knote: [m[Kremove parentheses
+[3.391s]   271 |             void[01;36m[K(msg)[m[K;
+[3.391s]       |                 [01;36m[K^~~~~[m[K
+[3.391s]       |                 [31m[K-[m[K   [31m[K-[m[K
+[3.391s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:271:18:[m[K [01;31m[Kerror: [m[Kvariable or field ‘[01m[Kmsg[m[K’ declared void
+[3.391s]   271 |             void([01;31m[Kmsg[m[K);
+[3.391s]       |                  [01;31m[K^~~[m[K
+[3.391s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:267:75:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.391s]   267 |     void jointStateCallback([01;35m[Kconst sensor_msgs::msg::JointState::SharedPtr msg[m[K)
+[3.391s]       |                             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[10.620s] gmake[2]: *** [CMakeFiles/ibvs.dir/build.make:79：CMakeFiles/ibvs.dir/src/ibvs.cpp.o] 错误 1
+[10.620s] gmake[1]: *** [CMakeFiles/Makefile2:153：CMakeFiles/ibvs.dir/all] 错误 2
+[10.620s] gmake: *** [Makefile:146：all] 错误 2
+[10.621s] Invoked command in '/home/p/ws_demo2/build/ibvs' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --build /home/p/ws_demo2/build/ibvs -- -j16 -l16

@@ -1,0 +1,83 @@
+[0.028s] Invoking command in '/home/p/ws_demo2/build/ibvs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --build /home/p/ws_demo2/build/ibvs -- -j16 -l16
+[0.057s] [ 50%] [32mBuilding CXX object CMakeFiles/ibvs.dir/src/ibvs.cpp.o[0m
+[3.716s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:693:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+[3.716s]   693 | }
+[3.716s]       |  [01;31m[K^[m[K
+[3.716s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:7:1:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+[3.716s]     7 | [01;36m[K{[m[K
+[3.716s]       | [01;36m[K^[m[K
+[3.729s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:[m[K In constructor ‘[01m[KVisualServoInit::VisualServoInit()[m[K’:
+[3.729s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:28:41:[m[K [01;31m[Kerror: [m[K‘[01m[KjacobianCallback[m[K’ is not a member of ‘[01m[KVisualServoInit[m[K’
+[3.729s]    28 |             std::bind(&VisualServoInit::[01;31m[KjacobianCallback[m[K, this, std::placeholders::_1));
+[3.729s]       |                                         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[3.752s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:[m[K In member function ‘[01m[Kvoid VisualServoInit::rgb_callback(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[3.753s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:140:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kdetect_rectangle_corners[m[K’ was not declared in this scope
+[3.753s]   140 |             bool detection_success = [01;31m[Kdetect_rectangle_corners[m[K(img_bgr, detected_corners_);
+[3.753s]       |                                      [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.764s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:226:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kinit_visual_servo[m[K’ was not declared in this scope
+[3.764s]   226 |             [01;31m[Kinit_visual_servo[m[K();
+[3.764s]       |             [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[3.766s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:[m[K In member function ‘[01m[Kvoid VisualServoInit::depth_callback(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[3.766s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:241:66:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.766s]   241 |     void depth_callback([01;35m[Kconst sensor_msgs::msg::Image::SharedPtr msg[m[K)
+[3.766s]       |                         [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[3.777s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:[m[K In member function ‘[01m[Kvoid VisualServoInit::rgb_camera_info_callback(sensor_msgs::msg::CameraInfo_<std::allocator<void> >::SharedPtr)[m[K’:
+[3.777s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:266:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kinit_target_features[m[K’ was not declared in this scope; did you mean ‘[01m[Ktarget_features_[m[K’?
+[3.778s]   266 |             [01;31m[Kinit_target_features[m[K();
+[3.778s]       |             [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[3.778s]       |             [32m[Ktarget_features_[m[K
+[3.780s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:[m[K In member function ‘[01m[Kvoid VisualServoInit::jointStateCallback(sensor_msgs::msg::JointState_<std::allocator<void> >::SharedPtr)[m[K’:
+[3.780s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:287:9:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kcatch[m[K’
+[3.780s]   287 |         [01;31m[Kcatch[m[K (const std::exception& e)
+[3.780s]       |         [01;31m[K^~~~~[m[K
+[3.780s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:293:10:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[Kcatch[m[K’ before ‘[01m[Kjoint_velocity_publisher_callback[m[K’
+[3.780s]   293 |     void [01;31m[Kjoint_velocity_publisher_callback[m[K()
+[3.780s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.780s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:293:10:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K([m[K’ before ‘[01m[Kjoint_velocity_publisher_callback[m[K’
+[3.780s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:293:10:[m[K [01;31m[Kerror: [m[Kexpected type-specifier before ‘[01m[Kjoint_velocity_publisher_callback[m[K’
+[3.780s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:294:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K{[m[K’ token
+[3.780s]   294 |     [01;31m[K{[m[K
+[3.780s]       |     [01;31m[K^[m[K
+[3.780s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:293:10:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+[3.780s]   293 |     void [01;36m[Kjoint_velocity_publisher_callback[m[K()
+[3.780s]       |          [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.780s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:307:5:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+[3.780s]   307 |     [01;31m[K{[m[K
+[3.780s]       |     [01;31m[K^[m[K
+[3.780s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:332:6:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+[3.780s]   332 |      [01;31m[K{[m[K
+[3.781s]       |      [01;31m[K^[m[K
+[3.781s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:390:33:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+[3.781s]   390 |     void init_target_features() [01;31m[K{[m[K
+[3.781s]       |                                 [01;31m[K^[m[K
+[3.781s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:446:32:[m[K [01;35m[Kwarning: [m[Kempty parentheses were disambiguated as a function declaration [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wvexing-parse-Wvexing-parse]8;;[m[K]
+[3.781s]   446 |      bool compute_feature_error[01;35m[K()[m[K{
+[3.781s]       |                                [01;35m[K^~[m[K
+[3.781s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:446:32:[m[K [01;36m[Knote: [m[Kremove parentheses to default-initialize a variable
+[3.781s]   446 |      bool compute_feature_error[01;36m[K()[m[K{
+[3.781s]       |                                [01;36m[K^~[m[K
+[3.781s]       |                                [31m[K--[m[K
+[3.781s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:446:32:[m[K [01;36m[Knote: [m[Kor replace parentheses with braces to value-initialize a variable
+[3.781s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:446:34:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+[3.781s]   446 |      bool compute_feature_error()[01;31m[K{[m[K
+[3.781s]       |                                  [01;31m[K^[m[K
+[3.781s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:506:29:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+[3.781s]   506 |     void init_visual_servo()[01;31m[K{[m[K
+[3.781s]       |                             [01;31m[K^[m[K
+[3.781s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:542:99:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+[3.781s]   542 |     void ConvertCameraVelToBaseVel(const std::string &camera_frame, const std::string &base_frame)[01;31m[K{[m[K
+[3.781s]       |                                                                                                   [01;31m[K^[m[K
+[3.781s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:636:5:[m[K [01;31m[Kerror: [m[Ka function-definition is not allowed here before ‘[01m[K{[m[K’ token
+[3.781s]   636 |     [01;31m[K{[m[K
+[3.781s]       |     [01;31m[K^[m[K
+[3.782s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:277:75:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.782s]   277 |     void jointStateCallback([01;35m[Kconst sensor_msgs::msg::JointState::SharedPtr msg[m[K)
+[3.782s]       |                             [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[3.782s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:[m[K At global scope:
+[3.782s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:693:2:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id at end of input
+[3.783s]   693 | }
+[3.783s]       |  [01;31m[K^[m[K
+[7.369s] gmake[2]: *** [CMakeFiles/ibvs.dir/build.make:79：CMakeFiles/ibvs.dir/src/ibvs.cpp.o] 错误 1
+[7.369s] gmake[1]: *** [CMakeFiles/Makefile2:153：CMakeFiles/ibvs.dir/all] 错误 2
+[7.369s] gmake: *** [Makefile:146：all] 错误 2
+[7.371s] Invoked command in '/home/p/ws_demo2/build/ibvs' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --build /home/p/ws_demo2/build/ibvs -- -j16 -l16
