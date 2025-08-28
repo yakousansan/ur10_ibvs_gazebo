@@ -1,0 +1,8 @@
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:[m[K In constructor ‘[01m[KVisualServoInit::VisualServoInit()[m[K’:
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:52:113:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kdo[m[K’
+   52 |     error_data_file << "Timestamp,error_x0,error_y0,error_x1,error_y1,error_x2,error_y2,error_x3,error_y3,RMSE,"
+      |                                                                                                                 [01;31m[K^[m[K
+      |                                                                                                                 [32m[K;[m[K
+gmake[2]: *** [CMakeFiles/ibvs.dir/build.make:79：CMakeFiles/ibvs.dir/src/ibvs.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:153：CMakeFiles/ibvs.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

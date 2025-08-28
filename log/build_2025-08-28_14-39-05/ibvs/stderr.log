@@ -1,0 +1,12 @@
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:[m[K In member function ‘[01m[Kvoid VisualServoInit::depth_callback(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:196:79:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  196 | ServoInit::depth_callback([01;35m[Kconst sensor_msgs::msg::Image::SharedPtr msg[m[K)
+      |                           [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:[m[K In member function ‘[01m[Kvoid VisualServoInit::jointStateCallback(sensor_msgs::msg::JointState_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:232:88:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  232 | ::jointStateCallback([01;35m[Kconst sensor_msgs::msg::JointState::SharedPtr msg[m[K)
+      |                      [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+
+/usr/bin/ld: warning: libopencv_imgproc.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgproc.so.411
+/usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.411

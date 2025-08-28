@@ -1,0 +1,334 @@
+[0.085s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.085s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7c5456953490>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7c5456952ec0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7c5456952ec0>>, mixin_verb=('build',))
+[0.211s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.211s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.211s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.211s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.212s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.212s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.212s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/p/ws_demo2'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_image) by extensions ['ignore', 'ignore_ament_install']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_image) by extension 'ignore'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_image) by extension 'ignore_ament_install'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_image) by extensions ['colcon_pkg']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_image) by extension 'colcon_pkg'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_image) by extensions ['colcon_meta']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_image) by extension 'colcon_meta'
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_image) by extensions ['ros']
+[0.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/camera_image) by extension 'ros'
+[0.223s] DEBUG:colcon.colcon_core.package_identification:Package 'src/camera_image' with type 'ros.ament_cmake' and name 'camera_image'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(src/ibvs) by extensions ['ignore', 'ignore_ament_install']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/ibvs) by extension 'ignore'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/ibvs) by extension 'ignore_ament_install'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/ibvs) by extensions ['colcon_pkg']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/ibvs) by extension 'colcon_pkg'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/ibvs) by extensions ['colcon_meta']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/ibvs) by extension 'colcon_meta'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/ibvs) by extensions ['ros']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(src/ibvs) by extension 'ros'
+[0.225s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ibvs' with type 'ros.ament_cmake' and name 'ibvs'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/ik) by extensions ['ignore', 'ignore_ament_install']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/ik) by extension 'ignore'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/ik) by extension 'ignore_ament_install'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/ik) by extensions ['colcon_pkg']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/ik) by extension 'colcon_pkg'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/ik) by extensions ['colcon_meta']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/ik) by extension 'colcon_meta'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/ik) by extensions ['ros']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(src/ik) by extension 'ros'
+[0.226s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ik' with type 'ros.ament_cmake' and name 'ik'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_description) by extensions ['ignore', 'ignore_ament_install']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_description) by extension 'ignore'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_description) by extension 'ignore_ament_install'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_description) by extensions ['colcon_pkg']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_description) by extension 'colcon_pkg'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_description) by extensions ['colcon_meta']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_description) by extension 'colcon_meta'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_description) by extensions ['ros']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(src/ur_description) by extension 'ros'
+[0.227s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ur_description' with type 'ros.ament_cmake' and name 'ur_description'
+[0.227s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.227s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.227s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.227s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.227s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.246s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.246s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.249s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 5 installed packages in /home/p/ws_demo2/install
+[0.249s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/p/ws_demo1/install
+[0.250s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 5 installed packages in /home/p/demo_ws2/install
+[0.251s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 55 installed packages in /home/p/ws_moveit2/install
+[0.252s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 391 installed packages in /opt/ros/humble
+[0.254s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'camera_image' build argument 'cmake_args' from command line to 'None'
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'camera_image' build argument 'cmake_target' from command line to 'None'
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'camera_image' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'camera_image' build argument 'cmake_clean_cache' from command line to 'False'
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'camera_image' build argument 'cmake_clean_first' from command line to 'False'
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'camera_image' build argument 'cmake_force_configure' from command line to 'False'
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'camera_image' build argument 'ament_cmake_args' from command line to 'None'
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'camera_image' build argument 'catkin_cmake_args' from command line to 'None'
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'camera_image' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.293s] DEBUG:colcon.colcon_core.verb:Building package 'camera_image' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/p/ws_demo2/build/camera_image', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/p/ws_demo2/install/camera_image', 'merge_install': False, 'path': '/home/p/ws_demo2/src/camera_image', 'symlink_install': False, 'test_result_base': None}
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'ibvs' build argument 'cmake_args' from command line to 'None'
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'ibvs' build argument 'cmake_target' from command line to 'None'
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'ibvs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'ibvs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'ibvs' build argument 'cmake_clean_first' from command line to 'False'
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'ibvs' build argument 'cmake_force_configure' from command line to 'False'
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'ibvs' build argument 'ament_cmake_args' from command line to 'None'
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'ibvs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.293s] Level 5:colcon.colcon_core.verb:set package 'ibvs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.293s] DEBUG:colcon.colcon_core.verb:Building package 'ibvs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/p/ws_demo2/build/ibvs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/p/ws_demo2/install/ibvs', 'merge_install': False, 'path': '/home/p/ws_demo2/src/ibvs', 'symlink_install': False, 'test_result_base': None}
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'ik' build argument 'cmake_args' from command line to 'None'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'ik' build argument 'cmake_target' from command line to 'None'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'ik' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'ik' build argument 'cmake_clean_cache' from command line to 'False'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'ik' build argument 'cmake_clean_first' from command line to 'False'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'ik' build argument 'cmake_force_configure' from command line to 'False'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'ik' build argument 'ament_cmake_args' from command line to 'None'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'ik' build argument 'catkin_cmake_args' from command line to 'None'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'ik' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.294s] DEBUG:colcon.colcon_core.verb:Building package 'ik' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/p/ws_demo2/build/ik', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/p/ws_demo2/install/ik', 'merge_install': False, 'path': '/home/p/ws_demo2/src/ik', 'symlink_install': False, 'test_result_base': None}
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'ur_description' build argument 'cmake_args' from command line to 'None'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'ur_description' build argument 'cmake_target' from command line to 'None'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'ur_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'ur_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'ur_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'ur_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'ur_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'ur_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.294s] Level 5:colcon.colcon_core.verb:set package 'ur_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.294s] DEBUG:colcon.colcon_core.verb:Building package 'ur_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/p/ws_demo2/build/ur_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/p/ws_demo2/install/ur_description', 'merge_install': False, 'path': '/home/p/ws_demo2/src/ur_description', 'symlink_install': False, 'test_result_base': None}
+[0.294s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.295s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.295s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/p/ws_demo2/src/camera_image' with build type 'ament_cmake'
+[0.295s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/p/ws_demo2/src/camera_image'
+[0.297s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.297s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.297s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.302s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/p/ws_demo2/src/ibvs' with build type 'ament_cmake'
+[0.302s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/p/ws_demo2/src/ibvs'
+[0.303s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.303s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.309s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/p/ws_demo2/src/ik' with build type 'ament_cmake'
+[0.309s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/p/ws_demo2/src/ik'
+[0.309s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.309s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.315s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/p/ws_demo2/src/ur_description' with build type 'ament_cmake'
+[0.315s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/p/ws_demo2/src/ur_description'
+[0.315s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.315s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.326s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/p/ws_demo2/build/camera_image': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --build /home/p/ws_demo2/build/camera_image -- -j16 -l16
+[0.328s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/p/ws_demo2/build/ibvs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --build /home/p/ws_demo2/build/ibvs -- -j16 -l16
+[0.331s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/p/ws_demo2/build/ik': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --build /home/p/ws_demo2/build/ik -- -j16 -l16
+[0.335s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/p/ws_demo2/build/ur_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --build /home/p/ws_demo2/build/ur_description -- -j16 -l16
+[0.348s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/p/ws_demo2/build/ur_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --build /home/p/ws_demo2/build/ur_description -- -j16 -l16
+[0.351s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/p/ws_demo2/build/ur_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --install /home/p/ws_demo2/build/ur_description
+[0.361s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ur_description)
+[0.361s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/p/ws_demo2/build/camera_image' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --build /home/p/ws_demo2/build/camera_image -- -j16 -l16
+[0.362s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/p/ws_demo2/build/camera_image': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --install /home/p/ws_demo2/build/camera_image
+[0.362s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/p/ws_demo2/build/ur_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --install /home/p/ws_demo2/build/ur_description
+[0.366s] Level 1:colcon.colcon_core.environment:checking '/home/p/ws_demo2/install/ur_description' for CMake module files
+[0.366s] Level 1:colcon.colcon_core.environment:checking '/home/p/ws_demo2/install/ur_description' for CMake config files
+[0.367s] Level 1:colcon.colcon_core.shell:create_environment_hook('ur_description', 'cmake_prefix_path')
+[0.367s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/p/ws_demo2/install/ur_description/share/ur_description/hook/cmake_prefix_path.ps1'
+[0.368s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/p/ws_demo2/install/ur_description/share/ur_description/hook/cmake_prefix_path.dsv'
+[0.369s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/p/ws_demo2/install/ur_description/share/ur_description/hook/cmake_prefix_path.sh'
+[0.369s] Level 1:colcon.colcon_core.environment:checking '/home/p/ws_demo2/install/ur_description/bin'
+[0.369s] Level 1:colcon.colcon_core.environment:checking '/home/p/ws_demo2/install/ur_description/lib/pkgconfig/ur_description.pc'
+[0.370s] Level 1:colcon.colcon_core.environment:checking '/home/p/ws_demo2/install/ur_description/lib/python3.10/site-packages'
+[0.370s] Level 1:colcon.colcon_core.environment:checking '/home/p/ws_demo2/install/ur_description/bin'
+[0.370s] INFO:colcon.colcon_core.shell:Creating package script '/home/p/ws_demo2/install/ur_description/share/ur_description/package.ps1'
+[0.371s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/p/ws_demo2/install/ur_description/share/ur_description/package.dsv'
+[0.371s] INFO:colcon.colcon_core.shell:Creating package script '/home/p/ws_demo2/install/ur_description/share/ur_description/package.sh'
+[0.372s] INFO:colcon.colcon_core.shell:Creating package script '/home/p/ws_demo2/install/ur_description/share/ur_description/package.bash'
+[0.372s] INFO:colcon.colcon_core.shell:Creating package script '/home/p/ws_demo2/install/ur_description/share/ur_description/package.zsh'
+[0.373s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/p/ws_demo2/install/ur_description/share/colcon-core/packages/ur_description)
+[0.373s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ur_description)
+[0.373s] Level 1:colcon.colcon_core.environment:checking '/home/p/ws_demo2/install/ur_description' for CMake module files
+[0.374s] Level 1:colcon.colcon_core.environment:checking '/home/p/ws_demo2/install/ur_description' for CMake config files
+[0.374s] Level 1:colcon.colcon_core.shell:create_environment_hook('ur_description', 'cmake_prefix_path')
+[0.374s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/p/ws_demo2/install/ur_description/share/ur_description/hook/cmake_prefix_path.ps1'
+[0.374s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/p/ws_demo2/install/ur_description/share/ur_description/hook/cmake_prefix_path.dsv'
+[0.375s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/p/ws_demo2/install/ur_description/share/ur_description/hook/cmake_prefix_path.sh'
+[0.375s] Level 1:colcon.colcon_core.environment:checking '/home/p/ws_demo2/install/ur_description/bin'
+[0.375s] Level 1:colcon.colcon_core.environment:checking '/home/p/ws_demo2/install/ur_description/lib/pkgconfig/ur_description.pc'
+[0.375s] Level 1:colcon.colcon_core.environment:checking '/home/p/ws_demo2/install/ur_description/lib/python3.10/site-packages'
+[0.375s] Level 1:colcon.colcon_core.environment:checking '/home/p/ws_demo2/install/ur_description/bin'
+[0.376s] INFO:colcon.colcon_core.shell:Creating package script '/home/p/ws_demo2/install/ur_description/share/ur_description/package.ps1'
+[0.376s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/p/ws_demo2/install/ur_description/share/ur_description/package.dsv'
+[0.376s] INFO:colcon.colcon_core.shell:Creating package script '/home/p/ws_demo2/install/ur_description/share/ur_description/package.sh'
+[0.377s] INFO:colcon.colcon_core.shell:Creating package script '/home/p/ws_demo2/install/ur_description/share/ur_description/package.bash'
+[0.377s] INFO:colcon.colcon_core.shell:Creating package script '/home/p/ws_demo2/install/ur_description/share/ur_description/package.zsh'
+[0.377s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/p/ws_demo2/install/ur_description/share/colcon-core/packages/ur_description)
+[0.378s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/p/ws_demo2/build/ik' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --build /home/p/ws_demo2/build/ik -- -j16 -l16
+[0.379s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/p/ws_demo2/build/ik': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --install /home/p/ws_demo2/build/ik
+[0.380s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(camera_image)
+[0.380s] Level 1:colcon.colcon_core.environment:checking '/home/p/ws_demo2/install/camera_image' for CMake module files
+[0.380s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/p/ws_demo2/build/camera_image' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --install /home/p/ws_demo2/build/camera_image
+[0.380s] Level 1:colcon.colcon_core.environment:checking '/home/p/ws_demo2/install/camera_image' for CMake config files
+[0.381s] Level 1:colcon.colcon_core.shell:create_environment_hook('camera_image', 'cmake_prefix_path')
+[0.381s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/p/ws_demo2/install/camera_image/share/camera_image/hook/cmake_prefix_path.ps1'
+[0.381s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/p/ws_demo2/install/camera_image/share/camera_image/hook/cmake_prefix_path.dsv'
+[0.381s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/p/ws_demo2/install/camera_image/share/camera_image/hook/cmake_prefix_path.sh'
+[0.382s] Level 1:colcon.colcon_core.environment:checking '/home/p/ws_demo2/install/camera_image/lib'
+[0.382s] Level 1:colcon.colcon_core.environment:checking '/home/p/ws_demo2/install/camera_image/bin'
+[0.382s] Level 1:colcon.colcon_core.environment:checking '/home/p/ws_demo2/install/camera_image/lib/pkgconfig/camera_image.pc'
+[0.382s] Level 1:colcon.colcon_core.environment:checking '/home/p/ws_demo2/install/camera_image/lib/python3.10/site-packages'
+[0.382s] Level 1:colcon.colcon_core.environment:checking '/home/p/ws_demo2/install/camera_image/bin'
+[0.382s] INFO:colcon.colcon_core.shell:Creating package script '/home/p/ws_demo2/install/camera_image/share/camera_image/package.ps1'
+[0.383s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/p/ws_demo2/install/camera_image/share/camera_image/package.dsv'
+[0.383s] INFO:colcon.colcon_core.shell:Creating package script '/home/p/ws_demo2/install/camera_image/share/camera_image/package.sh'
+[0.384s] INFO:colcon.colcon_core.shell:Creating package script '/home/p/ws_demo2/install/camera_image/share/camera_image/package.bash'
+[0.384s] INFO:colcon.colcon_core.shell:Creating package script '/home/p/ws_demo2/install/camera_image/share/camera_image/package.zsh'
+[0.384s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/p/ws_demo2/install/camera_image/share/colcon-core/packages/camera_image)
+[0.384s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(camera_image)
+[0.385s] Level 1:colcon.colcon_core.environment:checking '/home/p/ws_demo2/install/camera_image' for CMake module files
+[0.385s] Level 1:colcon.colcon_core.environment:checking '/home/p/ws_demo2/install/camera_image' for CMake config files
+[0.385s] Level 1:colcon.colcon_core.shell:create_environment_hook('camera_image', 'cmake_prefix_path')
+[0.385s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/p/ws_demo2/install/camera_image/share/camera_image/hook/cmake_prefix_path.ps1'
+[0.386s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/p/ws_demo2/install/camera_image/share/camera_image/hook/cmake_prefix_path.dsv'
+[0.386s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/p/ws_demo2/install/camera_image/share/camera_image/hook/cmake_prefix_path.sh'
+[0.386s] Level 1:colcon.colcon_core.environment:checking '/home/p/ws_demo2/install/camera_image/lib'
+[0.386s] Level 1:colcon.colcon_core.environment:checking '/home/p/ws_demo2/install/camera_image/bin'
+[0.386s] Level 1:colcon.colcon_core.environment:checking '/home/p/ws_demo2/install/camera_image/lib/pkgconfig/camera_image.pc'
+[0.387s] Level 1:colcon.colcon_core.environment:checking '/home/p/ws_demo2/install/camera_image/lib/python3.10/site-packages'
+[0.387s] Level 1:colcon.colcon_core.environment:checking '/home/p/ws_demo2/install/camera_image/bin'
+[0.387s] INFO:colcon.colcon_core.shell:Creating package script '/home/p/ws_demo2/install/camera_image/share/camera_image/package.ps1'
+[0.387s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/p/ws_demo2/install/camera_image/share/camera_image/package.dsv'
+[0.388s] INFO:colcon.colcon_core.shell:Creating package script '/home/p/ws_demo2/install/camera_image/share/camera_image/package.sh'
+[0.388s] INFO:colcon.colcon_core.shell:Creating package script '/home/p/ws_demo2/install/camera_image/share/camera_image/package.bash'
+[0.388s] INFO:colcon.colcon_core.shell:Creating package script '/home/p/ws_demo2/install/camera_image/share/camera_image/package.zsh'
+[0.389s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/p/ws_demo2/install/camera_image/share/colcon-core/packages/camera_image)
+[0.390s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ik)
+[0.390s] Level 1:colcon.colcon_core.environment:checking '/home/p/ws_demo2/install/ik' for CMake module files
+[0.392s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/p/ws_demo2/build/ik' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --install /home/p/ws_demo2/build/ik
+[0.392s] Level 1:colcon.colcon_core.environment:checking '/home/p/ws_demo2/install/ik' for CMake config files
+[0.392s] Level 1:colcon.colcon_core.shell:create_environment_hook('ik', 'cmake_prefix_path')
+[0.392s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/p/ws_demo2/install/ik/share/ik/hook/cmake_prefix_path.ps1'
+[0.392s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/p/ws_demo2/install/ik/share/ik/hook/cmake_prefix_path.dsv'
+[0.392s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/p/ws_demo2/install/ik/share/ik/hook/cmake_prefix_path.sh'
+[0.393s] Level 1:colcon.colcon_core.environment:checking '/home/p/ws_demo2/install/ik/lib'
+[0.393s] Level 1:colcon.colcon_core.environment:checking '/home/p/ws_demo2/install/ik/bin'
+[0.393s] Level 1:colcon.colcon_core.environment:checking '/home/p/ws_demo2/install/ik/lib/pkgconfig/ik.pc'
+[0.393s] Level 1:colcon.colcon_core.environment:checking '/home/p/ws_demo2/install/ik/lib/python3.10/site-packages'
+[0.393s] Level 1:colcon.colcon_core.environment:checking '/home/p/ws_demo2/install/ik/bin'
+[0.394s] INFO:colcon.colcon_core.shell:Creating package script '/home/p/ws_demo2/install/ik/share/ik/package.ps1'
+[0.394s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/p/ws_demo2/install/ik/share/ik/package.dsv'
+[0.394s] INFO:colcon.colcon_core.shell:Creating package script '/home/p/ws_demo2/install/ik/share/ik/package.sh'
+[0.394s] INFO:colcon.colcon_core.shell:Creating package script '/home/p/ws_demo2/install/ik/share/ik/package.bash'
+[0.395s] INFO:colcon.colcon_core.shell:Creating package script '/home/p/ws_demo2/install/ik/share/ik/package.zsh'
+[0.395s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/p/ws_demo2/install/ik/share/colcon-core/packages/ik)
+[0.396s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ik)
+[0.396s] Level 1:colcon.colcon_core.environment:checking '/home/p/ws_demo2/install/ik' for CMake module files
+[0.396s] Level 1:colcon.colcon_core.environment:checking '/home/p/ws_demo2/install/ik' for CMake config files
+[0.396s] Level 1:colcon.colcon_core.shell:create_environment_hook('ik', 'cmake_prefix_path')
+[0.396s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/p/ws_demo2/install/ik/share/ik/hook/cmake_prefix_path.ps1'
+[0.397s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/p/ws_demo2/install/ik/share/ik/hook/cmake_prefix_path.dsv'
+[0.397s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/p/ws_demo2/install/ik/share/ik/hook/cmake_prefix_path.sh'
+[0.397s] Level 1:colcon.colcon_core.environment:checking '/home/p/ws_demo2/install/ik/lib'
+[0.397s] Level 1:colcon.colcon_core.environment:checking '/home/p/ws_demo2/install/ik/bin'
+[0.397s] Level 1:colcon.colcon_core.environment:checking '/home/p/ws_demo2/install/ik/lib/pkgconfig/ik.pc'
+[0.398s] Level 1:colcon.colcon_core.environment:checking '/home/p/ws_demo2/install/ik/lib/python3.10/site-packages'
+[0.398s] Level 1:colcon.colcon_core.environment:checking '/home/p/ws_demo2/install/ik/bin'
+[0.398s] INFO:colcon.colcon_core.shell:Creating package script '/home/p/ws_demo2/install/ik/share/ik/package.ps1'
+[0.398s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/p/ws_demo2/install/ik/share/ik/package.dsv'
+[0.399s] INFO:colcon.colcon_core.shell:Creating package script '/home/p/ws_demo2/install/ik/share/ik/package.sh'
+[0.399s] INFO:colcon.colcon_core.shell:Creating package script '/home/p/ws_demo2/install/ik/share/ik/package.bash'
+[0.399s] INFO:colcon.colcon_core.shell:Creating package script '/home/p/ws_demo2/install/ik/share/ik/package.zsh'
+[0.400s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/p/ws_demo2/install/ik/share/colcon-core/packages/ik)
+[22.850s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/p/ws_demo2/build/ibvs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --build /home/p/ws_demo2/build/ibvs -- -j16 -l16
+[22.851s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/p/ws_demo2/build/ibvs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --install /home/p/ws_demo2/build/ibvs
+[22.863s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ibvs)
+[22.863s] Level 1:colcon.colcon_core.environment:checking '/home/p/ws_demo2/install/ibvs' for CMake module files
+[22.864s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/p/ws_demo2/build/ibvs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --install /home/p/ws_demo2/build/ibvs
+[22.864s] Level 1:colcon.colcon_core.environment:checking '/home/p/ws_demo2/install/ibvs' for CMake config files
+[22.864s] Level 1:colcon.colcon_core.shell:create_environment_hook('ibvs', 'cmake_prefix_path')
+[22.864s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/p/ws_demo2/install/ibvs/share/ibvs/hook/cmake_prefix_path.ps1'
+[22.865s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/p/ws_demo2/install/ibvs/share/ibvs/hook/cmake_prefix_path.dsv'
+[22.865s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/p/ws_demo2/install/ibvs/share/ibvs/hook/cmake_prefix_path.sh'
+[22.865s] Level 1:colcon.colcon_core.environment:checking '/home/p/ws_demo2/install/ibvs/lib'
+[22.865s] Level 1:colcon.colcon_core.environment:checking '/home/p/ws_demo2/install/ibvs/bin'
+[22.866s] Level 1:colcon.colcon_core.environment:checking '/home/p/ws_demo2/install/ibvs/lib/pkgconfig/ibvs.pc'
+[22.866s] Level 1:colcon.colcon_core.environment:checking '/home/p/ws_demo2/install/ibvs/lib/python3.10/site-packages'
+[22.866s] Level 1:colcon.colcon_core.environment:checking '/home/p/ws_demo2/install/ibvs/bin'
+[22.866s] INFO:colcon.colcon_core.shell:Creating package script '/home/p/ws_demo2/install/ibvs/share/ibvs/package.ps1'
+[22.866s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/p/ws_demo2/install/ibvs/share/ibvs/package.dsv'
+[22.867s] INFO:colcon.colcon_core.shell:Creating package script '/home/p/ws_demo2/install/ibvs/share/ibvs/package.sh'
+[22.867s] INFO:colcon.colcon_core.shell:Creating package script '/home/p/ws_demo2/install/ibvs/share/ibvs/package.bash'
+[22.867s] INFO:colcon.colcon_core.shell:Creating package script '/home/p/ws_demo2/install/ibvs/share/ibvs/package.zsh'
+[22.868s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/p/ws_demo2/install/ibvs/share/colcon-core/packages/ibvs)
+[22.868s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ibvs)
+[22.868s] Level 1:colcon.colcon_core.environment:checking '/home/p/ws_demo2/install/ibvs' for CMake module files
+[22.869s] Level 1:colcon.colcon_core.environment:checking '/home/p/ws_demo2/install/ibvs' for CMake config files
+[22.869s] Level 1:colcon.colcon_core.shell:create_environment_hook('ibvs', 'cmake_prefix_path')
+[22.869s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/p/ws_demo2/install/ibvs/share/ibvs/hook/cmake_prefix_path.ps1'
+[22.869s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/p/ws_demo2/install/ibvs/share/ibvs/hook/cmake_prefix_path.dsv'
+[22.870s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/p/ws_demo2/install/ibvs/share/ibvs/hook/cmake_prefix_path.sh'
+[22.870s] Level 1:colcon.colcon_core.environment:checking '/home/p/ws_demo2/install/ibvs/lib'
+[22.870s] Level 1:colcon.colcon_core.environment:checking '/home/p/ws_demo2/install/ibvs/bin'
+[22.870s] Level 1:colcon.colcon_core.environment:checking '/home/p/ws_demo2/install/ibvs/lib/pkgconfig/ibvs.pc'
+[22.870s] Level 1:colcon.colcon_core.environment:checking '/home/p/ws_demo2/install/ibvs/lib/python3.10/site-packages'
+[22.871s] Level 1:colcon.colcon_core.environment:checking '/home/p/ws_demo2/install/ibvs/bin'
+[22.871s] INFO:colcon.colcon_core.shell:Creating package script '/home/p/ws_demo2/install/ibvs/share/ibvs/package.ps1'
+[22.872s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/p/ws_demo2/install/ibvs/share/ibvs/package.dsv'
+[22.872s] INFO:colcon.colcon_core.shell:Creating package script '/home/p/ws_demo2/install/ibvs/share/ibvs/package.sh'
+[22.872s] INFO:colcon.colcon_core.shell:Creating package script '/home/p/ws_demo2/install/ibvs/share/ibvs/package.bash'
+[22.873s] INFO:colcon.colcon_core.shell:Creating package script '/home/p/ws_demo2/install/ibvs/share/ibvs/package.zsh'
+[22.873s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/p/ws_demo2/install/ibvs/share/colcon-core/packages/ibvs)
+[22.873s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[22.873s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[22.874s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[22.874s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[22.878s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[22.878s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[22.878s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[22.886s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[22.886s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/p/ws_demo2/install/local_setup.ps1'
+[22.887s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/p/ws_demo2/install/_local_setup_util_ps1.py'
+[22.888s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/p/ws_demo2/install/setup.ps1'
+[22.890s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/p/ws_demo2/install/local_setup.sh'
+[22.891s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/p/ws_demo2/install/_local_setup_util_sh.py'
+[22.891s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/p/ws_demo2/install/setup.sh'
+[22.894s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/p/ws_demo2/install/local_setup.bash'
+[22.894s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/p/ws_demo2/install/setup.bash'
+[22.897s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/p/ws_demo2/install/local_setup.zsh'
+[22.897s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/p/ws_demo2/install/setup.zsh'

@@ -1,0 +1,42 @@
+[0.026s] Invoking command in '/home/p/ws_demo2/build/ibvs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --build /home/p/ws_demo2/build/ibvs -- -j16 -l16
+[0.057s] [ 50%] [32mBuilding CXX object CMakeFiles/ibvs.dir/src/ibvs.cpp.o[0m
+[3.543s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:63:23:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kvoid[m[K’
+[3.543s]    63 | void VisualServoInit::[01;31m[Kvoid[m[K rgb_callback(const sensor_msgs::msg::Image::SharedPtr msg)
+[3.543s]       |                       [01;31m[K^~~~[m[K
+[3.543s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:192:23:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kvoid[m[K’
+[3.543s]   192 | void VisualServoInit::[01;31m[Kvoid[m[K depth_callback(const sensor_msgs::msg::Image::SharedPtr msg)
+[3.543s]       |                       [01;31m[K^~~~[m[K
+[3.543s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:204:23:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kvoid[m[K’
+[3.543s]   204 | void VisualServoInit::[01;31m[Kvoid[m[K rgb_camera_info_callback(const sensor_msgs::msg::CameraInfo::SharedPtr msg)
+[3.543s]       |                       [01;31m[K^~~~[m[K
+[3.543s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:228:23:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kvoid[m[K’
+[3.543s]   228 | void VisualServoInit::[01;31m[Kvoid[m[K jointStateCallback(const sensor_msgs::msg::JointState::SharedPtr msg)
+[3.544s]       |                       [01;31m[K^~~~[m[K
+[3.544s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:244:23:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kvoid[m[K’
+[3.544s]   244 | void VisualServoInit::[01;31m[Kvoid[m[K joint_velocity_publisher_callback()
+[3.544s]       |                       [01;31m[K^~~~[m[K
+[3.544s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:257:23:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kvoid[m[K’
+[3.544s]   257 | void VisualServoInit::[01;31m[Kvoid[m[K jacobianCallback(const std_msgs::msg::Float64MultiArray::SharedPtr msg)
+[3.544s]       |                       [01;31m[K^~~~[m[K
+[3.544s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:282:23:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kbool[m[K’
+[3.544s]   282 | void VisualServoInit::[01;31m[Kbool[m[K detect_rectangle_corners(const cv::Mat& img, std::vector<vpImagePoint>& corners)
+[3.544s]       |                       [01;31m[K^~~~[m[K
+[3.544s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:373:23:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kvoid[m[K’
+[3.544s]   373 | void VisualServoInit::[01;31m[Kvoid[m[K init_target_features() {
+[3.544s]       |                       [01;31m[K^~~~[m[K
+[3.544s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:429:23:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kbool[m[K’
+[3.544s]   429 | void VisualServoInit::[01;31m[Kbool[m[K compute_feature_error(){
+[3.544s]       |                       [01;31m[K^~~~[m[K
+[3.544s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:489:23:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kvoid[m[K’
+[3.544s]   489 | void VisualServoInit::[01;31m[Kvoid[m[K init_visual_servo()
+[3.544s]       |                       [01;31m[K^~~~[m[K
+[3.544s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:526:23:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kvoid[m[K’
+[3.544s]   526 | void VisualServoInit::[01;31m[Kvoid[m[K ConvertCameraVelToBaseVel(const std::string &camera_frame, const std::string &base_frame)
+[3.545s]       |                       [01;31m[K^~~~[m[K
+[3.545s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:620:23:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kvoid[m[K’
+[3.545s]   620 | void VisualServoInit::[01;31m[Kvoid[m[K convertBaseVelToJointVel()
+[3.545s]       |                       [01;31m[K^~~~[m[K
+[7.920s] gmake[2]: *** [CMakeFiles/ibvs.dir/build.make:79：CMakeFiles/ibvs.dir/src/ibvs.cpp.o] 错误 1
+[7.921s] gmake[1]: *** [CMakeFiles/Makefile2:153：CMakeFiles/ibvs.dir/all] 错误 2
+[7.921s] gmake: *** [Makefile:146：all] 错误 2
+[7.923s] Invoked command in '/home/p/ws_demo2/build/ibvs' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --build /home/p/ws_demo2/build/ibvs -- -j16 -l16

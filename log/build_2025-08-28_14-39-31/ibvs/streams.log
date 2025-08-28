@@ -1,0 +1,37 @@
+[0.026s] Invoking command in '/home/p/ws_demo2/build/ibvs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --build /home/p/ws_demo2/build/ibvs -- -j16 -l16
+[0.060s] [ 50%] [32mBuilding CXX object CMakeFiles/ibvs.dir/src/ibvs.cpp.o[0m
+[3.723s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:[m[K In member function ‘[01m[Kvoid VisualServoInit::depth_callback(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[3.723s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:198:79:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.723s]   198 | ServoInit::depth_callback([01;35m[Kconst sensor_msgs::msg::Image::SharedPtr msg[m[K)
+[3.723s]       |                           [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[3.723s] 
+[3.727s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:[m[K In member function ‘[01m[Kvoid VisualServoInit::jointStateCallback(sensor_msgs::msg::JointState_<std::allocator<void> >::SharedPtr)[m[K’:
+[3.727s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:234:88:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[3.728s]   234 | ::jointStateCallback([01;35m[Kconst sensor_msgs::msg::JointState::SharedPtr msg[m[K)
+[3.728s]       |                      [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[3.728s] 
+[20.262s] [100%] [32m[1mLinking CXX executable ibvs[0m
+[21.380s] /usr/bin/ld: warning: libopencv_imgproc.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgproc.so.411
+[21.381s] /usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.411
+[22.065s] [100%] Built target ibvs
+[22.075s] Invoked command in '/home/p/ws_demo2/build/ibvs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --build /home/p/ws_demo2/build/ibvs -- -j16 -l16
+[22.076s] Invoking command in '/home/p/ws_demo2/build/ibvs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --install /home/p/ws_demo2/build/ibvs
+[22.078s] -- Install configuration: ""
+[22.079s] -- Installing: /home/p/ws_demo2/install/ibvs/lib/ibvs/ibvs
+[22.088s] -- Set non-toolchain portion of runtime path of "/home/p/ws_demo2/install/ibvs/lib/ibvs/ibvs" to ""
+[22.088s] -- Up-to-date: /home/p/ws_demo2/install/ibvs/share/ament_index/resource_index/package_run_dependencies/ibvs
+[22.088s] -- Up-to-date: /home/p/ws_demo2/install/ibvs/share/ament_index/resource_index/parent_prefix_path/ibvs
+[22.088s] -- Up-to-date: /home/p/ws_demo2/install/ibvs/share/ibvs/environment/ament_prefix_path.sh
+[22.088s] -- Up-to-date: /home/p/ws_demo2/install/ibvs/share/ibvs/environment/ament_prefix_path.dsv
+[22.088s] -- Up-to-date: /home/p/ws_demo2/install/ibvs/share/ibvs/environment/path.sh
+[22.088s] -- Up-to-date: /home/p/ws_demo2/install/ibvs/share/ibvs/environment/path.dsv
+[22.089s] -- Up-to-date: /home/p/ws_demo2/install/ibvs/share/ibvs/local_setup.bash
+[22.089s] -- Up-to-date: /home/p/ws_demo2/install/ibvs/share/ibvs/local_setup.sh
+[22.089s] -- Up-to-date: /home/p/ws_demo2/install/ibvs/share/ibvs/local_setup.zsh
+[22.089s] -- Up-to-date: /home/p/ws_demo2/install/ibvs/share/ibvs/local_setup.dsv
+[22.089s] -- Installing: /home/p/ws_demo2/install/ibvs/share/ibvs/package.dsv
+[22.089s] -- Up-to-date: /home/p/ws_demo2/install/ibvs/share/ament_index/resource_index/packages/ibvs
+[22.089s] -- Up-to-date: /home/p/ws_demo2/install/ibvs/share/ibvs/cmake/ibvsConfig.cmake
+[22.089s] -- Up-to-date: /home/p/ws_demo2/install/ibvs/share/ibvs/cmake/ibvsConfig-version.cmake
+[22.089s] -- Up-to-date: /home/p/ws_demo2/install/ibvs/share/ibvs/package.xml
+[22.090s] Invoked command in '/home/p/ws_demo2/build/ibvs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --install /home/p/ws_demo2/build/ibvs

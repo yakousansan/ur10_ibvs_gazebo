@@ -1,0 +1,40 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/ibvs.dir/src/ibvs.cpp.o[0m
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:63:23:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kvoid[m[K’
+   63 | void VisualServoInit::[01;31m[Kvoid[m[K rgb_callback(const sensor_msgs::msg::Image::SharedPtr msg)
+      |                       [01;31m[K^~~~[m[K
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:192:23:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kvoid[m[K’
+  192 | void VisualServoInit::[01;31m[Kvoid[m[K depth_callback(const sensor_msgs::msg::Image::SharedPtr msg)
+      |                       [01;31m[K^~~~[m[K
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:204:23:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kvoid[m[K’
+  204 | void VisualServoInit::[01;31m[Kvoid[m[K rgb_camera_info_callback(const sensor_msgs::msg::CameraInfo::SharedPtr msg)
+      |                       [01;31m[K^~~~[m[K
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:228:23:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kvoid[m[K’
+  228 | void VisualServoInit::[01;31m[Kvoid[m[K jointStateCallback(const sensor_msgs::msg::JointState::SharedPtr msg)
+      |                       [01;31m[K^~~~[m[K
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:244:23:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kvoid[m[K’
+  244 | void VisualServoInit::[01;31m[Kvoid[m[K joint_velocity_publisher_callback()
+      |                       [01;31m[K^~~~[m[K
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:257:23:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kvoid[m[K’
+  257 | void VisualServoInit::[01;31m[Kvoid[m[K jacobianCallback(const std_msgs::msg::Float64MultiArray::SharedPtr msg)
+      |                       [01;31m[K^~~~[m[K
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:282:23:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kbool[m[K’
+  282 | void VisualServoInit::[01;31m[Kbool[m[K detect_rectangle_corners(const cv::Mat& img, std::vector<vpImagePoint>& corners)
+      |                       [01;31m[K^~~~[m[K
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:373:23:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kvoid[m[K’
+  373 | void VisualServoInit::[01;31m[Kvoid[m[K init_target_features() {
+      |                       [01;31m[K^~~~[m[K
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:429:23:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kbool[m[K’
+  429 | void VisualServoInit::[01;31m[Kbool[m[K compute_feature_error(){
+      |                       [01;31m[K^~~~[m[K
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:489:23:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kvoid[m[K’
+  489 | void VisualServoInit::[01;31m[Kvoid[m[K init_visual_servo()
+      |                       [01;31m[K^~~~[m[K
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:526:23:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kvoid[m[K’
+  526 | void VisualServoInit::[01;31m[Kvoid[m[K ConvertCameraVelToBaseVel(const std::string &camera_frame, const std::string &base_frame)
+      |                       [01;31m[K^~~~[m[K
+[01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:620:23:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kvoid[m[K’
+  620 | void VisualServoInit::[01;31m[Kvoid[m[K convertBaseVelToJointVel()
+      |                       [01;31m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/ibvs.dir/build.make:79：CMakeFiles/ibvs.dir/src/ibvs.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:153：CMakeFiles/ibvs.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

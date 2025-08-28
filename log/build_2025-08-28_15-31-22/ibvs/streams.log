@@ -1,0 +1,11 @@
+[0.029s] Invoking command in '/home/p/ws_demo2/build/ibvs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --build /home/p/ws_demo2/build/ibvs -- -j16 -l16
+[0.059s] [ 50%] [32mBuilding CXX object CMakeFiles/ibvs.dir/src/ibvs.cpp.o[0m
+[3.560s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:[m[K In constructor ‘[01m[KVisualServoInit::VisualServoInit()[m[K’:
+[3.560s] [01m[K/home/p/ws_demo2/src/ibvs/src/ibvs.cpp:52:113:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kdo[m[K’
+[3.560s]    52 |     error_data_file << "Timestamp,error_x0,error_y0,error_x1,error_y1,error_x2,error_y2,error_x3,error_y3,RMSE,"
+[3.560s]       |                                                                                                                 [01;31m[K^[m[K
+[3.560s]       |                                                                                                                 [32m[K;[m[K
+[10.979s] gmake[2]: *** [CMakeFiles/ibvs.dir/build.make:79：CMakeFiles/ibvs.dir/src/ibvs.cpp.o] 错误 1
+[10.979s] gmake[1]: *** [CMakeFiles/Makefile2:153：CMakeFiles/ibvs.dir/all] 错误 2
+[10.980s] gmake: *** [Makefile:146：all] 错误 2
+[10.981s] Invoked command in '/home/p/ws_demo2/build/ibvs' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --build /home/p/ws_demo2/build/ibvs -- -j16 -l16
