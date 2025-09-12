@@ -1,0 +1,6 @@
+[0.061s] Invoking command in '/home/p/ws_demo2/build/ibvs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --build /home/p/ws_demo2/build/ibvs -- -j16 -l16
+[0.163s] [ 50%] [32mBuilding CXX object CMakeFiles/ibvs.dir/src/ibvs.cpp.o[0m
+[39.104s] [100%] [32m[1mLinking CXX executable ibvs[0m
+[41.275s] /usr/bin/ld: warning: libopencv_imgproc.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgproc.so.411
+[41.277s] /usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.411
+[42.663s] [100%] Built target ibvs

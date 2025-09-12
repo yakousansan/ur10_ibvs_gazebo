@@ -1,0 +1,36 @@
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found rclcpp: 16.0.12 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+-- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Configuring done (1.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/p/ws_demo2/build/mpc
+[ 50%] [32mBuilding CXX object CMakeFiles/mpc.dir/src/mpc.cpp.o[0m
+[100%] [32m[1mLinking CXX executable mpc[0m
+[100%] Built target mpc
+-- Install configuration: ""
+-- Installing: /home/p/ws_demo2/install/mpc/lib/mpc/mpc
+-- Set non-toolchain portion of runtime path of "/home/p/ws_demo2/install/mpc/lib/mpc/mpc" to ""
+-- Up-to-date: /home/p/ws_demo2/install/mpc/share/ament_index/resource_index/package_run_dependencies/mpc
+-- Up-to-date: /home/p/ws_demo2/install/mpc/share/ament_index/resource_index/parent_prefix_path/mpc
+-- Up-to-date: /home/p/ws_demo2/install/mpc/share/mpc/environment/ament_prefix_path.sh
+-- Installing: /home/p/ws_demo2/install/mpc/share/mpc/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/p/ws_demo2/install/mpc/share/mpc/environment/path.sh
+-- Installing: /home/p/ws_demo2/install/mpc/share/mpc/environment/path.dsv
+-- Up-to-date: /home/p/ws_demo2/install/mpc/share/mpc/local_setup.bash
+-- Up-to-date: /home/p/ws_demo2/install/mpc/share/mpc/local_setup.sh
+-- Up-to-date: /home/p/ws_demo2/install/mpc/share/mpc/local_setup.zsh
+-- Installing: /home/p/ws_demo2/install/mpc/share/mpc/local_setup.dsv
+-- Installing: /home/p/ws_demo2/install/mpc/share/mpc/package.dsv
+-- Up-to-date: /home/p/ws_demo2/install/mpc/share/ament_index/resource_index/packages/mpc
+-- Up-to-date: /home/p/ws_demo2/install/mpc/share/mpc/cmake/mpcConfig.cmake
+-- Up-to-date: /home/p/ws_demo2/install/mpc/share/mpc/cmake/mpcConfig-version.cmake
+-- Up-to-date: /home/p/ws_demo2/install/mpc/share/mpc/package.xml

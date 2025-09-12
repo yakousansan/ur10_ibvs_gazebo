@@ -1,0 +1,4 @@
+source;share/mpc/local_setup.bash
+source;share/mpc/local_setup.dsv
+source;share/mpc/local_setup.sh
+source;share/mpc/local_setup.zsh

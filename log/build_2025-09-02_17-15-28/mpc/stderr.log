@@ -1,0 +1,14 @@
+[01m[K/home/p/ws_demo2/src/mpc/src/mpc.cpp:[m[K In member function ‘[01m[Kvoid MpcControllerNode::solveMpcProblem()[m[K’:
+[01m[K/home/p/ws_demo2/src/mpc/src/mpc.cpp:105:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass OsqpEigen::Data[m[K’ has no member named ‘[01m[KsetObjectiveMatrix[m[K’
+  105 |     solver_.data()->[01;31m[KsetObjectiveMatrix[m[K(P_mat);
+      |                     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/p/ws_demo2/src/mpc/src/mpc.cpp:106:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass OsqpEigen::Data[m[K’ has no member named ‘[01m[KsetObjectiveVector[m[K’
+  106 |     solver_.data()->[01;31m[KsetObjectiveVector[m[K(q_vec);
+      |                     [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/p/ws_demo2/src/mpc/src/mpc.cpp:[m[K In member function ‘[01m[Kvoid MpcControllerNode::publishCommand(const Eigen::VectorXd&)[m[K’:
+[01m[K/home/p/ws_demo2/src/mpc/src/mpc.cpp:121:63:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KVc_optimal[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  121 | void MpcControllerNode::publishCommand([01;35m[Kconst Eigen::VectorXd& Vc_optimal[m[K)
+      |                                        [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/mpc.dir/build.make:79：CMakeFiles/mpc.dir/src/mpc.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:153：CMakeFiles/mpc.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

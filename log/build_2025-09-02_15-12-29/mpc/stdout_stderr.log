@@ -1,0 +1,8 @@
+[33mCMake Warning:
+  Ignoring extra path from command line:
+
+   "/home/p/ws_demo2/src/mpc"
+
+[0m
+[0mCMake Error: The source directory "/home/p/ws_demo2/src/mpc" does not appear to contain CMakeLists.txt.
+Specify --help for usage, or press the help button on the CMake GUI.[0m

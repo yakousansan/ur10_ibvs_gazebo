@@ -1,0 +1,25 @@
+[0.045s] Invoking command in '/home/p/ws_demo2/build/mpc': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --build /home/p/ws_demo2/build/mpc -- -j16 -l16
+[0.101s] [ 50%] [32mBuilding CXX object CMakeFiles/mpc.dir/src/mpc.cpp.o[0m
+[4.133s] [100%] [32m[1mLinking CXX executable mpc[0m
+[4.257s] [100%] Built target mpc
+[4.263s] Invoked command in '/home/p/ws_demo2/build/mpc' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --build /home/p/ws_demo2/build/mpc -- -j16 -l16
+[4.265s] Invoking command in '/home/p/ws_demo2/build/mpc': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --install /home/p/ws_demo2/build/mpc
+[4.268s] -- Install configuration: ""
+[4.268s] -- Installing: /home/p/ws_demo2/install/mpc/lib/mpc/mpc
+[4.269s] -- Set non-toolchain portion of runtime path of "/home/p/ws_demo2/install/mpc/lib/mpc/mpc" to ""
+[4.269s] -- Installing: /home/p/ws_demo2/install/mpc/share/ament_index/resource_index/package_run_dependencies/mpc
+[4.269s] -- Installing: /home/p/ws_demo2/install/mpc/share/ament_index/resource_index/parent_prefix_path/mpc
+[4.269s] -- Installing: /home/p/ws_demo2/install/mpc/share/mpc/environment/ament_prefix_path.sh
+[4.269s] -- Installing: /home/p/ws_demo2/install/mpc/share/mpc/environment/ament_prefix_path.dsv
+[4.270s] -- Installing: /home/p/ws_demo2/install/mpc/share/mpc/environment/path.sh
+[4.270s] -- Installing: /home/p/ws_demo2/install/mpc/share/mpc/environment/path.dsv
+[4.270s] -- Installing: /home/p/ws_demo2/install/mpc/share/mpc/local_setup.bash
+[4.270s] -- Installing: /home/p/ws_demo2/install/mpc/share/mpc/local_setup.sh
+[4.270s] -- Installing: /home/p/ws_demo2/install/mpc/share/mpc/local_setup.zsh
+[4.270s] -- Installing: /home/p/ws_demo2/install/mpc/share/mpc/local_setup.dsv
+[4.270s] -- Installing: /home/p/ws_demo2/install/mpc/share/mpc/package.dsv
+[4.271s] -- Installing: /home/p/ws_demo2/install/mpc/share/ament_index/resource_index/packages/mpc
+[4.271s] -- Installing: /home/p/ws_demo2/install/mpc/share/mpc/cmake/mpcConfig.cmake
+[4.271s] -- Installing: /home/p/ws_demo2/install/mpc/share/mpc/cmake/mpcConfig-version.cmake
+[4.271s] -- Installing: /home/p/ws_demo2/install/mpc/share/mpc/package.xml
+[4.273s] Invoked command in '/home/p/ws_demo2/build/mpc' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --install /home/p/ws_demo2/build/mpc

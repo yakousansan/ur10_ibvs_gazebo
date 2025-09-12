@@ -1,0 +1,17 @@
+[0.048s] Invoking command in '/home/p/ws_demo2/build/mpc': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --build /home/p/ws_demo2/build/mpc -- -j16 -l16
+[0.114s] [ 50%] [32mBuilding CXX object CMakeFiles/mpc.dir/src/mpc.cpp.o[0m
+[5.014s] [01m[K/home/p/ws_demo2/src/mpc/src/mpc.cpp:[m[K In member function ‘[01m[Kvoid MpcControllerNode::solveMpcProblem()[m[K’:
+[5.014s] [01m[K/home/p/ws_demo2/src/mpc/src/mpc.cpp:105:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass OsqpEigen::Solver[m[K’ has no member named ‘[01m[KsetObjectiveMatrix[m[K’
+[5.014s]   105 |     solver_.[01;31m[KsetObjectiveMatrix[m[K(P_mat);
+[5.014s]       |             [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[5.015s] [01m[K/home/p/ws_demo2/src/mpc/src/mpc.cpp:106:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass OsqpEigen::Solver[m[K’ has no member named ‘[01m[KsetObjectiveVector[m[K’
+[5.015s]   106 |     solver_.[01;31m[KsetObjectiveVector[m[K(q_vec);
+[5.015s]       |             [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[5.015s] [01m[K/home/p/ws_demo2/src/mpc/src/mpc.cpp:[m[K In member function ‘[01m[Kvoid MpcControllerNode::publishCommand(const Eigen::VectorXd&)[m[K’:
+[5.015s] [01m[K/home/p/ws_demo2/src/mpc/src/mpc.cpp:119:63:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KVc_optimal[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[5.015s]   119 | void MpcControllerNode::publishCommand([01;35m[Kconst Eigen::VectorXd& Vc_optimal[m[K)
+[5.015s]       |                                        [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[9.999s] gmake[2]: *** [CMakeFiles/mpc.dir/build.make:79：CMakeFiles/mpc.dir/src/mpc.cpp.o] 错误 1
+[9.999s] gmake[1]: *** [CMakeFiles/Makefile2:153：CMakeFiles/mpc.dir/all] 错误 2
+[9.999s] gmake: *** [Makefile:146：all] 错误 2
+[10.001s] Invoked command in '/home/p/ws_demo2/build/mpc' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --build /home/p/ws_demo2/build/mpc -- -j16 -l16

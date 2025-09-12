@@ -1,0 +1,10 @@
+[0.046s] Invoking command in '/home/p/ws_demo2/build/mpc': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake /home/p/ws_demo2/src/mpc -DCMAKE_INSTALL_PREFIX=/home/p/ws_demo2/install/mpc
+[0.048s] [33mCMake Warning:
+[0.048s]   Ignoring extra path from command line:
+[0.048s] 
+[0.048s]    "/home/p/ws_demo2/src/mpc"
+[0.048s] 
+[0.048s] [0m
+[0.048s] [0mCMake Error: The source directory "/home/p/ws_demo2/src/mpc" does not appear to contain CMakeLists.txt.
+[0.048s] Specify --help for usage, or press the help button on the CMake GUI.[0m
+[0.071s] Invoked command in '/home/p/ws_demo2/build/mpc' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake /home/p/ws_demo2/src/mpc -DCMAKE_INSTALL_PREFIX=/home/p/ws_demo2/install/mpc

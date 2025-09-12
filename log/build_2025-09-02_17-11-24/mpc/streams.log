@@ -1,0 +1,24 @@
+[0.047s] Invoking command in '/home/p/ws_demo2/build/mpc': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --build /home/p/ws_demo2/build/mpc -- -j16 -l16
+[0.108s] [ 50%] [32mBuilding CXX object CMakeFiles/mpc.dir/src/mpc.cpp.o[0m
+[4.760s] [01m[K/home/p/ws_demo2/src/mpc/src/mpc.cpp:[m[K In member function ‘[01m[Kvoid MpcControllerNode::solveMpcProblem()[m[K’:
+[4.760s] [01m[K/home/p/ws_demo2/src/mpc/src/mpc.cpp:100:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass OsqpEigen::Data[m[K’ has no member named ‘[01m[KsetP[m[K’
+[4.760s]   100 |     solver_.data()->[01;31m[KsetP[m[K(P_mat);
+[4.761s]       |                     [01;31m[K^~~~[m[K
+[4.761s] [01m[K/home/p/ws_demo2/src/mpc/src/mpc.cpp:101:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass OsqpEigen::Data[m[K’ has no member named ‘[01m[KsetQ[m[K’
+[4.761s]   101 |     solver_.data()->[01;31m[KsetQ[m[K(q_vec);
+[4.761s]       |                     [01;31m[K^~~~[m[K
+[4.761s] [01m[K/home/p/ws_demo2/src/mpc/src/mpc.cpp:104:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass OsqpEigen::Solver[m[K’ has no member named ‘[01m[Kis[m[K’
+[4.761s]   104 |     if (!solver_.[01;31m[Kis[m[K     Initialized()) {
+[4.761s]       |                  [01;31m[K^~[m[K
+[4.761s] [01m[K/home/p/ws_demo2/src/mpc/src/mpc.cpp:104:24:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[KInitialized[m[K’
+[4.761s]   104 |     if [34m[K([m[K!solver_.is[01;31m[K     [m[K[32m[KInitialized[m[K()) {
+[4.761s]       |        [34m[K~[m[K           [01;31m[K^~~~~[m[K[32m[K~~~~~~~~~~~[m[K
+[4.761s]       |                        [32m[K)[m[K
+[4.762s] [01m[K/home/p/ws_demo2/src/mpc/src/mpc.cpp:[m[K In member function ‘[01m[Kvoid MpcControllerNode::publishCommand(const Eigen::VectorXd&)[m[K’:
+[4.762s] [01m[K/home/p/ws_demo2/src/mpc/src/mpc.cpp:115:63:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KVc_optimal[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[4.762s]   115 | void MpcControllerNode::publishCommand([01;35m[Kconst Eigen::VectorXd& Vc_optimal[m[K)
+[4.762s]       |                                        [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[9.668s] gmake[2]: *** [CMakeFiles/mpc.dir/build.make:79：CMakeFiles/mpc.dir/src/mpc.cpp.o] 错误 1
+[9.668s] gmake[1]: *** [CMakeFiles/Makefile2:153：CMakeFiles/mpc.dir/all] 错误 2
+[9.668s] gmake: *** [Makefile:146：all] 错误 2
+[9.670s] Invoked command in '/home/p/ws_demo2/build/mpc' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/p/ws_moveit2/install/moveit_configs_utils:/home/p/ws_moveit2/install/launch_param_builder:/home/p/demo_ws2/install/ur20_joint_control:/home/p/demo_ws2/install/arm_joint_control:/opt/ros/humble /usr/local/bin/cmake --build /home/p/ws_demo2/build/mpc -- -j16 -l16

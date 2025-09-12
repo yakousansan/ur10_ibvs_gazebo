@@ -1,0 +1,21 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/mpc.dir/src/mpc.cpp.o[0m
+[100%] [32m[1mLinking CXX executable mpc[0m
+[100%] Built target mpc
+-- Install configuration: ""
+-- Installing: /home/p/ws_demo2/install/mpc/lib/mpc/mpc
+-- Set non-toolchain portion of runtime path of "/home/p/ws_demo2/install/mpc/lib/mpc/mpc" to ""
+-- Installing: /home/p/ws_demo2/install/mpc/share/ament_index/resource_index/package_run_dependencies/mpc
+-- Installing: /home/p/ws_demo2/install/mpc/share/ament_index/resource_index/parent_prefix_path/mpc
+-- Installing: /home/p/ws_demo2/install/mpc/share/mpc/environment/ament_prefix_path.sh
+-- Installing: /home/p/ws_demo2/install/mpc/share/mpc/environment/ament_prefix_path.dsv
+-- Installing: /home/p/ws_demo2/install/mpc/share/mpc/environment/path.sh
+-- Installing: /home/p/ws_demo2/install/mpc/share/mpc/environment/path.dsv
+-- Installing: /home/p/ws_demo2/install/mpc/share/mpc/local_setup.bash
+-- Installing: /home/p/ws_demo2/install/mpc/share/mpc/local_setup.sh
+-- Installing: /home/p/ws_demo2/install/mpc/share/mpc/local_setup.zsh
+-- Installing: /home/p/ws_demo2/install/mpc/share/mpc/local_setup.dsv
+-- Installing: /home/p/ws_demo2/install/mpc/share/mpc/package.dsv
+-- Installing: /home/p/ws_demo2/install/mpc/share/ament_index/resource_index/packages/mpc
+-- Installing: /home/p/ws_demo2/install/mpc/share/mpc/cmake/mpcConfig.cmake
+-- Installing: /home/p/ws_demo2/install/mpc/share/mpc/cmake/mpcConfig-version.cmake
+-- Installing: /home/p/ws_demo2/install/mpc/share/mpc/package.xml

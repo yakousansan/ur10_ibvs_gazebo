@@ -1,4 +1,5 @@
 /home/p/ws_demo2/install/ibvs/lib/ibvs/ibvs
+/home/p/ws_demo2/install/ibvs/share/ibvs/launch/ur10_gazebo.launch.py
 /home/p/ws_demo2/install/ibvs/share/ament_index/resource_index/package_run_dependencies/ibvs
 /home/p/ws_demo2/install/ibvs/share/ament_index/resource_index/parent_prefix_path/ibvs
 /home/p/ws_demo2/install/ibvs/share/ibvs/environment/ament_prefix_path.sh
