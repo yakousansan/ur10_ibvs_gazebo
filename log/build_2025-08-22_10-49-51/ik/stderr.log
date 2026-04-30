@@ -1,8 +1,0 @@
-In file included from [01m[K/home/p/ws_demo2/src/ik/src/ik.cpp:1[m[K:
-[01m[K/home/p/ws_demo2/src/ik/include/ik.h:13:10:[m[K [01;31m[Kfatal error: [m[Kpinocchio/robot-model.hpp: 没有那个文件或目录
-   13 | #include [01;31m[K<pinocchio/robot-model.hpp>[m[K
-      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
-compilation terminated.
-gmake[2]: *** [CMakeFiles/ik.dir/build.make:79：CMakeFiles/ik.dir/src/ik.cpp.o] 错误 1
-gmake[1]: *** [CMakeFiles/Makefile2:153：CMakeFiles/ik.dir/all] 错误 2
-gmake: *** [Makefile:146：all] 错误 2

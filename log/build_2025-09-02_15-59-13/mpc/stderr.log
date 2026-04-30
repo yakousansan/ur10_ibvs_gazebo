@@ -1,8 +1,0 @@
-In file included from [01m[K/home/p/ws_demo2/src/mpc/src/mpc.cpp:1[m[K:
-[01m[K/home/p/ws_demo2/src/mpc/include/mpc.h:5:10:[m[K [01;31m[Kfatal error: [m[Kstd_msgs/msg/float64_multi_array.hpp: 没有那个文件或目录
-    5 | #include [01;31m[K<std_msgs/msg/float64_multi_array.hpp>[m[K
-      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
-compilation terminated.
-gmake[2]: *** [CMakeFiles/mpc.dir/build.make:79：CMakeFiles/mpc.dir/src/mpc.cpp.o] 错误 1
-gmake[1]: *** [CMakeFiles/Makefile2:153：CMakeFiles/mpc.dir/all] 错误 2
-gmake: *** [Makefile:146：all] 错误 2
