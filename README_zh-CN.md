@@ -98,13 +98,13 @@
 # OpenCV（ROS2 通常已自带）
 sudo apt install libopencv-dev
 
-# ViSP
+# ViSP — 参考官网安装指南：https://visp.inria.fr/install/
 sudo apt install libvisp-dev
 
 # Eigen3
 sudo apt install libeigen3-dev
 
-# Pinocchio
+# Pinocchio — 参考官网安装指南：https://stack-of-tasks.github.io/pinocchio/download.html
 sudo apt install robotpkg-py3*-pinocchio
 ```
 
