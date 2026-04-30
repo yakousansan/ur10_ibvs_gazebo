@@ -1,7 +1,7 @@
 # IBVS - 基于图像的 UR10 视觉伺服系统
 
 <p align="center">
-  <img src="src/camera_image/picture/rgb_image.jpg" width="600" alt="Gazebo 仿真环境">
+  <img src="docs/ur.png" width="600" alt="UR10 IBVS Gazebo 仿真">
 </p>
 
 <p align="center">

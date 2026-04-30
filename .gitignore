@@ -17,3 +17,6 @@ __pycache__/
 # Editor temp files
 *.swp
 *~
+
+# Claude Code
+CLAUDE.md

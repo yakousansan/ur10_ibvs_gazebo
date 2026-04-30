@@ -1,7 +1,7 @@
 # IBVS - Image-Based Visual Servoing for UR10
 
 <p align="center">
-  <img src="src/camera_image/picture/rgb_image.jpg" width="600" alt="Gazebo Simulation">
+  <img src="docs/ur.png" width="600" alt="UR10 IBVS Gazebo Simulation">
 </p>
 
 <p align="center">
