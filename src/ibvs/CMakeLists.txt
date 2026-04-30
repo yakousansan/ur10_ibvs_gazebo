@@ -16,7 +16,6 @@ find_package(VISP REQUIRED)
 find_package(tf2 REQUIRED)
 find_package(tf2_ros REQUIRED)
 find_package(Eigen3 REQUIRED)
-find_package(service_interfaces REQUIRED)
 add_executable(ibvs src/ibvs.cpp)
 
 
@@ -30,8 +29,6 @@ ament_target_dependencies(
   tf2
   tf2_ros
   Eigen3
-  service_interfaces
-    
 )
 
 # 链接第三方库
