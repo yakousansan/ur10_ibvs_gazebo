@@ -99,13 +99,11 @@ Refer to the [ROS2 official documentation](https://docs.ros.org/en/humble/Instal
 sudo apt install libopencv-dev
 
 # ViSP — refer to official guide: https://visp.inria.fr/install/
-sudo apt install libvisp-dev
 
 # Eigen3
 sudo apt install libeigen3-dev
 
 # Pinocchio — refer to official guide: https://stack-of-tasks.github.io/pinocchio/download.html
-sudo apt install robotpkg-py3*-pinocchio
 ```
 
 **3. Build the workspace**

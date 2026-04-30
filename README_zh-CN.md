@@ -99,13 +99,11 @@
 sudo apt install libopencv-dev
 
 # ViSP — 参考官网安装指南：https://visp.inria.fr/install/
-sudo apt install libvisp-dev
 
 # Eigen3
 sudo apt install libeigen3-dev
 
 # Pinocchio — 参考官网安装指南：https://stack-of-tasks.github.io/pinocchio/download.html
-sudo apt install robotpkg-py3*-pinocchio
 ```
 
 **3. 编译工作空间**
