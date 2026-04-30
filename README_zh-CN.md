@@ -211,6 +211,10 @@ src/
 - [Pinocchio](https://stack-of-tasks.github.io/pinocchio/) — 刚体动力学库
 - [Universal Robots ROS2 Driver](https://github.com/UniversalRobots/Universal_Robots_ROS2_Driver) — UR10 模型参考
 
+## Star 历史
+
+[![Star History Chart](https://api.star-history.com/svg?repos=yakousansan/ur10_ibvs_gazebo&type=Date)](https://star-history.com/#yakousansan/ur10_ibvs_gazebo&Date)
+
 ### 许可证
 
 本项目采用 MIT 许可证。
