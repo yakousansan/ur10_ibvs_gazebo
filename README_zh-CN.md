@@ -22,7 +22,7 @@
 
 系统在机械臂末端安装 Intel RealSense D455 深度相机，通过检测相机图像中矩形目标的四个角点，计算当前特征与期望特征之间的误差，利用 ViSP 视觉伺服库生成相机速度指令，再经由 TF2 坐标变换和雅可比伪逆运算转换为关节速度，最终发送给 ros2 速度控制器，驱动机械臂运动，使目标角点逐步收敛到图像中的期望位置。
 
-## 目录
+### 目录
 
 - [项目简介](#项目简介)
 - [系统架构](#系统架构)
@@ -228,7 +228,7 @@ src/
 - [Pinocchio](https://stack-of-tasks.github.io/pinocchio/) — 刚体动力学库
 - [Universal Robots ROS2 Driver](https://github.com/UniversalRobots/Universal_Robots_ROS2_Driver) — UR10 模型参考
 
-## Star 历史
+### Star 历史
 
 [![Star History Chart](https://api.star-history.com/svg?repos=yakousansan/ur10_ibvs_gazebo&type=Date)](https://star-history.com/#yakousansan/ur10_ibvs_gazebo&Date)
 

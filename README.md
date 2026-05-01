@@ -22,7 +22,7 @@ This project is an **Eye-in-Hand Image-Based Visual Servoing (IBVS)** system bui
 
 An Intel RealSense D455 depth camera is mounted on the robot's end-effector. The system detects four corners of a rectangular target in the camera image, computes the error between current and desired features, generates camera velocity commands using the ViSP visual servoing library, and converts them to joint velocities through TF2 coordinate transforms and Jacobian pseudoinverse computation. The joint velocities are then sent to a ros2 velocity controller, driving the robot until the target corners converge to their desired positions in the image.
 
-## Table of Contents
+### Table of Contents
 
 - [Overview](#overview)
 - [System Architecture](#system-architecture)
@@ -228,7 +228,7 @@ File naming format: `{type}_{MMDD}_{HHmmss}.csv`
 - [Pinocchio](https://stack-of-tasks.github.io/pinocchio/) — Rigid body dynamics library
 - [Universal Robots ROS2 Driver](https://github.com/UniversalRobots/Universal_Robots_ROS2_Driver) — UR10 model reference
 
-## Star History
+### Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=yakousansan/ur10_ibvs_gazebo&type=Date)](https://star-history.com/#yakousansan/ur10_ibvs_gazebo&Date)
 
